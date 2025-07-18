@@ -14,11 +14,11 @@ from dataclasses import dataclass
 from datetime import datetime
 import logging
 from collections.abc import Mapping, Sequence
-from pythonjsonlogger import jsonlogger
+from pythonjsonlogger.json import JsonFormatter
 
 # Configure structured JSON logging
 logHandler = logging.StreamHandler()
-formatter = jsonlogger.JsonFormatter('%(asctime)s %(levelname)s %(name)s %(message)s')
+formatter = JsonFormatter('%(asctime)s %(levelname)s %(name)s %(message)s')
 logHandler.setFormatter(formatter)
 logger = logging.getLogger(__name__)
 logger.handlers = []
@@ -242,10 +242,13 @@ class EnhancedBayutScraper:
             location_hierarchy = hit.get("location")
             # Extract city from location hierarchy
             city = None
-            for loc in location_hierarchy:
-                if loc.get("level") == 1:  # City level
-                    city = loc.get("name")
-                    break
+            if location_hierarchy:
+                for loc in location_hierarchy:
+                    if loc.get("level") == 1:  # City level
+                        city = loc.get("name")
+                        break
+            else:
+                city = None
         else:
             city = None
         

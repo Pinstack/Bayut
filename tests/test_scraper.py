@@ -5,14 +5,16 @@ Test script for Bayut.sa scraper
 
 import asyncio
 import json
-from bayut_scraper import BayutScraper
+from src.bayut_scraper import EnhancedBayutScraper
+import pytest
 
+@pytest.mark.asyncio
 async def test_basic_scraping():
     """Test basic scraping functionality"""
     print("🧪 Testing Bayut.sa Scraper...")
     
     try:
-        async with BayutScraper() as scraper:
+        async with EnhancedBayutScraper() as scraper:
             print("✅ Scraper initialized successfully")
             
             # Test single page scraping
@@ -47,12 +49,13 @@ async def test_basic_scraping():
         print(f"❌ Test failed: {e}")
         return False
 
+@pytest.mark.asyncio
 async def test_filtering():
     """Test filtering functionality"""
     print("\n🔍 Testing filtering...")
     
     try:
-        async with BayutScraper() as scraper:
+        async with EnhancedBayutScraper() as scraper:
             # Test custom filters
             custom_filters = "purpose:for-sale AND category:apartments"
             listings = await scraper.scrape_all_listings(
@@ -65,27 +68,4 @@ async def test_filtering():
             
     except Exception as e:
         print(f"❌ Filter test failed: {e}")
-        return False
-
-async def main():
-    """Run all tests"""
-    print("🚀 Starting Bayut.sa Scraper Tests\n")
-    
-    # Test basic functionality
-    basic_test = await test_basic_scraping()
-    
-    # Test filtering
-    filter_test = await test_filtering()
-    
-    # Summary
-    print(f"\n📊 Test Summary:")
-    print(f"   Basic Scraping: {'✅ PASS' if basic_test else '❌ FAIL'}")
-    print(f"   Filtering: {'✅ PASS' if filter_test else '❌ FAIL'}")
-    
-    if basic_test and filter_test:
-        print(f"\n🎉 All tests passed! The scraper is working correctly.")
-    else:
-        print(f"\n⚠️  Some tests failed. Check the error messages above.")
-
-if __name__ == "__main__":
-    asyncio.run(main()) 
+        return False 

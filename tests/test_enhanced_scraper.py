@@ -5,8 +5,10 @@ Test script for the enhanced Bayut.sa scraper
 
 import asyncio
 import json
-from bayut_scraper_enhanced import EnhancedBayutScraper
+from src.bayut_scraper import EnhancedBayutScraper
+import pytest
 
+@pytest.mark.asyncio
 async def test_basic_search():
     """Test basic search without filters"""
     print("🧪 Testing enhanced Bayut.sa Scraper...")
@@ -49,6 +51,7 @@ async def test_basic_search():
         print(f"❌ Test failed: {e}")
         return False
 
+@pytest.mark.asyncio
 async def test_different_filters():
     """Test different filter approaches"""
     print("\n🔍 Testing different filter approaches...")
@@ -83,31 +86,4 @@ async def test_different_filters():
             
     except Exception as e:
         print(f"❌ Filter test failed: {e}")
-        return False
-
-async def main():
-    """Run all tests"""
-    print("🚀 Starting Enhanced Bayut.sa Scraper Tests\n")
-    
-    # Test basic functionality
-    basic_test = await test_basic_search()
-    
-    # Test different filters
-    filter_test = await test_different_filters()
-    
-    # Summary
-    print(f"\n📊 Test Summary:")
-    print(f"   Basic Search: {'✅ PASS' if basic_test else '❌ FAIL'}")
-    print(f"   Filter Tests: {'✅ PASS' if filter_test else '❌ FAIL'}")
-    
-    if basic_test or filter_test:
-        print(f"\n🎉 Enhanced scraper is working! Found properties with some filter combinations.")
-    else:
-        print(f"\n⚠️  No properties found. This might indicate:")
-        print(f"   - API rate limiting")
-        print(f"   - Filter syntax issues")
-        print(f"   - API changes")
-        print(f"   - Network connectivity issues")
-
-if __name__ == "__main__":
-    asyncio.run(main()) 
+        return False 

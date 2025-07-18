@@ -13,8 +13,8 @@ from pathlib import Path
 # Add src to path for imports
 sys.path.insert(0, str(Path(__file__).parent / "src"))
 
-from bayut_scraper_enhanced import EnhancedBayutScraper
-from backfill_normalized_locations import backfill_normalized_locations
+from bayut_scraper import EnhancedBayutScraper
+from backfill_locations import backfill_normalized_locations
 from db_utils import backfill_properties_to_normalized_tables, SessionLocal
 from models import Property, Agency, Agent, Media, UniqueLocation, PropertyLocation
 import logging
