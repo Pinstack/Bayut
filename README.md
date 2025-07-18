@@ -38,11 +38,20 @@ pip install -r requirements.txt
 
 3. **Run the scraper:**
 ```bash
-# Scrape 100 properties (demo)
-python src/scrape_100_properties.py
+# Show available commands
+python bayut.py --help
 
-# Or run the enhanced scraper directly
-python src/bayut_scraper_enhanced.py
+# Scrape 100 properties (demo)
+python bayut.py scrape --limit 100
+
+# Scrape all properties
+python bayut.py scrape --all
+
+# Check database status
+python bayut.py db status
+
+# Show project information
+python bayut.py info
 ```
 
 ### Alternative Setup (without virtual environment)
@@ -60,7 +69,14 @@ pip3 install -r requirements.txt
 
 3. Run the scraper:
 ```bash
-python3 src/scrape_100_properties.py
+# Show available commands
+python3 bayut.py --help
+
+# Scrape 100 properties (demo)
+python3 bayut.py scrape --limit 100
+
+# Check database status
+python3 bayut.py db status
 ```
 
 ## 📁 Project Structure
@@ -75,11 +91,13 @@ Bayut_mapping/
 │   ├── techContext.md
 │   ├── activeContext.md
 │   └── progress.md
+├── bayut.py                       # Main CLI interface
 ├── src/                           # Source code
 │   ├── __init__.py
-│   ├── bayut_scraper.py          # Original scraper
 │   ├── bayut_scraper_enhanced.py # Enhanced scraper with REGA data
-│   └── scrape_100_properties.py  # Demo script
+│   ├── db_utils.py               # Database utilities
+│   ├── models.py                 # SQLAlchemy models
+│   └── backfill_normalized_locations.py # Location normalization
 ├── tests/                         # Test files
 │   ├── __init__.py
 │   ├── test_scraper.py
@@ -111,6 +129,52 @@ The scraper extracts comprehensive property data including:
 - **Media**: Photo count, video count, floor plans
 - **REGA Information**: Complete regulatory and license data
 - **Bilingual Content**: Arabic and English field variants
+
+## 🖥️ CLI Usage
+
+The project now includes a comprehensive command-line interface for all operations:
+
+### Available Commands
+
+```bash
+# Show all available commands
+python bayut.py --help
+
+# Scraping commands
+python bayut.py scrape --limit 100    # Scrape 100 properties
+python bayut.py scrape --all          # Scrape all properties
+
+# Database commands
+python bayut.py db status             # Show database statistics
+python bayut.py db backfill           # Backfill normalized tables
+python bayut.py db normalize-locations # Normalize location data
+
+# Utility commands
+python bayut.py info                  # Show project information
+python bayut.py test                  # Run basic tests
+```
+
+### Database Status Example
+
+```bash
+python bayut.py db status
+```
+
+Output:
+```
+==================================================
+DATABASE STATUS
+==================================================
+Properties: 27,535
+Agencies: 1,388
+Agents: 2,224
+Media Items: 23,205
+Unique Locations: 1,459
+Property-Location Relationships: 100,454
+Properties with Agency: 25,397 (92.2%)
+Properties with Agent: 27,338 (99.3%)
+==================================================
+```
 
 ## 🔧 Usage Examples
 
