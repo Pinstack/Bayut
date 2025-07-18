@@ -35,9 +35,9 @@ async def test_basic_scraping():
                 print(f"   Price: {sample.price}")
                 print(f"   Location: {sample.location}")
                 print(f"   Area: {sample.area}")
-                print(f"   Rooms: {sample.rooms}")
-                print(f"   Baths: {sample.baths}")
-                print(f"   Verified: {sample.isVerified}")
+                print(f"   Rooms: {sample.bedrooms}")
+                print(f"   Baths: {sample.bathrooms}")
+                print(f"   Verified: {sample.is_verified}")
                 
                 # Save test results
                 scraper.save_listings_to_json(listings, "test_results.json")
