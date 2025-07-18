@@ -13,10 +13,17 @@ from typing import Dict, List, Optional, Any
 from dataclasses import dataclass
 from datetime import datetime
 import logging
+from collections.abc import Mapping, Sequence
+from pythonjsonlogger import jsonlogger
 
-# Configure logging
-logging.basicConfig(level=logging.INFO)
+# Configure structured JSON logging
+logHandler = logging.StreamHandler()
+formatter = jsonlogger.JsonFormatter('%(asctime)s %(levelname)s %(name)s %(message)s')
+logHandler.setFormatter(formatter)
 logger = logging.getLogger(__name__)
+logger.handlers = []
+logger.addHandler(logHandler)
+logger.setLevel(logging.INFO)
 
 @dataclass
 class AlgoliaConfig:
@@ -111,11 +118,16 @@ class PropertyListing:
 class EnhancedBayutScraper:
     """Enhanced scraper class for Bayut.sa using Algolia API"""
     
-    def __init__(self, config: Optional[AlgoliaConfig] = None):
+    def __init__(self, config: Optional[AlgoliaConfig] = None, max_retries: int = 5, backoff_factor: float = 1.5, concurrency: int = 1, delay_between_requests: float = 0.5):
         self.config = config or AlgoliaConfig()
         self.session: Optional[aiohttp.ClientSession] = None
         self.total_listings = 0
         self.processed_listings = 0
+        self.max_retries = max_retries
+        self.backoff_factor = backoff_factor
+        self.concurrency = concurrency
+        self.delay_between_requests = delay_between_requests
+        self._semaphore = asyncio.Semaphore(concurrency)
         
     async def __aenter__(self):
         """Async context manager entry"""
@@ -197,23 +209,29 @@ class EnhancedBayutScraper:
         
         url = f"{self.config.base_url}/*/queries"
         
-        try:
-            async with self.session.post(
-                url,
-                headers=self.config.headers,
-                json=search_body,
-                timeout=aiohttp.ClientTimeout(total=30)
-            ) as response:
-                response.raise_for_status()
-                data = await response.json()
-                return data
-                
-        except aiohttp.ClientError as e:
-            logger.error(f"HTTP error during search: {e}")
-            raise
-        except Exception as e:
-            logger.error(f"Unexpected error during search: {e}")
-            raise
+        attempt = 0
+        while True:
+            try:
+                async with self.session.post(
+                    url,
+                    headers=self.config.headers,
+                    json=search_body,
+                    timeout=aiohttp.ClientTimeout(total=30)
+                ) as response:
+                    response.raise_for_status()
+                    data = await response.json()
+                    return data
+            except (aiohttp.ClientError, asyncio.TimeoutError) as e:
+                attempt += 1
+                if attempt > self.max_retries:
+                    logger.error(f"Max retries exceeded for page {page}: {e}")
+                    raise
+                sleep_time = self.backoff_factor ** (attempt - 1)
+                logger.warning(f"Request failed (attempt {attempt}/{self.max_retries}): {e}. Retrying in {sleep_time:.1f}s...")
+                await asyncio.sleep(sleep_time)
+            except Exception as e:
+                logger.error(f"Unexpected error during search: {e}")
+                raise
     
     def parse_listing(self, hit: Dict[str, Any]) -> PropertyListing:
         """Parse a single listing from Algolia response with enhanced field mapping"""
@@ -331,7 +349,7 @@ class EnhancedBayutScraper:
         filters: str = "",
         max_pages: Optional[int] = None,
         batch_size: int = 25,
-        delay_between_requests: float = 0.5
+        delay_between_requests: Optional[float] = None
     ) -> List[PropertyListing]:
         """
         Scrape all property listings with pagination
@@ -350,16 +368,20 @@ class EnhancedBayutScraper:
         
         logger.info(f"Starting to scrape listings with filters: {filters}")
         
+        delay = delay_between_requests if delay_between_requests is not None else self.delay_between_requests
+        
         while True:
             try:
                 logger.info(f"Scraping page {page + 1}...")
                 
                 # Search for listings
-                response = await self.search_listings(
-                    filters=filters,
-                    page=page,
-                    hits_per_page=batch_size
-                )
+                # Use semaphore for future concurrency support
+                async with self._semaphore:
+                    response = await self.search_listings(
+                        filters=filters,
+                        page=page,
+                        hits_per_page=batch_size
+                    )
                 
                 # Extract results
                 if "results" in response and len(response["results"]) > 0:
@@ -395,8 +417,8 @@ class EnhancedBayutScraper:
                     page += 1
                     
                     # Delay between requests to be respectful
-                    if delay_between_requests > 0:
-                        await asyncio.sleep(delay_between_requests)
+                    if delay > 0:
+                        await asyncio.sleep(delay)
                         
                 else:
                     logger.warning("No results in response")
@@ -527,47 +549,78 @@ class EnhancedBayutScraper:
         
         logger.info(f"Saved {len(listings)} listings in database format to {filename}")
 
-async def main():
-    """Main function demonstrating the enhanced scraper usage"""
-    
-    # Example usage
-    async with EnhancedBayutScraper() as scraper:
-        
-        # Example 1: Scrape all apartments for sale in Saudi Arabia
-        logger.info("=== Example 1: Scraping apartments for sale ===")
-        apartments_for_sale = await scraper.scrape_by_category_and_purpose(
-            category="apartments",
-            purpose="for-sale",
-            max_pages=2  # Limit for demo
-        )
-        
-        # Save results in both formats
-        scraper.save_listings_to_json(apartments_for_sale, "enhanced_apartments_for_sale.json")
-        scraper.save_listings_to_database_format(apartments_for_sale, "enhanced_apartments_db_ready.json")
-        
-        # Example 2: Scrape with custom filters
-        logger.info("=== Example 2: Scrape with custom filters ===")
-        custom_filters = "purpose:for-sale AND category:villas AND price>=1000000"
-        custom_listings = await scraper.scrape_all_listings(
-            filters=custom_filters,
-            max_pages=1  # Limit for demo
-        )
-        
-        scraper.save_listings_to_json(custom_listings, "enhanced_custom_filters.json")
-        
-        # Example 3: Get detailed listing information
-        logger.info("=== Example 3: Getting detailed listing info ===")
-        if apartments_for_sale:
-            sample_listing = apartments_for_sale[0]
-            logger.info(f"Sample listing: {sample_listing.title}")
-            logger.info(f"Price: {sample_listing.price}")
-            logger.info(f"Location: {sample_listing.location}")
-            logger.info(f"Area: {sample_listing.area}")
-            logger.info(f"Rooms: {sample_listing.bedrooms}")
-            logger.info(f"Baths: {sample_listing.bathrooms}")
-            logger.info(f"Verified: {sample_listing.is_verified}")
-            logger.info(f"Permit Number: {sample_listing.permit_number}")
-            logger.info(f"REGA Data Available: {bool(sample_listing.extra_fields)}")
+def clean_for_json(data):
+    def _clean(obj, seen=None):
+        if seen is None:
+            seen = set()
+        obj_id = id(obj)
+        if obj_id in seen:
+            return None  # Remove circular reference
+        seen.add(obj_id)
+        if isinstance(obj, Mapping):
+            return {k: _clean(v, seen) for k, v in obj.items()}
+        elif isinstance(obj, Sequence) and not isinstance(obj, (str, bytes)):
+            return [_clean(i, seen) for i in obj]
+        try:
+            json.dumps(obj)
+            return obj
+        except Exception:
+            return str(obj)
+    return _clean(data)
+
+def map_api_to_db(hit):
+    # Flatten location
+    loc = hit.get('location')
+    if isinstance(loc, list) and loc:
+        location_val = loc[-1].get('name') or loc[-1].get('externalID') or str(loc[-1])
+    elif isinstance(loc, dict):
+        location_val = loc.get('name') or loc.get('externalID') or str(loc)
+    else:
+        location_val = loc if isinstance(loc, str) else None
+    # Flatten property_type
+    pt = hit.get('property_type')
+    if isinstance(pt, list) and pt:
+        property_type_val = pt[-1].get('name') or pt[-1].get('externalID') or str(pt[-1])
+    elif isinstance(pt, dict):
+        property_type_val = pt.get('name') or pt.get('externalID') or str(pt)
+    else:
+        property_type_val = pt if isinstance(pt, str) else None
+    return {
+        'external_id': hit.get('external_id'),
+        'title': hit.get('title') or hit.get('title_ar'),
+        'price': hit.get('price'),
+        'currency': hit.get('currency'),
+        'location': location_val,
+        'area': hit.get('area'),
+        'bedrooms': hit.get('bedrooms'),
+        'bathrooms': hit.get('bathrooms'),
+        'property_type': property_type_val,
+        'permit_number': hit.get('permit_number'),
+        'is_verified': hit.get('is_verified'),
+        'extra_fields': clean_for_json({
+            k: v for k, v in hit.items() if k not in {
+                'external_id', 'title', 'title_ar', 'price', 'currency', 'location',
+                'area', 'bedrooms', 'bathrooms', 'property_type', 'permit_number', 'is_verified'
+            }
+        })
+    }
 
 if __name__ == "__main__":
+    import asyncio
+    from src.db_utils import bulk_insert_properties
+
+    async def main():
+        async with EnhancedBayutScraper() as scraper:
+            listings = await scraper.scrape_all_listings(
+                filters="",  # No filters: get all listings (for sale, for lease, etc.)
+                max_pages=None  # No limit: scrape all pages
+            )
+            if listings is None or not listings:
+                print("No listings found.")
+                return
+            # Use explicit mapping for each listing
+            prepared = [map_api_to_db(l.__dict__) for l in listings]
+            bulk_insert_properties(prepared)
+            print(f"Inserted {len(prepared)} properties into the database.")
+
     asyncio.run(main()) 
