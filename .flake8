@@ -1,0 +1,17 @@
+[flake8]
+max-line-length = 88
+extend-ignore = E203,E501,W503,W504
+exclude = 
+    .venv,
+    .git,
+    __pycache__,
+    *.pyc,
+    build,
+    dist,
+    .pytest_cache,
+    alembic,
+    migrations,
+per-file-ignores =
+    __init__.py:F401
+    tests/*:B011
+max-complexity = 10 

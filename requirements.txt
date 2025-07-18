@@ -1,3 +1,9 @@
 aiohttp>=3.8.0
 asyncio
-typing-extensions>=4.0.0 
+typing-extensions>=4.0.0
+
+# Code Quality Tools
+flake8>=6.0.0
+ruff>=0.1.0
+black>=23.0.0
+vulture>=2.9.0 

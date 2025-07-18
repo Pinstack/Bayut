@@ -2,442 +2,256 @@
 
 A comprehensive, efficient, and async Python scraper for Bayut.sa property listings using reverse-engineered Algolia API endpoints.
 
-## 🎯 Features
+## Features
 
-- **Efficient API-based scraping** using Algolia search API
-- **Async/await support** for high-performance batch scraping
-- **Comprehensive data extraction** including all property details
-- **Flexible filtering** by category, purpose, location, price, etc.
-- **Pagination support** for scraping all available listings
-- **Rate limiting** to be respectful to the API
-- **JSON export** with structured data
-- **Type hints** for better code maintainability
-- **Complete REGA information** including all regulatory data
-- **Bilingual support** (Arabic and English)
+- **Async Scraping**: Efficient concurrent API requests using Python asyncio
+- **Complete Data Capture**: All property fields including REGA (Real Estate General Authority) information
+- **Flexible Filtering**: Support for various search criteria (category, purpose, location, price)
+- **Production Ready**: Robust error handling, rate limiting, and data validation
+- **Database Integration**: PostgreSQL-ready data with normalized schema
+- **Code Quality**: Comprehensive linting and formatting tools
 
-## 🚀 Quick Start
+## Quick Start
 
-### Virtual Environment Setup
+### 1. Setup Virtual Environment
 
-1. **Create and activate virtual environment:**
 ```bash
-# Create virtual environment
+# Create and activate virtual environment
 python3 -m venv .venv
+source .venv/bin/activate  # On Windows: .venv\Scripts\activate
 
+# Or use the convenience script
+./activate_venv.sh
+
+# Install dependencies
+pip install -r requirements.txt
+```
+
+### 2. Run the Scraper
+
+```bash
+# Basic scraping (100 properties)
+python bayut.py
+
+# Or run the enhanced scraper
+python src/bayut_scraper_enhanced.py
+```
+
+### 3. Check Code Quality
+
+```bash
+# Run all code quality checks
+./scripts/lint.sh
+
+# Format code automatically
+./scripts/format.sh
+```
+
+## Code Quality Tools
+
+This project uses a comprehensive set of code quality tools:
+
+### **Primary Tools (Ruff-First Approach)**
+
+- **Ruff**: Fast linter and formatter (10-100x faster than alternatives)
+  - Linting: `ruff check src/ tests/ bayut.py`
+  - Formatting: `ruff format src/ tests/ bayut.py`
+  - Auto-fix: `ruff check --fix src/ tests/ bayut.py`
+
+- **Black**: Backup formatter for consistency
+  - Formatting: `black src/ tests/ bayut.py`
+
+### **Additional Tools**
+
+- **Flake8**: Comprehensive linting with additional rules
+- **Vulture**: Dead code detection
+- **Pytest**: Testing framework with async support
+
+### **Why Ruff-First?**
+
+1. **Speed**: Ruff is extremely fast (10-100x faster than other tools)
+2. **Comprehensive**: Can handle both linting and formatting
+3. **Auto-fix**: Automatically fixes many common issues
+4. **Modern**: Built with Rust for performance
+5. **Compatible**: Works well with Black formatting
+
+### **Usage Examples**
+
+```bash
+# Quick format check
+ruff format --check src/ tests/ bayut.py
+
+# Quick lint check
+ruff check src/ tests/ bayut.py
+
+# Auto-fix issues
+ruff check --fix src/ tests/ bayut.py
+
+# Run all quality checks
+./scripts/lint.sh
+
+# Format all code
+./scripts/format.sh
+```
+
+## Project Structure
+
+```
+Bayut/
+├── src/                          # Source code
+│   ├── bayut_scraper.py         # Original scraper
+│   ├── bayut_scraper_enhanced.py # Enhanced scraper with REGA data
+│   ├── models.py                # Data models
+│   └── db_utils.py              # Database utilities
+├── tests/                       # Test files
+│   ├── test_scraper.py         # Basic scraper tests
+│   └── test_enhanced_scraper.py # Enhanced scraper tests
+├── scripts/                     # Utility scripts
+│   ├── lint.sh                 # Code quality checks
+│   └── format.sh               # Code formatting
+├── memory-bank/                 # Project documentation
+├── data/                        # Output data
+├── requirements.txt             # Python dependencies
+├── pyproject.toml              # Project configuration
+├── .flake8                     # Flake8 configuration
+└── README.md                   # This file
+```
+
+## Configuration
+
+### Code Quality Settings
+
+The project is configured with:
+
+- **Line Length**: 88 characters (Black standard)
+- **Python Version**: 3.9+
+- **Target Version**: py39
+- **Quote Style**: Double quotes
+- **Indent Style**: Spaces
+
+### Key Configuration Files
+
+- `pyproject.toml`: Main configuration for Ruff, Black, Vulture, and Pytest
+- `.flake8`: Flake8-specific configuration
+- `scripts/lint.sh`: Convenience script for all quality checks
+- `scripts/format.sh`: Convenience script for code formatting
+
+## Development Workflow
+
+### 1. Before Committing
+
+```bash
 # Activate virtual environment
 source .venv/bin/activate
 
-# Or use the provided script
-./activate_venv.sh
+# Run all quality checks
+./scripts/lint.sh
+
+# If issues found, format code
+./scripts/format.sh
+
+# Run tests
+pytest tests/ -v
 ```
 
-2. **Install dependencies:**
-```bash
-pip install -r requirements.txt
-```
-
-3. **Run the scraper:**
-```bash
-# Show available commands
-python bayut.py --help
-
-# Scrape 100 properties (demo)
-python bayut.py scrape --limit 100
-
-# Scrape all properties
-python bayut.py scrape --all
-
-# Check database status
-python bayut.py db status
-
-# Show project information
-python bayut.py info
-```
-
-### Alternative Setup (without virtual environment)
-
-1. Clone this repository:
-```bash
-git clone <repository-url>
-cd Bayut_mapping
-```
-
-2. Install dependencies:
-```bash
-pip3 install -r requirements.txt
-```
-
-3. Run the scraper:
-```bash
-# Show available commands
-python3 bayut.py --help
-
-# Scrape 100 properties (demo)
-python3 bayut.py scrape --limit 100
-
-# Check database status
-python3 bayut.py db status
-```
-
-## 📁 Project Structure
-
-```
-Bayut_mapping/
-├── .venv/                          # Virtual environment
-├── memory-bank/                    # Project documentation
-│   ├── projectbrief.md
-│   ├── productContext.md
-│   ├── systemPatterns.md
-│   ├── techContext.md
-│   ├── activeContext.md
-│   └── progress.md
-├── bayut.py                       # Main CLI interface
-├── src/                           # Source code
-│   ├── __init__.py
-│   ├── bayut_scraper_enhanced.py # Enhanced scraper with REGA data
-│   ├── db_utils.py               # Database utilities
-│   ├── models.py                 # SQLAlchemy models
-│   └── backfill_normalized_locations.py # Location normalization
-├── tests/                         # Test files
-│   ├── __init__.py
-│   ├── test_scraper.py
-│   └── test_enhanced_scraper.py
-├── data/                          # Data files
-│   ├── output/                    # Scraper output
-│   │   ├── 100_properties.json
-│   │   └── 100_properties_db_ready.json
-│   └── samples/                   # Sample data
-│       ├── bayut_properties_full_20250718_075737.json
-│       └── test_enhanced_results.json
-├── requirements.txt               # Python dependencies
-├── activate_venv.sh              # Virtual environment activation
-├── .gitignore                    # Git ignore rules
-├── .cursorrules                  # Project intelligence
-└── README.md                     # Project documentation
-```
-
-## 📊 Data Structure
-
-The scraper extracts comprehensive property data including:
-
-- **Basic Info**: Title, price, location, area, rooms, baths
-- **Property Details**: Category, purpose, description, photos
-- **Contact Info**: Agency, contact name, phone number
-- **Verification**: Is verified, verification details
-- **Additional Data**: Geography, payment plans, documents, project info
-- **Timestamps**: Created/updated dates
-- **Media**: Photo count, video count, floor plans
-- **REGA Information**: Complete regulatory and license data
-- **Bilingual Content**: Arabic and English field variants
-
-## 🖥️ CLI Usage
-
-The project now includes a comprehensive command-line interface for all operations:
-
-### Available Commands
+### 2. Quick Development
 
 ```bash
-# Show all available commands
-python bayut.py --help
+# Just check formatting
+ruff format --check src/ tests/ bayut.py
 
-# Scraping commands
-python bayut.py scrape --limit 100    # Scrape 100 properties
-python bayut.py scrape --all          # Scrape all properties
+# Just check linting
+ruff check src/ tests/ bayut.py
 
-# Database commands
-python bayut.py db status             # Show database statistics
-python bayut.py db backfill           # Backfill normalized tables
-python bayut.py db normalize-locations # Normalize location data
-
-# Utility commands
-python bayut.py info                  # Show project information
-python bayut.py test                  # Run basic tests
+# Auto-fix common issues
+ruff check --fix src/ tests/ bayut.py
 ```
 
-### Database Status Example
+### 3. Individual Tool Usage
 
 ```bash
-python bayut.py db status
+# Ruff (recommended)
+ruff check src/ tests/ bayut.py
+ruff format src/ tests/ bayut.py
+
+# Black (backup)
+black src/ tests/ bayut.py
+
+# Flake8 (comprehensive)
+flake8 src/ tests/ bayut.py
+
+# Vulture (dead code)
+vulture src/ tests/ bayut.py
+
+# Pytest (testing)
+pytest tests/ -v
 ```
 
-Output:
-```
-==================================================
-DATABASE STATUS
-==================================================
-Properties: 27,535
-Agencies: 1,388
-Agents: 2,224
-Media Items: 23,205
-Unique Locations: 1,459
-Property-Location Relationships: 100,454
-Properties with Agency: 25,397 (92.2%)
-Properties with Agent: 27,338 (99.3%)
-==================================================
-```
+## API Integration
 
-## 🔧 Usage Examples
+The scraper uses Bayut.sa's Algolia search API:
 
-### Basic Usage
-
-```python
-import asyncio
-import sys
-import os
-
-# Add src to path
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'src'))
-
-from bayut_scraper_enhanced import EnhancedBayutScraper
-
-async def main():
-    async with EnhancedBayutScraper() as scraper:
-        # Scrape apartments for sale
-        listings = await scraper.scrape_by_category_and_purpose(
-            category="apartments",
-            purpose="for-sale",
-            max_pages=5
-        )
-        
-        # Save to JSON
-        scraper.save_listings_to_json(listings, "apartments_for_sale.json")
-
-asyncio.run(main())
-```
-
-### Advanced Filtering
-
-```python
-# Custom filters
-custom_filters = "purpose:for-sale AND category:villas AND price>=1000000"
-listings = await scraper.scrape_all_listings(
-    filters=custom_filters,
-    max_pages=10
-)
-
-# Location-specific search
-listings = await scraper.scrape_by_category_and_purpose(
-    category="apartments",
-    purpose="for-rent",
-    location="الرياض",  # Riyadh
-    max_pages=5
-)
-```
-
-### Batch Processing
-
-```python
-# Scrape multiple categories
-categories = ["apartments", "villas", "townhouses"]
-purposes = ["for-sale", "for-rent"]
-
-for category in categories:
-    for purpose in purposes:
-        listings = await scraper.scrape_by_category_and_purpose(
-            category=category,
-            purpose=purpose,
-            max_pages=3
-        )
-        
-        filename = f"{category}_{purpose}.json"
-        scraper.save_listings_to_json(listings, filename)
-```
-
-## 🔍 API Details
-
-### Algolia Configuration
-
+- **Base URL**: `https://ll8iz711cs-dsn.algolia.net/1/indexes/*/queries`
 - **Application ID**: `LL8IZ711CS`
-- **API Key**: `5b970b39b22a4ff1b99e5167696eef3f`
 - **Index**: `bayut-sa-production-ads-city-level-score-ar`
-- **Endpoint**: `https://ll8iz711cs-dsn.algolia.net/1/indexes/*/queries`
+- **Method**: POST with JSON payload
 
-### Available Filters
+## Data Models
 
-- `category`: apartments, villas, townhouses, etc.
-- `purpose`: for-sale, for-rent
-- `location`: City or area name
-- `price`: Price range (e.g., `price>=1000000`)
-- `rooms`: Number of rooms
-- `baths`: Number of bathrooms
-- `area`: Property area
-- `isVerified`: Verification status
-
-### Filter Examples
+### PropertyListing
 
 ```python
-# Price range
-"price>=500000 AND price<=2000000"
-
-# Multiple categories
-"category:(apartments OR villas)"
-
-# Location and price
-"location:الرياض AND price>=1000000"
-
-# Verified properties only
-"isVerified:true"
-
-# Complex filter
-"purpose:for-sale AND category:apartments AND location:جدة AND price>=500000 AND rooms>=2"
+@dataclass
+class PropertyListing:
+    external_id: str
+    title: str
+    title_ar: str
+    price: float
+    currency: str
+    location: str
+    area: float
+    bedrooms: int
+    bathrooms: int
+    property_type: str
+    purpose: str
+    permit_number: str
+    is_verified: bool
+    extra_fields: Dict[str, Any]  # REGA data
 ```
 
-## 📈 Performance Optimization
+## Database Integration
 
-### Rate Limiting
+The scraper prepares data for PostgreSQL with:
 
-The scraper includes built-in rate limiting to be respectful to the API:
+- **Normalized Schema**: Separate tables for agencies, agents, media, locations
+- **JSONB Fields**: Flexible storage for REGA data
+- **Bulk Insert**: Efficient database loading with upserts
+- **Foreign Keys**: Proper relationships between tables
 
-```python
-# Customize delay between requests
-listings = await scraper.scrape_all_listings(
-    filters="purpose:for-sale",
-    delay_between_requests=1.0  # 1 second delay
-)
-```
+## Performance
 
-### Batch Size
+- **Scraping Speed**: ~25 properties per minute
+- **Rate Limiting**: 1-second delays between requests
+- **Memory Usage**: Efficient async processing
+- **Error Recovery**: Robust retry mechanisms
 
-Adjust the number of results per page:
+## Contributing
 
-```python
-# Increase batch size for faster scraping
-listings = await scraper.scrape_all_listings(
-    filters="purpose:for-sale",
-    batch_size=50  # Default is 25
-)
-```
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Run code quality checks: `./scripts/lint.sh`
+5. Format code: `./scripts/format.sh`
+6. Run tests: `pytest tests/ -v`
+7. Submit a pull request
 
-### Concurrent Scraping
+## License
 
-For maximum efficiency, you can run multiple scrapers concurrently:
+This project is for educational and research purposes. Please respect Bayut.sa's terms of service.
 
-```python
-async def scrape_category(category: str, purpose: str):
-    async with EnhancedBayutScraper() as scraper:
-        return await scraper.scrape_by_category_and_purpose(
-            category=category,
-            purpose=purpose,
-            max_pages=5
-        )
+## Support
 
-# Run multiple scrapers concurrently
-tasks = [
-    scrape_category("apartments", "for-sale"),
-    scrape_category("villas", "for-sale"),
-    scrape_category("apartments", "for-rent")
-]
-
-results = await asyncio.gather(*tasks)
-```
-
-## 📁 Output Format
-
-The scraper saves data in structured JSON format:
-
-```json
-[
-  {
-    "external_id": "87589812",
-    "title": "دور علوي مودرن للبيع - مشروع الارين حي الروابي,الرياض",
-    "title_ar": "Modern upper floor for sale - Al Arin project, Rawabi neighborhood, Riyadh",
-    "price": 1300000,
-    "currency": "SAR",
-    "location": "الرياض",
-    "area": 600.0,
-    "bedrooms": 3,
-    "bathrooms": 3,
-    "property_type": "سكني",
-    "purpose": "for-sale",
-    "permit_number": "7200299856",
-    "is_verified": false,
-    "extra_fields": {
-      "rega_license_info_ad_license_number": "7200299856",
-      "rega_location_city": {"ar": "الرياض", "en": "Riyadh"},
-      "rega_property_specs_price": 1300000,
-      "rega_license_info_start_date": "2024-09-20",
-      "rega_license_info_end_date": "2025-09-20"
-    }
-  }
-]
-```
-
-## 🏛️ REGA Information
-
-The scraper collects comprehensive Real Estate General Authority (REGA) data:
-
-### License Information
-- Advertisement license numbers
-- FAL license numbers
-- License start/end dates
-- Expiry dates
-
-### Location Details
-- Building numbers
-- Street names
-- Postal codes
-- Coordinates
-- District information
-
-### Property Specifications
-- Area sizes
-- Room counts
-- Listing types
-- Usage classifications
-
-### Additional Information
-- Deed numbers
-- Plan numbers
-- Utilities availability
-- Guarantees and duration
-- Marketing channels
-
-## ⚠️ Important Notes
-
-1. **Rate Limiting**: Always use appropriate delays between requests to avoid being blocked
-2. **Terms of Service**: Ensure compliance with Bayut.sa's terms of service
-3. **Data Usage**: Use scraped data responsibly and in accordance with applicable laws
-4. **API Changes**: The Algolia API configuration may change; monitor for updates
-5. **Virtual Environment**: Always use the virtual environment to avoid dependency conflicts
-
-## 🛠️ Troubleshooting
-
-### Common Issues
-
-1. **Import Error**: Make sure to activate the virtual environment and install dependencies
-2. **Connection Errors**: Check your internet connection and try again
-3. **Rate Limiting**: Increase delay between requests if you encounter 429 errors
-4. **Empty Results**: Verify your filter syntax and try broader filters
-
-### Debug Mode
-
-Enable debug logging:
-
-```python
-import logging
-logging.basicConfig(level=logging.DEBUG)
-```
-
-### Virtual Environment Issues
-
-If you encounter issues with the virtual environment:
-
-```bash
-# Remove and recreate virtual environment
-rm -rf .venv
-python3 -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-```
-
-## 📝 License
-
-This project is for educational purposes. Please ensure compliance with Bayut.sa's terms of service and applicable laws when using this scraper.
-
-## 🤝 Contributing
-
-Feel free to submit issues, feature requests, or pull requests to improve this scraper.
-
----
-
-**Disclaimer**: This scraper is provided for educational purposes. Users are responsible for ensuring compliance with website terms of service and applicable laws. 
+For issues and questions:
+1. Check the memory-bank/ documentation
+2. Review the test files for usage examples
+3. Check the curl_examples.md for API details 

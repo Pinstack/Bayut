@@ -1,5 +1,1375 @@
 [
   {
+    "external_id": "87685968",
+    "objectID": "1066461",
+    "title": "شقة مفروشة بالكامل في الرياض، حي العليا",
+    "title_ar": "A fully furnished apartment in Riyadh, Al Olaya District",
+    "description": "",
+    "property_type": [
+      {
+        "id": 1,
+        "level": 0,
+        "externalID": "1",
+        "name_l1": "Residential",
+        "name": "سكني",
+        "slug_l1": "residential",
+        "slug": "residential",
+        "nameSingular_l1": "Residential",
+        "nameSingular": "سكني"
+      },
+      {
+        "id": 6,
+        "level": 1,
+        "externalID": "3",
+        "name_l1": "Apartments",
+        "name": "شقق",
+        "slug_l1": "apartments",
+        "slug": "apartments",
+        "nameSingular_l1": "Apartment",
+        "nameSingular": "شقة"
+      }
+    ],
+    "property_type_ar": "property",
+    "purpose": "for-rent",
+    "price": 120000.0,
+    "currency": "SAR",
+    "bedrooms": 2,
+    "bathrooms": 3,
+    "area": 120.0,
+    "area_unit": "sqm",
+    "location": [
+      {
+        "id": 1,
+        "level": 0,
+        "externalID": "1",
+        "name_l1": "KSA",
+        "name": "السعودية",
+        "slug_l1": "/ksa",
+        "slug": "/السعودية"
+      },
+      {
+        "id": 37,
+        "level": 1,
+        "externalID": "230",
+        "name_l1": "Riyadh",
+        "name": "الرياض",
+        "slug_l1": "/riyadh",
+        "slug": "/الرياض"
+      },
+      {
+        "id": 8484,
+        "level": 2,
+        "externalID": "12074",
+        "name_l1": "North Riyadh",
+        "name": "شمال الرياض",
+        "slug_l1": "/riyadh/north-riyadh",
+        "slug": "/الرياض/شمال-الرياض"
+      },
+      {
+        "id": 2914,
+        "level": 3,
+        "externalID": "5315",
+        "name_l1": "Al Olaya",
+        "name": "العليا",
+        "slug_l1": "/riyadh/north-riyadh/al-olaya",
+        "slug": "/الرياض/شمال-الرياض/العليا"
+      }
+    ],
+    "city": "الرياض",
+    "latitude": 24.714722164973,
+    "longitude": 46.679596818526,
+    "location_hierarchy": [
+      {
+        "id": 1,
+        "level": 0,
+        "externalID": "1",
+        "name_l1": "KSA",
+        "name": "السعودية",
+        "slug_l1": "/ksa",
+        "slug": "/السعودية"
+      },
+      {
+        "id": 37,
+        "level": 1,
+        "externalID": "230",
+        "name_l1": "Riyadh",
+        "name": "الرياض",
+        "slug_l1": "/riyadh",
+        "slug": "/الرياض"
+      },
+      {
+        "id": 8484,
+        "level": 2,
+        "externalID": "12074",
+        "name_l1": "North Riyadh",
+        "name": "شمال الرياض",
+        "slug_l1": "/riyadh/north-riyadh",
+        "slug": "/الرياض/شمال-الرياض"
+      },
+      {
+        "id": 2914,
+        "level": 3,
+        "externalID": "5315",
+        "name_l1": "Al Olaya",
+        "name": "العليا",
+        "slug_l1": "/riyadh/north-riyadh/al-olaya",
+        "slug": "/الرياض/شمال-الرياض/العليا"
+      }
+    ],
+    "agency_name": {
+      "id": 15494,
+      "objectID": 15494,
+      "name_l1": "SATEL Co.",
+      "name": "ساتل",
+      "externalID": "1720192428",
+      "product": "platinum plus",
+      "productScore": 3,
+      "licenses": [],
+      "logo": {
+        "id": 3156854,
+        "url": "https://bayut-sa-production.s3.eu-central-1.amazonaws.com/image/3156854/a8ad7e553cd241169a67e7d9538cc595"
+      },
+      "slug_l1": "satel-realty-company-1720192428",
+      "slug": "satel-realty-company-1720192428",
+      "tr": 4,
+      "tier": 4,
+      "roles": [],
+      "active": true,
+      "createdAt": "2023-05-07T02:40:40+00:00",
+      "commercialNumber": null,
+      "shortNumber": null,
+      "type": "agency"
+    },
+    "agency_name_ar": {
+      "id": 15494,
+      "objectID": 15494,
+      "name_l1": "SATEL Co.",
+      "name": "ساتل",
+      "externalID": "1720192428",
+      "product": "platinum plus",
+      "productScore": 3,
+      "licenses": [],
+      "logo": {
+        "id": 3156854,
+        "url": "https://bayut-sa-production.s3.eu-central-1.amazonaws.com/image/3156854/a8ad7e553cd241169a67e7d9538cc595"
+      },
+      "slug_l1": "satel-realty-company-1720192428",
+      "slug": "satel-realty-company-1720192428",
+      "tr": 4,
+      "tier": 4,
+      "roles": [],
+      "active": true,
+      "createdAt": "2023-05-07T02:40:40+00:00",
+      "commercialNumber": null,
+      "shortNumber": null,
+      "type": "agency"
+    },
+    "agent_name": "Naif",
+    "agent_name_ar": "Naif",
+    "phone": {
+      "mobile": "+966539992727",
+      "phone": "+966114888849",
+      "whatsapp": "966114049994",
+      "proxyMobile": "+966115002345",
+      "phoneNumbers": [
+        "+966114888849"
+      ],
+      "mobileNumbers": [
+        "+966539992727"
+      ]
+    },
+    "photo_url": {
+      "id": 4663527,
+      "externalID": "1422594",
+      "title": null,
+      "orderIndex": 0,
+      "nimaScore": null,
+      "url": "https://bayut-sa-production.s3.eu-central-1.amazonaws.com/image/4663527/5c4c6743ca6a4915800b51631da369dc",
+      "main": true,
+      "uuid": "8762a070-c650-4f1e-90e6-51cb99176322"
+    },
+    "photo_count": 16,
+    "permit_number": "7200589273",
+    "furnishing_status": "furnished",
+    "completion_status": "completed",
+    "is_verified": false,
+    "scraped_at": "2025-07-18T14:23:22.270502",
+    "created_at": 1752843135.0,
+    "updated_at": 1752843136.0,
+    "geography": {
+      "lat": 24.714722164973,
+      "lng": 46.679596818526
+    },
+    "extra_fields": {
+      "rega_location_city": {
+        "ar": "الرياض",
+        "en": "Riyadh"
+      },
+      "rega_location_region": {
+        "ar": "منطقة الرياض",
+        "en": "منطقة الرياض"
+      },
+      "ad_license_expiry_date": 1783371600,
+      "rega_location_district": {
+        "ar": "العليا",
+        "en": "Al Olaya"
+      },
+      "rega_location_latitude": 24.71472216497294,
+      "rega_location_longitude": 46.67959681852562,
+      "rega_utilities_sewerage": {
+        "ar": "نعم",
+        "en": "Yes"
+      },
+      "rega_location_postal_code": "12244",
+      "rega_location_street_name": {
+        "ar": "سيدة الرؤساء",
+        "en": "سيدة الرؤساء"
+      },
+      "rega_property_specs_price": 120000.0,
+      "rega_additional_info_notes": "",
+      "rega_license_info_end_date": "2026-07-07",
+      "rega_utilities_electricity": {
+        "ar": "نعم",
+        "en": "Yes"
+      },
+      "rega_license_info_start_date": "2025-07-07",
+      "rega_additional_info_channels": {
+        "ar": "منصة مرخصة ،لوحة اعلانية ،منصات التواصل الإجتماعي ،الإذاعة ،أخرى",
+        "en": "Licensed platform, Bulletin board, Social media platforms, Radio, Other"
+      },
+      "rega_location_building_number": "2444",
+      "rega_property_specs_area_size": 120.0,
+      "rega_location_additional_number": "8009",
+      "rega_additional_info_deed_number": "10458918937",
+      "rega_additional_info_listing_age": {
+        "ar": "سنتين",
+        "en": "2 years"
+      },
+      "rega_property_specs_listing_type": {
+        "ar": "شقق",
+        "en": "Apartment"
+      },
+      "rega_additional_info_street_width": 0.0,
+      "rega_property_specs_listing_usage": {
+        "ar": "",
+        "en": ""
+      },
+      "rega_license_info_ad_license_number": "7200589273",
+      "rega_property_specs_number_of_rooms": 2.0,
+      "rega_license_info_fal_license_number": "1200010193",
+      "brokerage_and_marketing_license_number": "1200010193",
+      "rega_additional_info_is_listing_pawned": {
+        "ar": "لا",
+        "en": "No"
+      },
+      "rega_property_specs_advertisement_type": {
+        "ar": "للإيجار",
+        "en": "For Rent"
+      },
+      "rega_additional_info_is_listing_constrained": {
+        "ar": "لا",
+        "en": "No"
+      },
+      "rega_additional_info_obligations_on_listing": "لا يوجد",
+      "rega_additional_info_guarantees_and_duration": "",
+      "dldPropertySK": "87685968"
+    },
+    "raw_data": {
+      "id": 1066461,
+      "ownerID": "00000000-e2ba-801f-8000-024213371337",
+      "userExternalID": "00000000-e2ba-801f-8000-024213371337",
+      "sourceID": 68353,
+      "state": "active",
+      "geography": {
+        "lat": 24.714722164973,
+        "lng": 46.679596818526
+      },
+      "purpose": "for-rent",
+      "price": 120000.0,
+      "product": "superhot",
+      "productLabel": "default",
+      "rentFrequency": "yearly",
+      "referenceNumber": null,
+      "permitNumber": "7200589273",
+      "projectNumber": null,
+      "title_l1": "A fully furnished apartment in Riyadh, Al Olaya District",
+      "title": "شقة مفروشة بالكامل في الرياض، حي العليا",
+      "externalID": "87685968",
+      "slug_l1": "details-87685968",
+      "slug": "تفاصيل-87685968",
+      "location": [
+        {
+          "id": 1,
+          "level": 0,
+          "externalID": "1",
+          "name_l1": "KSA",
+          "name": "السعودية",
+          "slug_l1": "/ksa",
+          "slug": "/السعودية"
+        },
+        {
+          "id": 37,
+          "level": 1,
+          "externalID": "230",
+          "name_l1": "Riyadh",
+          "name": "الرياض",
+          "slug_l1": "/riyadh",
+          "slug": "/الرياض"
+        },
+        {
+          "id": 8484,
+          "level": 2,
+          "externalID": "12074",
+          "name_l1": "North Riyadh",
+          "name": "شمال الرياض",
+          "slug_l1": "/riyadh/north-riyadh",
+          "slug": "/الرياض/شمال-الرياض"
+        },
+        {
+          "id": 2914,
+          "level": 3,
+          "externalID": "5315",
+          "name_l1": "Al Olaya",
+          "name": "العليا",
+          "slug_l1": "/riyadh/north-riyadh/al-olaya",
+          "slug": "/الرياض/شمال-الرياض/العليا"
+        }
+      ],
+      "category": [
+        {
+          "id": 1,
+          "level": 0,
+          "externalID": "1",
+          "name_l1": "Residential",
+          "name": "سكني",
+          "slug_l1": "residential",
+          "slug": "residential",
+          "nameSingular_l1": "Residential",
+          "nameSingular": "سكني"
+        },
+        {
+          "id": 6,
+          "level": 1,
+          "externalID": "3",
+          "name_l1": "Apartments",
+          "name": "شقق",
+          "slug_l1": "apartments",
+          "slug": "apartments",
+          "nameSingular_l1": "Apartment",
+          "nameSingular": "شقة"
+        }
+      ],
+      "createdAt": 1752843135.0,
+      "updatedAt": 1752843136.0,
+      "reactivatedAt": 1751916048.0,
+      "rooms": 2,
+      "baths": 3,
+      "area": 120.0,
+      "coverPhoto": {
+        "id": 4663527,
+        "externalID": "1422594",
+        "title": null,
+        "orderIndex": 0,
+        "nimaScore": null,
+        "url": "https://bayut-sa-production.s3.eu-central-1.amazonaws.com/image/4663527/5c4c6743ca6a4915800b51631da369dc",
+        "main": true,
+        "uuid": "8762a070-c650-4f1e-90e6-51cb99176322"
+      },
+      "photoCount": 16,
+      "videoCount": 0,
+      "panoramaCount": 0,
+      "phoneNumber": {
+        "mobile": "+966539992727",
+        "phone": "+966114888849",
+        "whatsapp": "966114049994",
+        "proxyMobile": "+966115002345",
+        "phoneNumbers": [
+          "+966114888849"
+        ],
+        "mobileNumbers": [
+          "+966539992727"
+        ]
+      },
+      "contactMethodAvailability": {
+        "whatsapp": true,
+        "sms": true,
+        "email": true,
+        "call": true
+      },
+      "contactName": "Naif",
+      "agency": {
+        "id": 15494,
+        "objectID": 15494,
+        "name_l1": "SATEL Co.",
+        "name": "ساتل",
+        "externalID": "1720192428",
+        "product": "platinum plus",
+        "productScore": 3,
+        "licenses": [],
+        "logo": {
+          "id": 3156854,
+          "url": "https://bayut-sa-production.s3.eu-central-1.amazonaws.com/image/3156854/a8ad7e553cd241169a67e7d9538cc595"
+        },
+        "slug_l1": "satel-realty-company-1720192428",
+        "slug": "satel-realty-company-1720192428",
+        "tr": 4,
+        "tier": 4,
+        "roles": [],
+        "active": true,
+        "createdAt": "2023-05-07T02:40:40+00:00",
+        "commercialNumber": null,
+        "shortNumber": null,
+        "type": "agency"
+      },
+      "isVerified": false,
+      "verification": {
+        "updatedAt": 1751916267.032236,
+        "eligible": false,
+        "status": "unverified",
+        "verifiedAt": null,
+        "trucheckedAt": 0
+      },
+      "floorPlanID": null,
+      "furnishingStatus": "furnished",
+      "extraFields": {
+        "rega_location_city": {
+          "ar": "الرياض",
+          "en": "Riyadh"
+        },
+        "rega_location_region": {
+          "ar": "منطقة الرياض",
+          "en": "منطقة الرياض"
+        },
+        "ad_license_expiry_date": 1783371600,
+        "rega_location_district": {
+          "ar": "العليا",
+          "en": "Al Olaya"
+        },
+        "rega_location_latitude": 24.71472216497294,
+        "rega_location_longitude": 46.67959681852562,
+        "rega_utilities_sewerage": {
+          "ar": "نعم",
+          "en": "Yes"
+        },
+        "rega_location_postal_code": "12244",
+        "rega_location_street_name": {
+          "ar": "سيدة الرؤساء",
+          "en": "سيدة الرؤساء"
+        },
+        "rega_property_specs_price": 120000.0,
+        "rega_additional_info_notes": "",
+        "rega_license_info_end_date": "2026-07-07",
+        "rega_utilities_electricity": {
+          "ar": "نعم",
+          "en": "Yes"
+        },
+        "rega_license_info_start_date": "2025-07-07",
+        "rega_additional_info_channels": {
+          "ar": "منصة مرخصة ،لوحة اعلانية ،منصات التواصل الإجتماعي ،الإذاعة ،أخرى",
+          "en": "Licensed platform, Bulletin board, Social media platforms, Radio, Other"
+        },
+        "rega_location_building_number": "2444",
+        "rega_property_specs_area_size": 120.0,
+        "rega_location_additional_number": "8009",
+        "rega_additional_info_deed_number": "10458918937",
+        "rega_additional_info_listing_age": {
+          "ar": "سنتين",
+          "en": "2 years"
+        },
+        "rega_property_specs_listing_type": {
+          "ar": "شقق",
+          "en": "Apartment"
+        },
+        "rega_additional_info_street_width": 0.0,
+        "rega_property_specs_listing_usage": {
+          "ar": "",
+          "en": ""
+        },
+        "rega_license_info_ad_license_number": "7200589273",
+        "rega_property_specs_number_of_rooms": 2.0,
+        "rega_license_info_fal_license_number": "1200010193",
+        "brokerage_and_marketing_license_number": "1200010193",
+        "rega_additional_info_is_listing_pawned": {
+          "ar": "لا",
+          "en": "No"
+        },
+        "rega_property_specs_advertisement_type": {
+          "ar": "للإيجار",
+          "en": "For Rent"
+        },
+        "rega_additional_info_is_listing_constrained": {
+          "ar": "لا",
+          "en": "No"
+        },
+        "rega_additional_info_obligations_on_listing": "لا يوجد",
+        "rega_additional_info_guarantees_and_duration": "",
+        "dldPropertySK": "87685968"
+      },
+      "type": "property",
+      "ownerAgent": {
+        "externalID": "00000000-e2ba-801f-8000-024213371337",
+        "name_l1": "Naif",
+        "name": "نايف",
+        "user_image": "https://bayut-sa-production.s3.eu-central-1.amazonaws.com/image/4287930/55b9f66801f74ebeaf5f93c5c27949de",
+        "user_image_id": 4287930,
+        "isTruBroker": true,
+        "slug_l1": "naif-00000000-e2ba-801f-8000-024213371337",
+        "slug": "naif-00000000-e2ba-801f-8000-024213371337",
+        "state": "active",
+        "isProfileCompleted": true,
+        "isComplete": true
+      },
+      "completionStatus": "completed",
+      "hasMatchingFloorPlans": false,
+      "photoIDs": [
+        4663527,
+        4663519,
+        4663520,
+        4663521,
+        4663522,
+        4663523,
+        4663524,
+        4663525,
+        4663526,
+        4663528,
+        4663529,
+        4663530,
+        4663531,
+        4663532,
+        4663533,
+        4663534
+      ],
+      "hidePrice": false,
+      "locationPurposeTier": 0,
+      "plotArea": null,
+      "additionalCategories": [
+        [
+          {
+            "id": 1,
+            "level": 0,
+            "externalID": "1",
+            "name_l1": "Residential",
+            "name": "سكني",
+            "slug_l1": "residential",
+            "slug": "residential",
+            "nameSingular_l1": "Residential",
+            "nameSingular": "سكني"
+          },
+          {
+            "id": 6,
+            "level": 1,
+            "externalID": "3",
+            "name_l1": "Apartments",
+            "name": "شقق",
+            "slug_l1": "apartments",
+            "slug": "apartments",
+            "nameSingular_l1": "Apartment",
+            "nameSingular": "شقة"
+          }
+        ]
+      ],
+      "objectID": "1066461",
+      "_highlightResult": {
+        "title_l1": {
+          "value": "A fully furnished apartment in Riyadh, Al Olaya District",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "title": {
+          "value": "شقة مفروشة بالكامل في الرياض، حي العليا",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "externalID": {
+          "value": "87685968",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "agency": {
+          "name_l1": {
+            "value": "SATEL Co.",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "name": {
+            "value": "ساتل",
+            "matchLevel": "none",
+            "matchedWords": []
+          }
+        },
+        "keywords": [
+          {
+            "value": "خاص",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          {
+            "value": "مصعد",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          {
+            "value": "مطبخ",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          {
+            "value": "مفروش بالكامل",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          {
+            "value": "موقف سيارة",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          {
+            "value": "مؤثثة",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          {
+            "value": "نادي رياضي",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          {
+            "value": "مفروش",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          {
+            "value": "خدم",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          {
+            "value": "مكتب",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          {
+            "value": "مفروشة",
+            "matchLevel": "none",
+            "matchedWords": []
+          }
+        ]
+      }
+    }
+  },
+  {
+    "external_id": "87686591",
+    "objectID": "1066959",
+    "title": "شقة مكونة من 4 غرف نوم للبيع في المنار",
+    "title_ar": "Apartment in North Jeddah，Al Manar 4 bedrooms 520000 SAR - 87686591",
+    "description": "",
+    "property_type": [
+      {
+        "id": 1,
+        "level": 0,
+        "externalID": "1",
+        "name_l1": "Residential",
+        "name": "سكني",
+        "slug_l1": "residential",
+        "slug": "residential",
+        "nameSingular_l1": "Residential",
+        "nameSingular": "سكني"
+      },
+      {
+        "id": 6,
+        "level": 1,
+        "externalID": "3",
+        "name_l1": "Apartments",
+        "name": "شقق",
+        "slug_l1": "apartments",
+        "slug": "apartments",
+        "nameSingular_l1": "Apartment",
+        "nameSingular": "شقة"
+      }
+    ],
+    "property_type_ar": "property",
+    "purpose": "for-sale",
+    "price": 520000.0,
+    "currency": "SAR",
+    "bedrooms": 4,
+    "bathrooms": 3,
+    "area": 133.0,
+    "area_unit": "sqm",
+    "location": [
+      {
+        "id": 1,
+        "level": 0,
+        "externalID": "1",
+        "name_l1": "KSA",
+        "name": "السعودية",
+        "slug_l1": "/ksa",
+        "slug": "/السعودية"
+      },
+      {
+        "id": 43,
+        "level": 1,
+        "externalID": "574",
+        "name_l1": "Jeddah",
+        "name": "جدة",
+        "slug_l1": "/jeddah",
+        "slug": "/جدة"
+      },
+      {
+        "id": 8176,
+        "level": 2,
+        "externalID": "12068",
+        "name_l1": "North Jeddah",
+        "name": "شمال جدة",
+        "slug_l1": "/jeddah/north-jeddah",
+        "slug": "/جدة/شمال-جدة"
+      },
+      {
+        "id": 3178,
+        "level": 3,
+        "externalID": "5691",
+        "name_l1": "Al Manar",
+        "name": "المنار",
+        "slug_l1": "/jeddah/north-jeddah/al-manar",
+        "slug": "/جدة/شمال-جدة/المنار"
+      }
+    ],
+    "city": "جدة",
+    "latitude": 21.599342851064,
+    "longitude": 39.233372638777,
+    "location_hierarchy": [
+      {
+        "id": 1,
+        "level": 0,
+        "externalID": "1",
+        "name_l1": "KSA",
+        "name": "السعودية",
+        "slug_l1": "/ksa",
+        "slug": "/السعودية"
+      },
+      {
+        "id": 43,
+        "level": 1,
+        "externalID": "574",
+        "name_l1": "Jeddah",
+        "name": "جدة",
+        "slug_l1": "/jeddah",
+        "slug": "/جدة"
+      },
+      {
+        "id": 8176,
+        "level": 2,
+        "externalID": "12068",
+        "name_l1": "North Jeddah",
+        "name": "شمال جدة",
+        "slug_l1": "/jeddah/north-jeddah",
+        "slug": "/جدة/شمال-جدة"
+      },
+      {
+        "id": 3178,
+        "level": 3,
+        "externalID": "5691",
+        "name_l1": "Al Manar",
+        "name": "المنار",
+        "slug_l1": "/jeddah/north-jeddah/al-manar",
+        "slug": "/جدة/شمال-جدة/المنار"
+      }
+    ],
+    "agency_name": {
+      "id": 990948,
+      "objectID": 990948,
+      "name_l1": "Durrah Almasiyah Real Estate",
+      "name": "شركة درة العقارية",
+      "externalID": "1720196763",
+      "product": "platinum plus",
+      "productScore": 3,
+      "licenses": [],
+      "logo": {
+        "id": 4256817,
+        "url": "https://bayut-sa-production.s3.eu-central-1.amazonaws.com/image/4256817/3bf2a3a912a24fb4be5be5b92f9f3ce4"
+      },
+      "slug_l1": "durrah-almasiyah-real-estate-1720196763",
+      "slug": "durrah-almasiyah-real-estate-1720196763",
+      "tr": 4,
+      "tier": 4,
+      "roles": [],
+      "active": true,
+      "createdAt": "2024-12-08T15:16:39+00:00",
+      "commercialNumber": null,
+      "shortNumber": null,
+      "type": "agency"
+    },
+    "agency_name_ar": {
+      "id": 990948,
+      "objectID": 990948,
+      "name_l1": "Durrah Almasiyah Real Estate",
+      "name": "شركة درة العقارية",
+      "externalID": "1720196763",
+      "product": "platinum plus",
+      "productScore": 3,
+      "licenses": [],
+      "logo": {
+        "id": 4256817,
+        "url": "https://bayut-sa-production.s3.eu-central-1.amazonaws.com/image/4256817/3bf2a3a912a24fb4be5be5b92f9f3ce4"
+      },
+      "slug_l1": "durrah-almasiyah-real-estate-1720196763",
+      "slug": "durrah-almasiyah-real-estate-1720196763",
+      "tr": 4,
+      "tier": 4,
+      "roles": [],
+      "active": true,
+      "createdAt": "2024-12-08T15:16:39+00:00",
+      "commercialNumber": null,
+      "shortNumber": null,
+      "type": "agency"
+    },
+    "agent_name": "ABDULLAH ALMASABI",
+    "agent_name_ar": "ABDULLAH ALMASABI",
+    "phone": {
+      "mobile": "+966595093068",
+      "whatsapp": "966502219649",
+      "mobileNumbers": [
+        "+966595093068"
+      ]
+    },
+    "photo_url": {
+      "id": 4674319,
+      "externalID": "1433783",
+      "title": null,
+      "orderIndex": 0,
+      "nimaScore": null,
+      "url": "https://bayut-sa-production.s3.eu-central-1.amazonaws.com/image/4674319/f1dc6296a74a4a0fb49bad2a8a890932",
+      "main": true,
+      "uuid": "ea2ae5eb-c3d4-4a87-80d8-6887d8cd2047"
+    },
+    "photo_count": 19,
+    "permit_number": "7200586768",
+    "furnishing_status": "unfurnished",
+    "completion_status": "completed",
+    "is_verified": false,
+    "scraped_at": "2025-07-18T14:23:22.270542",
+    "created_at": 1752837930.0,
+    "updated_at": 1752838175.0,
+    "geography": {
+      "lat": 21.599342851064,
+      "lng": 39.233372638777
+    },
+    "extra_fields": {
+      "rega_location_city": {
+        "ar": "جدة",
+        "en": "Jeddah"
+      },
+      "rega_location_region": {
+        "ar": "منطقة مكة المكرمة",
+        "en": "منطقة مكة المكرمة"
+      },
+      "ad_license_expiry_date": 1783285200,
+      "rega_location_district": {
+        "ar": "المنار",
+        "en": "Al Manar"
+      },
+      "rega_location_latitude": 21.5993428510639,
+      "rega_location_longitude": 39.23337263877719,
+      "rega_utilities_sewerage": {
+        "ar": "نعم",
+        "en": "Yes"
+      },
+      "rega_location_postal_code": "23462",
+      "rega_location_street_name": {
+        "ar": "المنار 19",
+        "en": "المنار 19"
+      },
+      "rega_property_specs_price": 520000.0,
+      "rega_additional_info_notes": "",
+      "rega_license_info_end_date": "2026-07-06",
+      "rega_utilities_electricity": {
+        "ar": "نعم",
+        "en": "Yes"
+      },
+      "rega_utilities_fixed_phone": {
+        "ar": "نعم",
+        "en": "Yes"
+      },
+      "rega_utilities_fiber_optics": {
+        "ar": "نعم",
+        "en": "Yes"
+      },
+      "rega_borders_east_limit_name": ":",
+      "rega_borders_west_limit_name": ":",
+      "rega_license_info_start_date": "2025-07-06",
+      "rega_additional_info_channels": {
+        "ar": "منصة مرخصة ،لوحة اعلانية ،منصات التواصل الإجتماعي ،الإذاعة ،أخرى",
+        "en": "Licensed platform, Bulletin board, Social media platforms, Radio, Other"
+      },
+      "rega_borders_north_limit_name": ":",
+      "rega_borders_south_limit_name": ":",
+      "rega_location_building_number": "3397",
+      "rega_property_specs_area_size": 133.92,
+      "rega_deed_location_description": "حي المنار بمدينة جدة  مساحة الوحدة من الأرض 39.54 متر   وتختص من المنافع والأجزاء المشتركة بمساحة 79.7 متر ",
+      "rega_location_additional_number": "7812",
+      "rega_additional_info_deed_number": "962090001005",
+      "rega_additional_info_land_number": "203",
+      "rega_additional_info_listing_age": {
+        "ar": "جديد",
+        "en": "New"
+      },
+      "rega_additional_info_plan_number": "656 / ج / س",
+      "rega_property_specs_listing_type": {
+        "ar": "شقق",
+        "en": "Apartment"
+      },
+      "rega_additional_info_street_width": 0.0,
+      "rega_property_specs_listing_usage": {
+        "ar": "",
+        "en": ""
+      },
+      "rega_borders_east_limit_description": " ارتداد 2  ثم شارع  عرض 20 م",
+      "rega_borders_east_limit_length_char": "أحد عشر   متر   و  عشر ون  سنتيمتر",
+      "rega_borders_west_limit_description": " درج  و منور 4  و الوحدة رقم 3 / أ",
+      "rega_borders_west_limit_length_char": "6.7 + 1.6 + 6.1",
+      "rega_license_info_ad_license_number": "7200586768",
+      "rega_property_specs_number_of_rooms": 4.0,
+      "rega_borders_north_limit_description": " ممرات  و الوحدة رقم 2 / أ",
+      "rega_borders_north_limit_length_char": "4.2 + 1.6 + 6.2",
+      "rega_borders_south_limit_description": " ارتداد 3 ثم جزء من القطعة رقم 202 والقطعة رقم  204 غربا وغرفة كهرباء شرقا",
+      "rega_borders_south_limit_length_char": "إثني عشر   متر",
+      "rega_license_info_fal_license_number": "1200017382",
+      "brokerage_and_marketing_license_number": "1200017382",
+      "rega_additional_info_is_listing_pawned": {
+        "ar": "لا",
+        "en": "No"
+      },
+      "rega_property_specs_advertisement_type": {
+        "ar": "للبيع",
+        "en": "For Sale"
+      },
+      "rega_additional_info_is_listing_constrained": {
+        "ar": "لا",
+        "en": "No"
+      },
+      "rega_additional_info_obligations_on_listing": "لا يوجد ",
+      "rega_additional_info_guarantees_and_duration": "",
+      "dldPropertySK": "87686591"
+    },
+    "raw_data": {
+      "id": 1066959,
+      "ownerID": "00000000-f09e-801f-8000-024213371337",
+      "userExternalID": "00000000-f09e-801f-8000-024213371337",
+      "sourceID": 68353,
+      "state": "active",
+      "geography": {
+        "lat": 21.599342851064,
+        "lng": 39.233372638777
+      },
+      "purpose": "for-sale",
+      "price": 520000.0,
+      "product": "superhot",
+      "productLabel": "default",
+      "rentFrequency": null,
+      "referenceNumber": null,
+      "permitNumber": "7200586768",
+      "projectNumber": null,
+      "title_l1": "Apartment in North Jeddah，Al Manar 4 bedrooms 520000 SAR - 87686591",
+      "title": "شقة مكونة من 4 غرف نوم للبيع في المنار",
+      "externalID": "87686591",
+      "slug_l1": "details-87686591",
+      "slug": "تفاصيل-87686591",
+      "location": [
+        {
+          "id": 1,
+          "level": 0,
+          "externalID": "1",
+          "name_l1": "KSA",
+          "name": "السعودية",
+          "slug_l1": "/ksa",
+          "slug": "/السعودية"
+        },
+        {
+          "id": 43,
+          "level": 1,
+          "externalID": "574",
+          "name_l1": "Jeddah",
+          "name": "جدة",
+          "slug_l1": "/jeddah",
+          "slug": "/جدة"
+        },
+        {
+          "id": 8176,
+          "level": 2,
+          "externalID": "12068",
+          "name_l1": "North Jeddah",
+          "name": "شمال جدة",
+          "slug_l1": "/jeddah/north-jeddah",
+          "slug": "/جدة/شمال-جدة"
+        },
+        {
+          "id": 3178,
+          "level": 3,
+          "externalID": "5691",
+          "name_l1": "Al Manar",
+          "name": "المنار",
+          "slug_l1": "/jeddah/north-jeddah/al-manar",
+          "slug": "/جدة/شمال-جدة/المنار"
+        }
+      ],
+      "category": [
+        {
+          "id": 1,
+          "level": 0,
+          "externalID": "1",
+          "name_l1": "Residential",
+          "name": "سكني",
+          "slug_l1": "residential",
+          "slug": "residential",
+          "nameSingular_l1": "Residential",
+          "nameSingular": "سكني"
+        },
+        {
+          "id": 6,
+          "level": 1,
+          "externalID": "3",
+          "name_l1": "Apartments",
+          "name": "شقق",
+          "slug_l1": "apartments",
+          "slug": "apartments",
+          "nameSingular_l1": "Apartment",
+          "nameSingular": "شقة"
+        }
+      ],
+      "createdAt": 1752837930.0,
+      "updatedAt": 1752838175.0,
+      "reactivatedAt": 1752046837.0,
+      "rooms": 4,
+      "baths": 3,
+      "area": 133.0,
+      "coverPhoto": {
+        "id": 4674319,
+        "externalID": "1433783",
+        "title": null,
+        "orderIndex": 0,
+        "nimaScore": null,
+        "url": "https://bayut-sa-production.s3.eu-central-1.amazonaws.com/image/4674319/f1dc6296a74a4a0fb49bad2a8a890932",
+        "main": true,
+        "uuid": "ea2ae5eb-c3d4-4a87-80d8-6887d8cd2047"
+      },
+      "photoCount": 19,
+      "videoCount": 0,
+      "panoramaCount": 0,
+      "phoneNumber": {
+        "mobile": "+966595093068",
+        "whatsapp": "966502219649",
+        "mobileNumbers": [
+          "+966595093068"
+        ]
+      },
+      "contactMethodAvailability": {
+        "whatsapp": true,
+        "sms": true,
+        "email": true,
+        "call": true
+      },
+      "contactName": "ABDULLAH ALMASABI",
+      "agency": {
+        "id": 990948,
+        "objectID": 990948,
+        "name_l1": "Durrah Almasiyah Real Estate",
+        "name": "شركة درة العقارية",
+        "externalID": "1720196763",
+        "product": "platinum plus",
+        "productScore": 3,
+        "licenses": [],
+        "logo": {
+          "id": 4256817,
+          "url": "https://bayut-sa-production.s3.eu-central-1.amazonaws.com/image/4256817/3bf2a3a912a24fb4be5be5b92f9f3ce4"
+        },
+        "slug_l1": "durrah-almasiyah-real-estate-1720196763",
+        "slug": "durrah-almasiyah-real-estate-1720196763",
+        "tr": 4,
+        "tier": 4,
+        "roles": [],
+        "active": true,
+        "createdAt": "2024-12-08T15:16:39+00:00",
+        "commercialNumber": null,
+        "shortNumber": null,
+        "type": "agency"
+      },
+      "isVerified": false,
+      "verification": {
+        "updatedAt": 1752046938.171782,
+        "eligible": false,
+        "status": "unverified",
+        "verifiedAt": null,
+        "trucheckedAt": 0
+      },
+      "floorPlanID": null,
+      "furnishingStatus": "unfurnished",
+      "extraFields": {
+        "rega_location_city": {
+          "ar": "جدة",
+          "en": "Jeddah"
+        },
+        "rega_location_region": {
+          "ar": "منطقة مكة المكرمة",
+          "en": "منطقة مكة المكرمة"
+        },
+        "ad_license_expiry_date": 1783285200,
+        "rega_location_district": {
+          "ar": "المنار",
+          "en": "Al Manar"
+        },
+        "rega_location_latitude": 21.5993428510639,
+        "rega_location_longitude": 39.23337263877719,
+        "rega_utilities_sewerage": {
+          "ar": "نعم",
+          "en": "Yes"
+        },
+        "rega_location_postal_code": "23462",
+        "rega_location_street_name": {
+          "ar": "المنار 19",
+          "en": "المنار 19"
+        },
+        "rega_property_specs_price": 520000.0,
+        "rega_additional_info_notes": "",
+        "rega_license_info_end_date": "2026-07-06",
+        "rega_utilities_electricity": {
+          "ar": "نعم",
+          "en": "Yes"
+        },
+        "rega_utilities_fixed_phone": {
+          "ar": "نعم",
+          "en": "Yes"
+        },
+        "rega_utilities_fiber_optics": {
+          "ar": "نعم",
+          "en": "Yes"
+        },
+        "rega_borders_east_limit_name": ":",
+        "rega_borders_west_limit_name": ":",
+        "rega_license_info_start_date": "2025-07-06",
+        "rega_additional_info_channels": {
+          "ar": "منصة مرخصة ،لوحة اعلانية ،منصات التواصل الإجتماعي ،الإذاعة ،أخرى",
+          "en": "Licensed platform, Bulletin board, Social media platforms, Radio, Other"
+        },
+        "rega_borders_north_limit_name": ":",
+        "rega_borders_south_limit_name": ":",
+        "rega_location_building_number": "3397",
+        "rega_property_specs_area_size": 133.92,
+        "rega_deed_location_description": "حي المنار بمدينة جدة  مساحة الوحدة من الأرض 39.54 متر   وتختص من المنافع والأجزاء المشتركة بمساحة 79.7 متر ",
+        "rega_location_additional_number": "7812",
+        "rega_additional_info_deed_number": "962090001005",
+        "rega_additional_info_land_number": "203",
+        "rega_additional_info_listing_age": {
+          "ar": "جديد",
+          "en": "New"
+        },
+        "rega_additional_info_plan_number": "656 / ج / س",
+        "rega_property_specs_listing_type": {
+          "ar": "شقق",
+          "en": "Apartment"
+        },
+        "rega_additional_info_street_width": 0.0,
+        "rega_property_specs_listing_usage": {
+          "ar": "",
+          "en": ""
+        },
+        "rega_borders_east_limit_description": " ارتداد 2  ثم شارع  عرض 20 م",
+        "rega_borders_east_limit_length_char": "أحد عشر   متر   و  عشر ون  سنتيمتر",
+        "rega_borders_west_limit_description": " درج  و منور 4  و الوحدة رقم 3 / أ",
+        "rega_borders_west_limit_length_char": "6.7 + 1.6 + 6.1",
+        "rega_license_info_ad_license_number": "7200586768",
+        "rega_property_specs_number_of_rooms": 4.0,
+        "rega_borders_north_limit_description": " ممرات  و الوحدة رقم 2 / أ",
+        "rega_borders_north_limit_length_char": "4.2 + 1.6 + 6.2",
+        "rega_borders_south_limit_description": " ارتداد 3 ثم جزء من القطعة رقم 202 والقطعة رقم  204 غربا وغرفة كهرباء شرقا",
+        "rega_borders_south_limit_length_char": "إثني عشر   متر",
+        "rega_license_info_fal_license_number": "1200017382",
+        "brokerage_and_marketing_license_number": "1200017382",
+        "rega_additional_info_is_listing_pawned": {
+          "ar": "لا",
+          "en": "No"
+        },
+        "rega_property_specs_advertisement_type": {
+          "ar": "للبيع",
+          "en": "For Sale"
+        },
+        "rega_additional_info_is_listing_constrained": {
+          "ar": "لا",
+          "en": "No"
+        },
+        "rega_additional_info_obligations_on_listing": "لا يوجد ",
+        "rega_additional_info_guarantees_and_duration": "",
+        "dldPropertySK": "87686591"
+      },
+      "type": "property",
+      "ownerAgent": {
+        "externalID": "00000000-f09e-801f-8000-024213371337",
+        "name_l1": "ABDULLAH ALMASABI",
+        "name": "عبدالله المصعبي",
+        "user_image": "https://bayut-sa-production.s3.eu-central-1.amazonaws.com/image/4622035/1f5e81a4a8b24ae5a91f3891518dc05f",
+        "user_image_id": 4622035,
+        "isTruBroker": false,
+        "slug_l1": "abdullah-almasabi-00000000-f09e-801f-8000-024213371337",
+        "slug": "abdullah-almasabi-00000000-f09e-801f-8000-024213371337",
+        "state": "active",
+        "isProfileCompleted": true,
+        "isComplete": true
+      },
+      "completionStatus": "completed",
+      "hasMatchingFloorPlans": false,
+      "photoIDs": [
+        4674319,
+        4674321,
+        4674320,
+        4674323,
+        4674325,
+        4674326,
+        4674324,
+        4674328,
+        4674327,
+        4674329,
+        4674330,
+        4674331,
+        4674332,
+        4674333,
+        4674334,
+        4674335,
+        4674336,
+        4674337,
+        4674338
+      ],
+      "hidePrice": false,
+      "locationPurposeTier": 0,
+      "plotArea": null,
+      "additionalCategories": [
+        [
+          {
+            "id": 1,
+            "level": 0,
+            "externalID": "1",
+            "name_l1": "Residential",
+            "name": "سكني",
+            "slug_l1": "residential",
+            "slug": "residential",
+            "nameSingular_l1": "Residential",
+            "nameSingular": "سكني"
+          },
+          {
+            "id": 6,
+            "level": 1,
+            "externalID": "3",
+            "name_l1": "Apartments",
+            "name": "شقق",
+            "slug_l1": "apartments",
+            "slug": "apartments",
+            "nameSingular_l1": "Apartment",
+            "nameSingular": "شقة"
+          }
+        ]
+      ],
+      "objectID": "1066959",
+      "_highlightResult": {
+        "title_l1": {
+          "value": "Apartment in North Jeddah，Al Manar 4 bedrooms 520000 SAR - 87686591",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "title": {
+          "value": "شقة مكونة من 4 غرف نوم للبيع في المنار",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "externalID": {
+          "value": "87686591",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "agency": {
+          "name_l1": {
+            "value": "Durrah Almasiyah Real Estate",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "name": {
+            "value": "شركة درة العقارية",
+            "matchLevel": "none",
+            "matchedWords": []
+          }
+        },
+        "keywords": [
+          {
+            "value": "حديقة",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          {
+            "value": "كبيرة",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          {
+            "value": "مستقلة",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          {
+            "value": "مول",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          {
+            "value": "موقف سيارة",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          {
+            "value": "مسجد",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          {
+            "value": "خاص",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          {
+            "value": "مستقل",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          {
+            "value": "واسعة",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          {
+            "value": "حديثة",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          {
+            "value": "مالك",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          {
+            "value": "مودرن",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          {
+            "value": "مطبخ",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          {
+            "value": "خدم",
+            "matchLevel": "none",
+            "matchedWords": []
+          }
+        ]
+      }
+    }
+  },
+  {
     "external_id": "87589812",
     "objectID": "1009268",
     "title": "دور علوي مودرن للبيع - مشروع الارين حي الروابي,الرياض",
@@ -188,7 +1558,7 @@
     "furnishing_status": "unfurnished",
     "completion_status": "completed",
     "is_verified": false,
-    "scraped_at": "2025-07-18T11:45:18.517664",
+    "scraped_at": "2025-07-18T14:23:22.270560",
     "created_at": 1752813020.0,
     "updated_at": 1752813020.0,
     "geography": {
@@ -867,7 +2237,7 @@
     "furnishing_status": "unfurnished",
     "completion_status": "completed",
     "is_verified": false,
-    "scraped_at": "2025-07-18T11:45:18.517682",
+    "scraped_at": "2025-07-18T14:23:22.270574",
     "created_at": 1752812993.0,
     "updated_at": 1752812993.0,
     "geography": {
@@ -1577,7 +2947,7 @@
     "furnishing_status": "unfurnished",
     "completion_status": "completed",
     "is_verified": false,
-    "scraped_at": "2025-07-18T11:45:18.517688",
+    "scraped_at": "2025-07-18T14:23:22.270591",
     "created_at": 1752812988.0,
     "updated_at": 1752812989.0,
     "geography": {
@@ -2275,7 +3645,7 @@
     "furnishing_status": "unfurnished",
     "completion_status": "completed",
     "is_verified": false,
-    "scraped_at": "2025-07-18T11:45:18.517693",
+    "scraped_at": "2025-07-18T14:23:22.270604",
     "created_at": 1752812870.0,
     "updated_at": 1752812870.0,
     "geography": {
@@ -3056,7 +4426,7 @@
     "furnishing_status": "unfurnished",
     "completion_status": "completed",
     "is_verified": false,
-    "scraped_at": "2025-07-18T11:45:18.517698",
+    "scraped_at": "2025-07-18T14:23:22.270619",
     "created_at": 1752812839.0,
     "updated_at": 1752812840.0,
     "geography": {
@@ -3829,7 +5199,7 @@
     "furnishing_status": "unfurnished",
     "completion_status": "completed",
     "is_verified": false,
-    "scraped_at": "2025-07-18T11:45:18.517703",
+    "scraped_at": "2025-07-18T14:23:22.270632",
     "created_at": 1752812751.0,
     "updated_at": 1752812752.0,
     "geography": {
@@ -4541,7 +5911,7 @@
     "furnishing_status": "unfurnished",
     "completion_status": "completed",
     "is_verified": false,
-    "scraped_at": "2025-07-18T11:45:18.517708",
+    "scraped_at": "2025-07-18T14:23:22.270646",
     "created_at": 1752812733.0,
     "updated_at": 1752812733.0,
     "geography": {
@@ -5278,7 +6648,7 @@
     "furnishing_status": "unfurnished",
     "completion_status": "completed",
     "is_verified": false,
-    "scraped_at": "2025-07-18T11:45:18.517713",
+    "scraped_at": "2025-07-18T14:23:22.270660",
     "created_at": 1752812729.0,
     "updated_at": 1752812730.0,
     "geography": {
@@ -6081,7 +7451,7 @@
     "furnishing_status": "unfurnished",
     "completion_status": "completed",
     "is_verified": false,
-    "scraped_at": "2025-07-18T11:45:18.517718",
+    "scraped_at": "2025-07-18T14:23:22.270674",
     "created_at": 1752811904.0,
     "updated_at": 1752811904.0,
     "geography": {
@@ -6814,7 +8184,7 @@
     "furnishing_status": "unfurnished",
     "completion_status": "completed",
     "is_verified": false,
-    "scraped_at": "2025-07-18T11:45:18.517723",
+    "scraped_at": "2025-07-18T14:23:22.270690",
     "created_at": 1752810200.0,
     "updated_at": 1752810200.0,
     "geography": {
@@ -7551,7 +8921,7 @@
     "furnishing_status": "unfurnished",
     "completion_status": "completed",
     "is_verified": false,
-    "scraped_at": "2025-07-18T11:45:18.517728",
+    "scraped_at": "2025-07-18T14:23:22.270704",
     "created_at": 1752777194.0,
     "updated_at": 1752777194.0,
     "geography": {
@@ -8248,7 +9618,7 @@
     "furnishing_status": "unfurnished",
     "completion_status": "completed",
     "is_verified": false,
-    "scraped_at": "2025-07-18T11:45:18.517732",
+    "scraped_at": "2025-07-18T14:23:22.270717",
     "created_at": 1752776769.0,
     "updated_at": 1752776769.0,
     "geography": {
@@ -8840,7 +10210,7 @@
     "furnishing_status": "furnished",
     "completion_status": "completed",
     "is_verified": false,
-    "scraped_at": "2025-07-18T11:45:18.517737",
+    "scraped_at": "2025-07-18T14:23:22.270730",
     "created_at": 1752776750.0,
     "updated_at": 1752776750.0,
     "geography": {
@@ -9468,7 +10838,7 @@
     "furnishing_status": "unfurnished",
     "completion_status": "completed",
     "is_verified": false,
-    "scraped_at": "2025-07-18T11:45:18.517742",
+    "scraped_at": "2025-07-18T14:23:22.270743",
     "created_at": 1752768252.0,
     "updated_at": 1752768252.0,
     "geography": {
@@ -10108,7 +11478,7 @@
     "furnishing_status": "unfurnished",
     "completion_status": "completed",
     "is_verified": false,
-    "scraped_at": "2025-07-18T11:45:18.517747",
+    "scraped_at": "2025-07-18T14:23:22.270756",
     "created_at": 1752768247.0,
     "updated_at": 1752768247.0,
     "geography": {
@@ -10780,7 +12150,7 @@
     "furnishing_status": "unfurnished",
     "completion_status": "completed",
     "is_verified": false,
-    "scraped_at": "2025-07-18T11:45:18.517752",
+    "scraped_at": "2025-07-18T14:23:22.270770",
     "created_at": 1752760724.0,
     "updated_at": 1752761585.0,
     "geography": {
@@ -11480,7 +12850,7 @@
     "furnishing_status": "unfurnished",
     "completion_status": "completed",
     "is_verified": false,
-    "scraped_at": "2025-07-18T11:45:18.517757",
+    "scraped_at": "2025-07-18T14:23:22.270783",
     "created_at": 1752751826.0,
     "updated_at": 1752751826.0,
     "geography": {
@@ -12136,7 +13506,7 @@
     "furnishing_status": "unfurnished",
     "completion_status": "completed",
     "is_verified": false,
-    "scraped_at": "2025-07-18T11:45:18.517762",
+    "scraped_at": "2025-07-18T14:23:22.270796",
     "created_at": 1752741865.0,
     "updated_at": 1752741865.0,
     "geography": {
@@ -12837,7 +14207,7 @@
     "furnishing_status": "unfurnished",
     "completion_status": "completed",
     "is_verified": false,
-    "scraped_at": "2025-07-18T11:45:18.517767",
+    "scraped_at": "2025-07-18T14:23:22.270811",
     "created_at": 1752741658.0,
     "updated_at": 1752743224.0,
     "geography": {
@@ -13550,7 +14920,7 @@
     "furnishing_status": "unfurnished",
     "completion_status": "completed",
     "is_verified": false,
-    "scraped_at": "2025-07-18T11:45:18.517773",
+    "scraped_at": "2025-07-18T14:23:22.270825",
     "created_at": 1752740099.0,
     "updated_at": 1752740099.0,
     "geography": {
@@ -14226,7 +15596,7 @@
     "furnishing_status": "furnished",
     "completion_status": "completed",
     "is_verified": false,
-    "scraped_at": "2025-07-18T11:45:18.517778",
+    "scraped_at": "2025-07-18T14:23:22.270839",
     "created_at": 1752740075.0,
     "updated_at": 1752740075.0,
     "geography": {
@@ -14889,7 +16259,7 @@
     "furnishing_status": "unfurnished",
     "completion_status": "completed",
     "is_verified": false,
-    "scraped_at": "2025-07-18T11:45:18.517783",
+    "scraped_at": "2025-07-18T14:23:22.270852",
     "created_at": 1752740019.0,
     "updated_at": 1752740019.0,
     "geography": {
@@ -15334,7 +16704,47 @@
         },
         "keywords": [
           {
-            "value": "خادمة",
+            "value": "جاهزة",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          {
+            "value": "مفروش",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          {
+            "value": "جاهز",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          {
+            "value": "موقف سيارة",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          {
+            "value": "خاص",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          {
+            "value": "بحر",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          {
+            "value": "حديثة",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          {
+            "value": "مفروشة",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          {
+            "value": "مؤثثة",
             "matchLevel": "none",
             "matchedWords": []
           },
@@ -15349,57 +16759,17 @@
             "matchedWords": []
           },
           {
-            "value": "جاهز",
-            "matchLevel": "none",
-            "matchedWords": []
-          },
-          {
-            "value": "خاص",
-            "matchLevel": "none",
-            "matchedWords": []
-          },
-          {
-            "value": "حديثة",
-            "matchLevel": "none",
-            "matchedWords": []
-          },
-          {
-            "value": "مودرن",
-            "matchLevel": "none",
-            "matchedWords": []
-          },
-          {
-            "value": "جاهزة",
-            "matchLevel": "none",
-            "matchedWords": []
-          },
-          {
             "value": "غير مفروشة",
             "matchLevel": "none",
             "matchedWords": []
           },
           {
-            "value": "بحر",
+            "value": "خادمة",
             "matchLevel": "none",
             "matchedWords": []
           },
           {
-            "value": "موقف سيارة",
-            "matchLevel": "none",
-            "matchedWords": []
-          },
-          {
-            "value": "مؤثثة",
-            "matchLevel": "none",
-            "matchedWords": []
-          },
-          {
-            "value": "مفروشة",
-            "matchLevel": "none",
-            "matchedWords": []
-          },
-          {
-            "value": "مفروش",
+            "value": "مودرن",
             "matchLevel": "none",
             "matchedWords": []
           }
@@ -15601,7 +16971,7 @@
     "furnishing_status": "furnished",
     "completion_status": "completed",
     "is_verified": false,
-    "scraped_at": "2025-07-18T11:45:18.517789",
+    "scraped_at": "2025-07-18T14:23:22.270865",
     "created_at": 1752739961.0,
     "updated_at": 1752739961.0,
     "geography": {
@@ -16104,1422 +17474,6 @@
           },
           {
             "value": "مفروش",
-            "matchLevel": "none",
-            "matchedWords": []
-          }
-        ]
-      }
-    }
-  },
-  {
-    "external_id": "87673671",
-    "objectID": "1059044",
-    "title": "شقة فاخرة للايجار بحي الحمانية",
-    "title_ar": "Luxorious Apartment In Al Rahmaniyah",
-    "description": "",
-    "property_type": [
-      {
-        "id": 1,
-        "level": 0,
-        "externalID": "1",
-        "name_l1": "Residential",
-        "name": "سكني",
-        "slug_l1": "residential",
-        "slug": "residential",
-        "nameSingular_l1": "Residential",
-        "nameSingular": "سكني"
-      },
-      {
-        "id": 6,
-        "level": 1,
-        "externalID": "3",
-        "name_l1": "Apartments",
-        "name": "شقق",
-        "slug_l1": "apartments",
-        "slug": "apartments",
-        "nameSingular_l1": "Apartment",
-        "nameSingular": "شقة"
-      }
-    ],
-    "property_type_ar": "property",
-    "purpose": "for-rent",
-    "price": 70000.0,
-    "currency": "SAR",
-    "bedrooms": 2,
-    "bathrooms": 2,
-    "area": 57.0,
-    "area_unit": "sqm",
-    "location": [
-      {
-        "id": 1,
-        "level": 0,
-        "externalID": "1",
-        "name_l1": "KSA",
-        "name": "السعودية",
-        "slug_l1": "/ksa",
-        "slug": "/السعودية"
-      },
-      {
-        "id": 37,
-        "level": 1,
-        "externalID": "230",
-        "name_l1": "Riyadh",
-        "name": "الرياض",
-        "slug_l1": "/riyadh",
-        "slug": "/الرياض"
-      },
-      {
-        "id": 8484,
-        "level": 2,
-        "externalID": "12074",
-        "name_l1": "North Riyadh",
-        "name": "شمال الرياض",
-        "slug_l1": "/riyadh/north-riyadh",
-        "slug": "/الرياض/شمال-الرياض"
-      },
-      {
-        "id": 2880,
-        "level": 3,
-        "externalID": "5260",
-        "name_l1": "Al Rahmaniyah",
-        "name": "الرحمانية",
-        "slug_l1": "/riyadh/north-riyadh/al-rahmaniyah",
-        "slug": "/الرياض/شمال-الرياض/الرحمانية"
-      }
-    ],
-    "city": "الرياض",
-    "latitude": 24.71816065871,
-    "longitude": 46.658214713652,
-    "location_hierarchy": [
-      {
-        "id": 1,
-        "level": 0,
-        "externalID": "1",
-        "name_l1": "KSA",
-        "name": "السعودية",
-        "slug_l1": "/ksa",
-        "slug": "/السعودية"
-      },
-      {
-        "id": 37,
-        "level": 1,
-        "externalID": "230",
-        "name_l1": "Riyadh",
-        "name": "الرياض",
-        "slug_l1": "/riyadh",
-        "slug": "/الرياض"
-      },
-      {
-        "id": 8484,
-        "level": 2,
-        "externalID": "12074",
-        "name_l1": "North Riyadh",
-        "name": "شمال الرياض",
-        "slug_l1": "/riyadh/north-riyadh",
-        "slug": "/الرياض/شمال-الرياض"
-      },
-      {
-        "id": 2880,
-        "level": 3,
-        "externalID": "5260",
-        "name_l1": "Al Rahmaniyah",
-        "name": "الرحمانية",
-        "slug_l1": "/riyadh/north-riyadh/al-rahmaniyah",
-        "slug": "/الرياض/شمال-الرياض/الرحمانية"
-      }
-    ],
-    "agency_name": {
-      "id": 15494,
-      "objectID": 15494,
-      "name_l1": "SATEL Co.",
-      "name": "ساتل",
-      "externalID": "1720192428",
-      "product": "platinum plus",
-      "productScore": 3,
-      "licenses": [],
-      "logo": {
-        "id": 3156854,
-        "url": "https://bayut-sa-production.s3.eu-central-1.amazonaws.com/image/3156854/a8ad7e553cd241169a67e7d9538cc595"
-      },
-      "slug_l1": "satel-realty-company-1720192428",
-      "slug": "satel-realty-company-1720192428",
-      "tr": 4,
-      "tier": 4,
-      "roles": [],
-      "active": true,
-      "createdAt": "2023-05-07T02:40:40+00:00",
-      "commercialNumber": null,
-      "shortNumber": null,
-      "type": "agency"
-    },
-    "agency_name_ar": {
-      "id": 15494,
-      "objectID": 15494,
-      "name_l1": "SATEL Co.",
-      "name": "ساتل",
-      "externalID": "1720192428",
-      "product": "platinum plus",
-      "productScore": 3,
-      "licenses": [],
-      "logo": {
-        "id": 3156854,
-        "url": "https://bayut-sa-production.s3.eu-central-1.amazonaws.com/image/3156854/a8ad7e553cd241169a67e7d9538cc595"
-      },
-      "slug_l1": "satel-realty-company-1720192428",
-      "slug": "satel-realty-company-1720192428",
-      "tr": 4,
-      "tier": 4,
-      "roles": [],
-      "active": true,
-      "createdAt": "2023-05-07T02:40:40+00:00",
-      "commercialNumber": null,
-      "shortNumber": null,
-      "type": "agency"
-    },
-    "agent_name": "Ahmed",
-    "agent_name_ar": "Ahmed",
-    "phone": {
-      "mobile": "+966539992727",
-      "phone": "+966114888849",
-      "whatsapp": "966114049994",
-      "proxyMobile": "+966115002346",
-      "phoneNumbers": [
-        "+966114888849"
-      ],
-      "mobileNumbers": [
-        "+966539992727"
-      ]
-    },
-    "photo_url": {
-      "id": 4634745,
-      "externalID": "1392462",
-      "title": null,
-      "orderIndex": 0,
-      "nimaScore": null,
-      "url": "https://bayut-sa-production.s3.eu-central-1.amazonaws.com/image/4634745/b476ac6a97c14cf9a9f096e28c324e8f",
-      "main": true,
-      "uuid": "0559c570-65ff-4f4d-97d2-2e4d3905f3e2"
-    },
-    "photo_count": 25,
-    "permit_number": "7200547759",
-    "furnishing_status": "furnished",
-    "completion_status": "completed",
-    "is_verified": false,
-    "scraped_at": "2025-07-18T11:45:18.517794",
-    "created_at": 1752739935.0,
-    "updated_at": 1752739935.0,
-    "geography": {
-      "lat": 24.71816065871,
-      "lng": 46.658214713652
-    },
-    "extra_fields": {
-      "rega_location_city": {
-        "ar": "الرياض",
-        "en": "Riyadh"
-      },
-      "rega_location_region": {
-        "ar": "منطقة الرياض",
-        "en": "منطقة الرياض"
-      },
-      "ad_license_expiry_date": 1774558800,
-      "rega_location_district": {
-        "ar": "الرحمانية",
-        "en": "Al Rahmaniyah"
-      },
-      "rega_location_latitude": 24.71816065870996,
-      "rega_location_longitude": 46.65821471365216,
-      "rega_utilities_sewerage": {
-        "ar": "نعم",
-        "en": "Yes"
-      },
-      "rega_location_postal_code": "12344",
-      "rega_location_street_name": {
-        "ar": "ابن جلجل",
-        "en": "ابن جلجل"
-      },
-      "rega_property_specs_price": 70000.0,
-      "rega_additional_info_notes": "",
-      "rega_license_info_end_date": "2026-03-27",
-      "rega_utilities_electricity": {
-        "ar": "نعم",
-        "en": "Yes"
-      },
-      "rega_utilities_fiber_optics": {
-        "ar": "نعم",
-        "en": "Yes"
-      },
-      "rega_license_info_start_date": "2025-05-26",
-      "rega_additional_info_channels": {
-        "ar": "منصة مرخصة ،لوحة اعلانية ،منصات التواصل الإجتماعي ،الإذاعة ،أخرى",
-        "en": "Licensed platform, Bulletin board, Social media platforms, Radio, Other"
-      },
-      "rega_location_building_number": "7498",
-      "rega_property_specs_area_size": 57.6,
-      "rega_location_additional_number": "3155",
-      "rega_additional_info_deed_number": "300002662587",
-      "rega_additional_info_listing_age": {
-        "ar": "ثلاث سنوات",
-        "en": "3 years"
-      },
-      "rega_property_specs_listing_type": {
-        "ar": "شقق",
-        "en": "Apartment"
-      },
-      "rega_additional_info_street_width": 0.0,
-      "rega_property_specs_listing_usage": {
-        "ar": "",
-        "en": ""
-      },
-      "rega_license_info_ad_license_number": "7200547759",
-      "rega_property_specs_number_of_rooms": 2.0,
-      "brokerage_and_marketing_license_number": "1200010193",
-      "rega_additional_info_is_listing_pawned": {
-        "ar": "لا",
-        "en": "No"
-      },
-      "rega_property_specs_advertisement_type": {
-        "ar": "للإيجار",
-        "en": "For Rent"
-      },
-      "rega_additional_info_is_listing_constrained": {
-        "ar": "لا",
-        "en": "No"
-      },
-      "rega_additional_info_obligations_on_listing": "لا يوجد",
-      "rega_additional_info_guarantees_and_duration": "",
-      "dldPropertySK": "87673671"
-    },
-    "raw_data": {
-      "id": 1059044,
-      "ownerID": "00000000-efdc-801f-8000-024213371337",
-      "userExternalID": "00000000-efdc-801f-8000-024213371337",
-      "sourceID": 68353,
-      "state": "active",
-      "geography": {
-        "lat": 24.71816065871,
-        "lng": 46.658214713652
-      },
-      "purpose": "for-rent",
-      "price": 70000.0,
-      "product": "superhot",
-      "productLabel": "default",
-      "rentFrequency": "yearly",
-      "referenceNumber": null,
-      "permitNumber": "7200547759",
-      "projectNumber": null,
-      "title_l1": "Luxorious Apartment In Al Rahmaniyah",
-      "title": "شقة فاخرة للايجار بحي الحمانية",
-      "externalID": "87673671",
-      "slug_l1": "details-87673671",
-      "slug": "تفاصيل-87673671",
-      "location": [
-        {
-          "id": 1,
-          "level": 0,
-          "externalID": "1",
-          "name_l1": "KSA",
-          "name": "السعودية",
-          "slug_l1": "/ksa",
-          "slug": "/السعودية"
-        },
-        {
-          "id": 37,
-          "level": 1,
-          "externalID": "230",
-          "name_l1": "Riyadh",
-          "name": "الرياض",
-          "slug_l1": "/riyadh",
-          "slug": "/الرياض"
-        },
-        {
-          "id": 8484,
-          "level": 2,
-          "externalID": "12074",
-          "name_l1": "North Riyadh",
-          "name": "شمال الرياض",
-          "slug_l1": "/riyadh/north-riyadh",
-          "slug": "/الرياض/شمال-الرياض"
-        },
-        {
-          "id": 2880,
-          "level": 3,
-          "externalID": "5260",
-          "name_l1": "Al Rahmaniyah",
-          "name": "الرحمانية",
-          "slug_l1": "/riyadh/north-riyadh/al-rahmaniyah",
-          "slug": "/الرياض/شمال-الرياض/الرحمانية"
-        }
-      ],
-      "category": [
-        {
-          "id": 1,
-          "level": 0,
-          "externalID": "1",
-          "name_l1": "Residential",
-          "name": "سكني",
-          "slug_l1": "residential",
-          "slug": "residential",
-          "nameSingular_l1": "Residential",
-          "nameSingular": "سكني"
-        },
-        {
-          "id": 6,
-          "level": 1,
-          "externalID": "3",
-          "name_l1": "Apartments",
-          "name": "شقق",
-          "slug_l1": "apartments",
-          "slug": "apartments",
-          "nameSingular_l1": "Apartment",
-          "nameSingular": "شقة"
-        }
-      ],
-      "createdAt": 1752739935.0,
-      "updatedAt": 1752739935.0,
-      "reactivatedAt": 1748273407.0,
-      "rooms": 2,
-      "baths": 2,
-      "area": 57.0,
-      "coverPhoto": {
-        "id": 4634745,
-        "externalID": "1392462",
-        "title": null,
-        "orderIndex": 0,
-        "nimaScore": null,
-        "url": "https://bayut-sa-production.s3.eu-central-1.amazonaws.com/image/4634745/b476ac6a97c14cf9a9f096e28c324e8f",
-        "main": true,
-        "uuid": "0559c570-65ff-4f4d-97d2-2e4d3905f3e2"
-      },
-      "photoCount": 25,
-      "videoCount": 0,
-      "panoramaCount": 0,
-      "phoneNumber": {
-        "mobile": "+966539992727",
-        "phone": "+966114888849",
-        "whatsapp": "966114049994",
-        "proxyMobile": "+966115002346",
-        "phoneNumbers": [
-          "+966114888849"
-        ],
-        "mobileNumbers": [
-          "+966539992727"
-        ]
-      },
-      "contactMethodAvailability": {
-        "whatsapp": true,
-        "sms": true,
-        "email": true,
-        "call": true
-      },
-      "contactName": "Ahmed",
-      "agency": {
-        "id": 15494,
-        "objectID": 15494,
-        "name_l1": "SATEL Co.",
-        "name": "ساتل",
-        "externalID": "1720192428",
-        "product": "platinum plus",
-        "productScore": 3,
-        "licenses": [],
-        "logo": {
-          "id": 3156854,
-          "url": "https://bayut-sa-production.s3.eu-central-1.amazonaws.com/image/3156854/a8ad7e553cd241169a67e7d9538cc595"
-        },
-        "slug_l1": "satel-realty-company-1720192428",
-        "slug": "satel-realty-company-1720192428",
-        "tr": 4,
-        "tier": 4,
-        "roles": [],
-        "active": true,
-        "createdAt": "2023-05-07T02:40:40+00:00",
-        "commercialNumber": null,
-        "shortNumber": null,
-        "type": "agency"
-      },
-      "isVerified": false,
-      "verification": {
-        "updatedAt": 1748353764.36546,
-        "eligible": false,
-        "status": "unverified",
-        "verifiedAt": null,
-        "trucheckedAt": 0
-      },
-      "floorPlanID": null,
-      "furnishingStatus": "furnished",
-      "extraFields": {
-        "rega_location_city": {
-          "ar": "الرياض",
-          "en": "Riyadh"
-        },
-        "rega_location_region": {
-          "ar": "منطقة الرياض",
-          "en": "منطقة الرياض"
-        },
-        "ad_license_expiry_date": 1774558800,
-        "rega_location_district": {
-          "ar": "الرحمانية",
-          "en": "Al Rahmaniyah"
-        },
-        "rega_location_latitude": 24.71816065870996,
-        "rega_location_longitude": 46.65821471365216,
-        "rega_utilities_sewerage": {
-          "ar": "نعم",
-          "en": "Yes"
-        },
-        "rega_location_postal_code": "12344",
-        "rega_location_street_name": {
-          "ar": "ابن جلجل",
-          "en": "ابن جلجل"
-        },
-        "rega_property_specs_price": 70000.0,
-        "rega_additional_info_notes": "",
-        "rega_license_info_end_date": "2026-03-27",
-        "rega_utilities_electricity": {
-          "ar": "نعم",
-          "en": "Yes"
-        },
-        "rega_utilities_fiber_optics": {
-          "ar": "نعم",
-          "en": "Yes"
-        },
-        "rega_license_info_start_date": "2025-05-26",
-        "rega_additional_info_channels": {
-          "ar": "منصة مرخصة ،لوحة اعلانية ،منصات التواصل الإجتماعي ،الإذاعة ،أخرى",
-          "en": "Licensed platform, Bulletin board, Social media platforms, Radio, Other"
-        },
-        "rega_location_building_number": "7498",
-        "rega_property_specs_area_size": 57.6,
-        "rega_location_additional_number": "3155",
-        "rega_additional_info_deed_number": "300002662587",
-        "rega_additional_info_listing_age": {
-          "ar": "ثلاث سنوات",
-          "en": "3 years"
-        },
-        "rega_property_specs_listing_type": {
-          "ar": "شقق",
-          "en": "Apartment"
-        },
-        "rega_additional_info_street_width": 0.0,
-        "rega_property_specs_listing_usage": {
-          "ar": "",
-          "en": ""
-        },
-        "rega_license_info_ad_license_number": "7200547759",
-        "rega_property_specs_number_of_rooms": 2.0,
-        "brokerage_and_marketing_license_number": "1200010193",
-        "rega_additional_info_is_listing_pawned": {
-          "ar": "لا",
-          "en": "No"
-        },
-        "rega_property_specs_advertisement_type": {
-          "ar": "للإيجار",
-          "en": "For Rent"
-        },
-        "rega_additional_info_is_listing_constrained": {
-          "ar": "لا",
-          "en": "No"
-        },
-        "rega_additional_info_obligations_on_listing": "لا يوجد",
-        "rega_additional_info_guarantees_and_duration": "",
-        "dldPropertySK": "87673671"
-      },
-      "type": "property",
-      "ownerAgent": {
-        "externalID": "00000000-efdc-801f-8000-024213371337",
-        "name_l1": "Ahmed",
-        "name": "أحمد",
-        "user_image": "https://bayut-sa-production.s3.eu-central-1.amazonaws.com/image/4287931/c9a623fe4e3745bf86ac285b7d244548",
-        "user_image_id": 4287931,
-        "isTruBroker": true,
-        "slug_l1": "ahmed-00000000-efdc-801f-8000-024213371337",
-        "slug": "ahmed-00000000-efdc-801f-8000-024213371337",
-        "state": "active",
-        "isProfileCompleted": true,
-        "isComplete": true
-      },
-      "completionStatus": "completed",
-      "hasMatchingFloorPlans": false,
-      "photoIDs": [
-        4634745,
-        4634746,
-        4634747,
-        4634748,
-        4634749,
-        4634750,
-        4634751,
-        4634752,
-        4634753,
-        4634754,
-        4634755,
-        4634756,
-        4634757,
-        4634758,
-        4634759,
-        4634761,
-        4634762,
-        4634763,
-        4634764,
-        4634765,
-        4634766,
-        4634767,
-        4634768,
-        4634769,
-        4634770
-      ],
-      "hidePrice": false,
-      "locationPurposeTier": 0,
-      "plotArea": null,
-      "additionalCategories": [
-        [
-          {
-            "id": 1,
-            "level": 0,
-            "externalID": "1",
-            "name_l1": "Residential",
-            "name": "سكني",
-            "slug_l1": "residential",
-            "slug": "residential",
-            "nameSingular_l1": "Residential",
-            "nameSingular": "سكني"
-          },
-          {
-            "id": 6,
-            "level": 1,
-            "externalID": "3",
-            "name_l1": "Apartments",
-            "name": "شقق",
-            "slug_l1": "apartments",
-            "slug": "apartments",
-            "nameSingular_l1": "Apartment",
-            "nameSingular": "شقة"
-          }
-        ]
-      ],
-      "objectID": "1059044",
-      "_highlightResult": {
-        "title_l1": {
-          "value": "Luxorious Apartment In Al Rahmaniyah",
-          "matchLevel": "none",
-          "matchedWords": []
-        },
-        "title": {
-          "value": "شقة فاخرة للايجار بحي الحمانية",
-          "matchLevel": "none",
-          "matchedWords": []
-        },
-        "externalID": {
-          "value": "87673671",
-          "matchLevel": "none",
-          "matchedWords": []
-        },
-        "agency": {
-          "name_l1": {
-            "value": "SATEL Co.",
-            "matchLevel": "none",
-            "matchedWords": []
-          },
-          "name": {
-            "value": "ساتل",
-            "matchLevel": "none",
-            "matchedWords": []
-          }
-        },
-        "keywords": [
-          {
-            "value": "مفروشة",
-            "matchLevel": "none",
-            "matchedWords": []
-          },
-          {
-            "value": "بلكونة",
-            "matchLevel": "none",
-            "matchedWords": []
-          },
-          {
-            "value": "موقف سيارة",
-            "matchLevel": "none",
-            "matchedWords": []
-          },
-          {
-            "value": "طابق ارضي",
-            "matchLevel": "none",
-            "matchedWords": []
-          },
-          {
-            "value": "مطبخ",
-            "matchLevel": "none",
-            "matchedWords": []
-          },
-          {
-            "value": "ترس",
-            "matchLevel": "none",
-            "matchedWords": []
-          },
-          {
-            "value": "مصعد",
-            "matchLevel": "none",
-            "matchedWords": []
-          },
-          {
-            "value": "ارضية",
-            "matchLevel": "none",
-            "matchedWords": []
-          },
-          {
-            "value": "مؤثثة",
-            "matchLevel": "none",
-            "matchedWords": []
-          },
-          {
-            "value": "ارضي",
-            "matchLevel": "none",
-            "matchedWords": []
-          },
-          {
-            "value": "فاخرة",
-            "matchLevel": "none",
-            "matchedWords": []
-          },
-          {
-            "value": "خدم",
-            "matchLevel": "none",
-            "matchedWords": []
-          },
-          {
-            "value": "مفروش",
-            "matchLevel": "none",
-            "matchedWords": []
-          },
-          {
-            "value": "مفروش بالكامل",
-            "matchLevel": "none",
-            "matchedWords": []
-          }
-        ]
-      }
-    }
-  },
-  {
-    "external_id": "87673650",
-    "objectID": "1058955",
-    "title": "شقة فاخرة غير مفروشة في حي العارض.",
-    "title_ar": "Luxury unfurnished apartment in Al Arid District.",
-    "description": "",
-    "property_type": [
-      {
-        "id": 1,
-        "level": 0,
-        "externalID": "1",
-        "name_l1": "Residential",
-        "name": "سكني",
-        "slug_l1": "residential",
-        "slug": "residential",
-        "nameSingular_l1": "Residential",
-        "nameSingular": "سكني"
-      },
-      {
-        "id": 6,
-        "level": 1,
-        "externalID": "3",
-        "name_l1": "Apartments",
-        "name": "شقق",
-        "slug_l1": "apartments",
-        "slug": "apartments",
-        "nameSingular_l1": "Apartment",
-        "nameSingular": "شقة"
-      }
-    ],
-    "property_type_ar": "property",
-    "purpose": "for-rent",
-    "price": 100000.0,
-    "currency": "SAR",
-    "bedrooms": 3,
-    "bathrooms": 3,
-    "area": 105.0,
-    "area_unit": "sqm",
-    "location": [
-      {
-        "id": 1,
-        "level": 0,
-        "externalID": "1",
-        "name_l1": "KSA",
-        "name": "السعودية",
-        "slug_l1": "/ksa",
-        "slug": "/السعودية"
-      },
-      {
-        "id": 37,
-        "level": 1,
-        "externalID": "230",
-        "name_l1": "Riyadh",
-        "name": "الرياض",
-        "slug_l1": "/riyadh",
-        "slug": "/الرياض"
-      },
-      {
-        "id": 8484,
-        "level": 2,
-        "externalID": "12074",
-        "name_l1": "North Riyadh",
-        "name": "شمال الرياض",
-        "slug_l1": "/riyadh/north-riyadh",
-        "slug": "/الرياض/شمال-الرياض"
-      },
-      {
-        "id": 2907,
-        "level": 3,
-        "externalID": "5307",
-        "name_l1": "Al Arid",
-        "name": "العارض",
-        "slug_l1": "/riyadh/north-riyadh/al-arid",
-        "slug": "/الرياض/شمال-الرياض/العارض"
-      }
-    ],
-    "city": "الرياض",
-    "latitude": 24.845673753783,
-    "longitude": 46.632424500551,
-    "location_hierarchy": [
-      {
-        "id": 1,
-        "level": 0,
-        "externalID": "1",
-        "name_l1": "KSA",
-        "name": "السعودية",
-        "slug_l1": "/ksa",
-        "slug": "/السعودية"
-      },
-      {
-        "id": 37,
-        "level": 1,
-        "externalID": "230",
-        "name_l1": "Riyadh",
-        "name": "الرياض",
-        "slug_l1": "/riyadh",
-        "slug": "/الرياض"
-      },
-      {
-        "id": 8484,
-        "level": 2,
-        "externalID": "12074",
-        "name_l1": "North Riyadh",
-        "name": "شمال الرياض",
-        "slug_l1": "/riyadh/north-riyadh",
-        "slug": "/الرياض/شمال-الرياض"
-      },
-      {
-        "id": 2907,
-        "level": 3,
-        "externalID": "5307",
-        "name_l1": "Al Arid",
-        "name": "العارض",
-        "slug_l1": "/riyadh/north-riyadh/al-arid",
-        "slug": "/الرياض/شمال-الرياض/العارض"
-      }
-    ],
-    "agency_name": {
-      "id": 15494,
-      "objectID": 15494,
-      "name_l1": "SATEL Co.",
-      "name": "ساتل",
-      "externalID": "1720192428",
-      "product": "platinum plus",
-      "productScore": 3,
-      "licenses": [],
-      "logo": {
-        "id": 3156854,
-        "url": "https://bayut-sa-production.s3.eu-central-1.amazonaws.com/image/3156854/a8ad7e553cd241169a67e7d9538cc595"
-      },
-      "slug_l1": "satel-realty-company-1720192428",
-      "slug": "satel-realty-company-1720192428",
-      "tr": 4,
-      "tier": 4,
-      "roles": [],
-      "active": true,
-      "createdAt": "2023-05-07T02:40:40+00:00",
-      "commercialNumber": null,
-      "shortNumber": null,
-      "type": "agency"
-    },
-    "agency_name_ar": {
-      "id": 15494,
-      "objectID": 15494,
-      "name_l1": "SATEL Co.",
-      "name": "ساتل",
-      "externalID": "1720192428",
-      "product": "platinum plus",
-      "productScore": 3,
-      "licenses": [],
-      "logo": {
-        "id": 3156854,
-        "url": "https://bayut-sa-production.s3.eu-central-1.amazonaws.com/image/3156854/a8ad7e553cd241169a67e7d9538cc595"
-      },
-      "slug_l1": "satel-realty-company-1720192428",
-      "slug": "satel-realty-company-1720192428",
-      "tr": 4,
-      "tier": 4,
-      "roles": [],
-      "active": true,
-      "createdAt": "2023-05-07T02:40:40+00:00",
-      "commercialNumber": null,
-      "shortNumber": null,
-      "type": "agency"
-    },
-    "agent_name": "Ahmed",
-    "agent_name_ar": "Ahmed",
-    "phone": {
-      "mobile": "+966539992727",
-      "phone": "+966114888849",
-      "whatsapp": "966114049994",
-      "proxyMobile": "+966115002346",
-      "phoneNumbers": [
-        "+966114888849"
-      ],
-      "mobileNumbers": [
-        "+966539992727"
-      ]
-    },
-    "photo_url": {
-      "id": 4584258,
-      "externalID": "1336221",
-      "title": null,
-      "orderIndex": 0,
-      "nimaScore": null,
-      "url": "https://bayut-sa-production.s3.eu-central-1.amazonaws.com/image/4584258/24f12fbd741b4a5286f5a60678c7c9ef",
-      "main": true,
-      "uuid": "236a5680-6d90-4d04-9f8c-87e4fe534746"
-    },
-    "photo_count": 18,
-    "permit_number": "7200547615",
-    "furnishing_status": "furnished",
-    "completion_status": "completed",
-    "is_verified": false,
-    "scraped_at": "2025-07-18T11:45:18.517800",
-    "created_at": 1752739929.0,
-    "updated_at": 1752739930.0,
-    "geography": {
-      "lat": 24.845673753783,
-      "lng": 46.632424500551
-    },
-    "extra_fields": {
-      "rega_location_city": {
-        "ar": "الرياض",
-        "en": "Riyadh"
-      },
-      "rega_location_region": {
-        "ar": "منطقة الرياض",
-        "en": "منطقة الرياض"
-      },
-      "ad_license_expiry_date": 1779656400,
-      "rega_location_district": {
-        "ar": "العارض",
-        "en": "Al Arid"
-      },
-      "rega_location_latitude": 24.84567375378327,
-      "rega_location_longitude": 46.6324245005511,
-      "rega_utilities_sewerage": {
-        "ar": "نعم",
-        "en": "Yes"
-      },
-      "rega_location_postal_code": "13332",
-      "rega_location_street_name": {
-        "ar": "الكاتب",
-        "en": "الكاتب"
-      },
-      "rega_property_specs_price": 100000.0,
-      "rega_additional_info_notes": "",
-      "rega_license_info_end_date": "2026-05-25",
-      "rega_utilities_electricity": {
-        "ar": "نعم",
-        "en": "Yes"
-      },
-      "rega_borders_east_limit_name": ":",
-      "rega_borders_west_limit_name": ":",
-      "rega_license_info_start_date": "2025-05-26",
-      "rega_additional_info_channels": {
-        "ar": "منصة مرخصة ،لوحة اعلانية ،منصات التواصل الإجتماعي ،الإذاعة ،أخرى",
-        "en": "Licensed platform, Bulletin board, Social media platforms, Radio, Other"
-      },
-      "rega_borders_north_limit_name": ":",
-      "rega_borders_south_limit_name": ":",
-      "rega_location_building_number": "2602",
-      "rega_property_specs_area_size": 105.64,
-      "rega_deed_location_description": "حي البساتين بمدينة الرياض  مساحة الوحدة من الأرض 61.38 متر   وتختص من المنافع والأجزاء المشتركة بمساحة 40.39 متر ",
-      "rega_location_additional_number": "7245",
-      "rega_additional_info_deed_number": "399022005764",
-      "rega_additional_info_land_number": "28",
-      "rega_additional_info_listing_age": {
-        "ar": "سنة",
-        "en": "1 year"
-      },
-      "rega_additional_info_plan_number": "3286",
-      "rega_property_specs_listing_type": {
-        "ar": "شقق",
-        "en": "Apartment"
-      },
-      "rega_additional_info_street_width": 0.0,
-      "rega_property_specs_listing_usage": {
-        "ar": "",
-        "en": ""
-      },
-      "rega_borders_east_limit_description": "وحدة 1/5 ومنور 6 ومنور 5",
-      "rega_borders_east_limit_length_char": "2.900 + 1.400 + 1.780 + 3.580 + 2.980 + 1.590 + 1.720 + 0.620 + 2.420 + 0.540 + 4.180",
-      "rega_borders_west_limit_description": "حديقة 7",
-      "rega_borders_west_limit_length_char": "2.170 + 1.190 + 13.810",
-      "rega_license_info_ad_license_number": "7200547615",
-      "rega_property_specs_number_of_rooms": 3.0,
-      "rega_borders_north_limit_description": "موزع رئيسي",
-      "rega_borders_north_limit_length_char": "ستة  متر   و  عشرة   سنتيمتر",
-      "rega_borders_south_limit_description": "مواقف  وشارع 36",
-      "rega_borders_south_limit_length_char": "خمسة  متر   و  ثمانية و خمسون  سنتيمتر",
-      "brokerage_and_marketing_license_number": "1200010193",
-      "rega_additional_info_is_listing_pawned": {
-        "ar": "نعم",
-        "en": "Yes"
-      },
-      "rega_property_specs_advertisement_type": {
-        "ar": "للإيجار",
-        "en": "For Rent"
-      },
-      "rega_additional_info_is_listing_constrained": {
-        "ar": "لا",
-        "en": "No"
-      },
-      "rega_additional_info_obligations_on_listing": "مرهون",
-      "rega_additional_info_guarantees_and_duration": "",
-      "dldPropertySK": "87673650"
-    },
-    "raw_data": {
-      "id": 1058955,
-      "ownerID": "00000000-efdc-801f-8000-024213371337",
-      "userExternalID": "00000000-efdc-801f-8000-024213371337",
-      "sourceID": 68353,
-      "state": "active",
-      "geography": {
-        "lat": 24.845673753783,
-        "lng": 46.632424500551
-      },
-      "purpose": "for-rent",
-      "price": 100000.0,
-      "product": "superhot",
-      "productLabel": "default",
-      "rentFrequency": "yearly",
-      "referenceNumber": null,
-      "permitNumber": "7200547615",
-      "projectNumber": null,
-      "title_l1": "Luxury unfurnished apartment in Al Arid District.",
-      "title": "شقة فاخرة غير مفروشة في حي العارض.",
-      "externalID": "87673650",
-      "slug_l1": "details-87673650",
-      "slug": "تفاصيل-87673650",
-      "location": [
-        {
-          "id": 1,
-          "level": 0,
-          "externalID": "1",
-          "name_l1": "KSA",
-          "name": "السعودية",
-          "slug_l1": "/ksa",
-          "slug": "/السعودية"
-        },
-        {
-          "id": 37,
-          "level": 1,
-          "externalID": "230",
-          "name_l1": "Riyadh",
-          "name": "الرياض",
-          "slug_l1": "/riyadh",
-          "slug": "/الرياض"
-        },
-        {
-          "id": 8484,
-          "level": 2,
-          "externalID": "12074",
-          "name_l1": "North Riyadh",
-          "name": "شمال الرياض",
-          "slug_l1": "/riyadh/north-riyadh",
-          "slug": "/الرياض/شمال-الرياض"
-        },
-        {
-          "id": 2907,
-          "level": 3,
-          "externalID": "5307",
-          "name_l1": "Al Arid",
-          "name": "العارض",
-          "slug_l1": "/riyadh/north-riyadh/al-arid",
-          "slug": "/الرياض/شمال-الرياض/العارض"
-        }
-      ],
-      "category": [
-        {
-          "id": 1,
-          "level": 0,
-          "externalID": "1",
-          "name_l1": "Residential",
-          "name": "سكني",
-          "slug_l1": "residential",
-          "slug": "residential",
-          "nameSingular_l1": "Residential",
-          "nameSingular": "سكني"
-        },
-        {
-          "id": 6,
-          "level": 1,
-          "externalID": "3",
-          "name_l1": "Apartments",
-          "name": "شقق",
-          "slug_l1": "apartments",
-          "slug": "apartments",
-          "nameSingular_l1": "Apartment",
-          "nameSingular": "شقة"
-        }
-      ],
-      "createdAt": 1752739929.0,
-      "updatedAt": 1752739930.0,
-      "reactivatedAt": 1748271608.0,
-      "rooms": 3,
-      "baths": 3,
-      "area": 105.0,
-      "coverPhoto": {
-        "id": 4584258,
-        "externalID": "1336221",
-        "title": null,
-        "orderIndex": 0,
-        "nimaScore": null,
-        "url": "https://bayut-sa-production.s3.eu-central-1.amazonaws.com/image/4584258/24f12fbd741b4a5286f5a60678c7c9ef",
-        "main": true,
-        "uuid": "236a5680-6d90-4d04-9f8c-87e4fe534746"
-      },
-      "photoCount": 18,
-      "videoCount": 0,
-      "panoramaCount": 0,
-      "phoneNumber": {
-        "mobile": "+966539992727",
-        "phone": "+966114888849",
-        "whatsapp": "966114049994",
-        "proxyMobile": "+966115002346",
-        "phoneNumbers": [
-          "+966114888849"
-        ],
-        "mobileNumbers": [
-          "+966539992727"
-        ]
-      },
-      "contactMethodAvailability": {
-        "whatsapp": true,
-        "sms": true,
-        "email": true,
-        "call": true
-      },
-      "contactName": "Ahmed",
-      "agency": {
-        "id": 15494,
-        "objectID": 15494,
-        "name_l1": "SATEL Co.",
-        "name": "ساتل",
-        "externalID": "1720192428",
-        "product": "platinum plus",
-        "productScore": 3,
-        "licenses": [],
-        "logo": {
-          "id": 3156854,
-          "url": "https://bayut-sa-production.s3.eu-central-1.amazonaws.com/image/3156854/a8ad7e553cd241169a67e7d9538cc595"
-        },
-        "slug_l1": "satel-realty-company-1720192428",
-        "slug": "satel-realty-company-1720192428",
-        "tr": 4,
-        "tier": 4,
-        "roles": [],
-        "active": true,
-        "createdAt": "2023-05-07T02:40:40+00:00",
-        "commercialNumber": null,
-        "shortNumber": null,
-        "type": "agency"
-      },
-      "isVerified": false,
-      "verification": {
-        "updatedAt": 1748337927.392694,
-        "eligible": false,
-        "status": "unverified",
-        "verifiedAt": null,
-        "trucheckedAt": 0
-      },
-      "floorPlanID": null,
-      "furnishingStatus": "furnished",
-      "extraFields": {
-        "rega_location_city": {
-          "ar": "الرياض",
-          "en": "Riyadh"
-        },
-        "rega_location_region": {
-          "ar": "منطقة الرياض",
-          "en": "منطقة الرياض"
-        },
-        "ad_license_expiry_date": 1779656400,
-        "rega_location_district": {
-          "ar": "العارض",
-          "en": "Al Arid"
-        },
-        "rega_location_latitude": 24.84567375378327,
-        "rega_location_longitude": 46.6324245005511,
-        "rega_utilities_sewerage": {
-          "ar": "نعم",
-          "en": "Yes"
-        },
-        "rega_location_postal_code": "13332",
-        "rega_location_street_name": {
-          "ar": "الكاتب",
-          "en": "الكاتب"
-        },
-        "rega_property_specs_price": 100000.0,
-        "rega_additional_info_notes": "",
-        "rega_license_info_end_date": "2026-05-25",
-        "rega_utilities_electricity": {
-          "ar": "نعم",
-          "en": "Yes"
-        },
-        "rega_borders_east_limit_name": ":",
-        "rega_borders_west_limit_name": ":",
-        "rega_license_info_start_date": "2025-05-26",
-        "rega_additional_info_channels": {
-          "ar": "منصة مرخصة ،لوحة اعلانية ،منصات التواصل الإجتماعي ،الإذاعة ،أخرى",
-          "en": "Licensed platform, Bulletin board, Social media platforms, Radio, Other"
-        },
-        "rega_borders_north_limit_name": ":",
-        "rega_borders_south_limit_name": ":",
-        "rega_location_building_number": "2602",
-        "rega_property_specs_area_size": 105.64,
-        "rega_deed_location_description": "حي البساتين بمدينة الرياض  مساحة الوحدة من الأرض 61.38 متر   وتختص من المنافع والأجزاء المشتركة بمساحة 40.39 متر ",
-        "rega_location_additional_number": "7245",
-        "rega_additional_info_deed_number": "399022005764",
-        "rega_additional_info_land_number": "28",
-        "rega_additional_info_listing_age": {
-          "ar": "سنة",
-          "en": "1 year"
-        },
-        "rega_additional_info_plan_number": "3286",
-        "rega_property_specs_listing_type": {
-          "ar": "شقق",
-          "en": "Apartment"
-        },
-        "rega_additional_info_street_width": 0.0,
-        "rega_property_specs_listing_usage": {
-          "ar": "",
-          "en": ""
-        },
-        "rega_borders_east_limit_description": "وحدة 1/5 ومنور 6 ومنور 5",
-        "rega_borders_east_limit_length_char": "2.900 + 1.400 + 1.780 + 3.580 + 2.980 + 1.590 + 1.720 + 0.620 + 2.420 + 0.540 + 4.180",
-        "rega_borders_west_limit_description": "حديقة 7",
-        "rega_borders_west_limit_length_char": "2.170 + 1.190 + 13.810",
-        "rega_license_info_ad_license_number": "7200547615",
-        "rega_property_specs_number_of_rooms": 3.0,
-        "rega_borders_north_limit_description": "موزع رئيسي",
-        "rega_borders_north_limit_length_char": "ستة  متر   و  عشرة   سنتيمتر",
-        "rega_borders_south_limit_description": "مواقف  وشارع 36",
-        "rega_borders_south_limit_length_char": "خمسة  متر   و  ثمانية و خمسون  سنتيمتر",
-        "brokerage_and_marketing_license_number": "1200010193",
-        "rega_additional_info_is_listing_pawned": {
-          "ar": "نعم",
-          "en": "Yes"
-        },
-        "rega_property_specs_advertisement_type": {
-          "ar": "للإيجار",
-          "en": "For Rent"
-        },
-        "rega_additional_info_is_listing_constrained": {
-          "ar": "لا",
-          "en": "No"
-        },
-        "rega_additional_info_obligations_on_listing": "مرهون",
-        "rega_additional_info_guarantees_and_duration": "",
-        "dldPropertySK": "87673650"
-      },
-      "type": "property",
-      "ownerAgent": {
-        "externalID": "00000000-efdc-801f-8000-024213371337",
-        "name_l1": "Ahmed",
-        "name": "أحمد",
-        "user_image": "https://bayut-sa-production.s3.eu-central-1.amazonaws.com/image/4287931/c9a623fe4e3745bf86ac285b7d244548",
-        "user_image_id": 4287931,
-        "isTruBroker": true,
-        "slug_l1": "ahmed-00000000-efdc-801f-8000-024213371337",
-        "slug": "ahmed-00000000-efdc-801f-8000-024213371337",
-        "state": "active",
-        "isProfileCompleted": true,
-        "isComplete": true
-      },
-      "completionStatus": "completed",
-      "hasMatchingFloorPlans": false,
-      "photoIDs": [
-        4584258,
-        4584259,
-        4584260,
-        4584261,
-        4584262,
-        4584263,
-        4584264,
-        4584265,
-        4584266,
-        4584267,
-        4584268,
-        4584269,
-        4584270,
-        4584271,
-        4584272,
-        4584273,
-        4584274,
-        4584275
-      ],
-      "hidePrice": false,
-      "locationPurposeTier": 0,
-      "plotArea": null,
-      "additionalCategories": [
-        [
-          {
-            "id": 1,
-            "level": 0,
-            "externalID": "1",
-            "name_l1": "Residential",
-            "name": "سكني",
-            "slug_l1": "residential",
-            "slug": "residential",
-            "nameSingular_l1": "Residential",
-            "nameSingular": "سكني"
-          },
-          {
-            "id": 6,
-            "level": 1,
-            "externalID": "3",
-            "name_l1": "Apartments",
-            "name": "شقق",
-            "slug_l1": "apartments",
-            "slug": "apartments",
-            "nameSingular_l1": "Apartment",
-            "nameSingular": "شقة"
-          }
-        ]
-      ],
-      "objectID": "1058955",
-      "_highlightResult": {
-        "title_l1": {
-          "value": "Luxury unfurnished apartment in Al Arid District.",
-          "matchLevel": "none",
-          "matchedWords": []
-        },
-        "title": {
-          "value": "شقة فاخرة غير مفروشة في حي العارض.",
-          "matchLevel": "none",
-          "matchedWords": []
-        },
-        "externalID": {
-          "value": "87673650",
-          "matchLevel": "none",
-          "matchedWords": []
-        },
-        "agency": {
-          "name_l1": {
-            "value": "SATEL Co.",
-            "matchLevel": "none",
-            "matchedWords": []
-          },
-          "name": {
-            "value": "ساتل",
-            "matchLevel": "none",
-            "matchedWords": []
-          }
-        },
-        "keywords": [
-          {
-            "value": "حديقة",
-            "matchLevel": "none",
-            "matchedWords": []
-          },
-          {
-            "value": "مودرن",
-            "matchLevel": "none",
-            "matchedWords": []
-          },
-          {
-            "value": "مؤثثة",
-            "matchLevel": "none",
-            "matchedWords": []
-          },
-          {
-            "value": "جاهزة",
-            "matchLevel": "none",
-            "matchedWords": []
-          },
-          {
-            "value": "الطابق السفلي",
-            "matchLevel": "none",
-            "matchedWords": []
-          },
-          {
-            "value": "جاهز",
-            "matchLevel": "none",
-            "matchedWords": []
-          },
-          {
-            "value": "موقف سيارة",
-            "matchLevel": "none",
-            "matchedWords": []
-          },
-          {
-            "value": "بحر",
-            "matchLevel": "none",
-            "matchedWords": []
-          },
-          {
-            "value": "مطبخ",
-            "matchLevel": "none",
-            "matchedWords": []
-          },
-          {
-            "value": "فاخرة",
-            "matchLevel": "none",
-            "matchedWords": []
-          },
-          {
-            "value": "غير مفروشة",
-            "matchLevel": "none",
-            "matchedWords": []
-          },
-          {
-            "value": "مفروشة",
-            "matchLevel": "none",
-            "matchedWords": []
-          },
-          {
-            "value": "حديثة",
-            "matchLevel": "none",
-            "matchedWords": []
-          },
-          {
-            "value": "مشتركة",
-            "matchLevel": "none",
-            "matchedWords": []
-          },
-          {
-            "value": "مصعد",
-            "matchLevel": "none",
-            "matchedWords": []
-          },
-          {
-            "value": "خدم",
-            "matchLevel": "none",
-            "matchedWords": []
-          },
-          {
-            "value": "نادي رياضي",
-            "matchLevel": "none",
-            "matchedWords": []
-          },
-          {
-            "value": "مفروش",
-            "matchLevel": "none",
-            "matchedWords": []
-          },
-          {
-            "value": "شيرنج",
             "matchLevel": "none",
             "matchedWords": []
           }
