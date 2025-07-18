@@ -4,11 +4,10 @@ from sqlalchemy import create_engine
 from sqlalchemy.dialects.postgresql import insert
 from sqlalchemy.orm import sessionmaker
 
-from models import (
+from src.models import (
     Agency,
     Agent,
     Document,
-    Location,
     Media,
     PaymentPlan,
     Project,
@@ -77,11 +76,13 @@ def insert_full_property_record(property_data):
         agency_id = upsert_agency(session, property_data.get("agency"))
         agent_id = upsert_agent(session, property_data.get("agent"))
         project_id = upsert_project(session, property_data.get("project"))
+
         # Prepare property core fields
         prop_fields = {k: v for k, v in property_data.items() if k in PROPERTY_COLUMNS}
         prop_fields["agency_id"] = agency_id
         prop_fields["agent_id"] = agent_id
         prop_fields["project_id"] = project_id
+
         # Upsert property
         stmt = insert(Property).values(**prop_fields)
         update_cols = {
@@ -105,22 +106,22 @@ def insert_full_property_record(property_data):
                 f"Property with external_id {prop_fields['external_id']} not found after insertion"
             )
         property_id = prop.id
-        # Insert related locations
-        for loc in property_data.get("locations", []):
-            loc["property_id"] = property_id
-            session.merge(Location(**loc))
+
         # Insert related media
         for media in property_data.get("media", []):
             media["property_id"] = property_id
             session.merge(Media(**media))
+
         # Insert related payment plans
         for plan in property_data.get("payment_plans", []):
             plan["property_id"] = property_id
             session.merge(PaymentPlan(**plan))
+
         # Insert related documents
         for doc in property_data.get("documents", []):
             doc["property_id"] = property_id
             session.merge(Document(**doc))
+
         session.commit()
     except Exception:
         session.rollback()
@@ -158,7 +159,7 @@ def bulk_insert_properties(properties_data):
 def backfill_properties_to_normalized_tables():
     """
     For each property in the DB, parse extra_fields and related columns,
-    and populate the new normalized tables (locations, media, agencies, agents, projects, payment_plans, documents).
+    and populate the new normalized tables (media, agencies, agents, projects, payment_plans, documents).
     """
     session = SessionLocal()
     try:
@@ -196,173 +197,128 @@ def backfill_properties_to_normalized_tables():
                     agent_name = extra_fields.get("agent_name")
                     agent_name_ar = extra_fields.get("agent_name_ar")
                     phone_info = extra_fields.get("phone", {})
-                    if isinstance(phone_info, dict):
-                        phone = phone_info.get("mobile")
-                        whatsapp = phone_info.get("whatsapp")
-                    else:
-                        phone = None
-                        whatsapp = None
-
                     agent_data = {
                         "name": agent_name,
                         "name_ar": agent_name_ar,
-                        "phone": phone,
-                        "whatsapp": whatsapp,
+                        "phone": phone_info.get("number") if phone_info else None,
+                        "email": extra_fields.get("email"),
+                        "image": extra_fields.get("agent_image"),
                     }
 
             # Parse project
             project_data = None
             if extra_fields is not None and isinstance(extra_fields, dict):
                 project_data = extra_fields.get("project")
+                if not project_data and extra_fields.get("project_name"):
+                    project_data = {
+                        "name": extra_fields.get("project_name"),
+                        "name_ar": extra_fields.get("project_name_ar"),
+                        "description": extra_fields.get("project_description"),
+                        "developer": extra_fields.get("developer"),
+                    }
 
             # Upsert agency, agent, project
             agency_id = upsert_agency(session, agency_data)
             agent_id = upsert_agent(session, agent_data)
             project_id = upsert_project(session, project_data)
 
-            # Update property with FKs (handle None values)
-            if agency_id is not None:
-                prop.agency_id = agency_id
-            if agent_id is not None:
-                prop.agent_id = agent_id
-            if project_id is not None:
-                prop.project_id = project_id
-            session.flush()
-            property_id = prop.id
+            # Update property with foreign keys
+            if agency_id is not None:  # type: ignore
+                prop.agency_id = agency_id  # type: ignore
+            if agent_id is not None:  # type: ignore
+                prop.agent_id = agent_id  # type: ignore
+            if project_id is not None:  # type: ignore
+                prop.project_id = project_id  # type: ignore
 
-            # Locations
-            locations = []
-            if extra_fields is not None and isinstance(extra_fields, dict):
-                locs = extra_fields.get("location_hierarchy") or extra_fields.get(
-                    "location"
-                )
-                if isinstance(locs, list):
-                    for location in locs:
-                        locations.append(
-                            {
-                                "property_id": property_id,
-                                "level": location.get("level"),
-                                "external_id": location.get("externalID"),
-                                "name": location.get("name"),
-                                "name_l1": location.get("name_l1"),
-                                "slug": location.get("slug"),
-                                "slug_l1": location.get("slug_l1"),
-                            }
-                        )
-            for loc in locations:
-                session.merge(Location(**loc))
+            # Parse and insert media
+            media_list = extra_fields.get("media", []) if extra_fields else []
+            for media_item in media_list:
+                if isinstance(media_item, dict):
+                    media_data = {
+                        "property_id": prop.id,
+                        "type": media_item.get("type", "image"),
+                        "url": media_item.get("url"),
+                        "title": media_item.get("title"),
+                        "description": media_item.get("description"),
+                    }
+                    session.merge(Media(**media_data))
 
-            # Media - handle photoIDs, photo_url, and photos
-            media_items = []
-            if extra_fields is not None and isinstance(extra_fields, dict):
-                # Handle photoIDs (array of IDs)
-                photo_ids = extra_fields.get("photoIDs", [])
-                if isinstance(photo_ids, list):
-                    for photo_id in photo_ids:
-                        # Construct URL from photo ID (Bayut pattern)
-                        photo_url = f"https://bayut-sa-production.s3.eu-central-1.amazonaws.com/image/{photo_id}"
-                        media_items.append(
-                            {
-                                "property_id": property_id,
-                                "type": "photo",
-                                "url": photo_url,
-                                "title": f"Photo {photo_id}",
-                            }
-                        )
-
-                # Handle photo_url object
-                photo_url_obj = extra_fields.get("photo_url")
-                if isinstance(photo_url_obj, dict) and photo_url_obj.get("url"):
-                    media_items.append(
-                        {
-                            "property_id": property_id,
-                            "type": "photo",
-                            "url": photo_url_obj.get("url"),
-                            "title": photo_url_obj.get("title") or "Cover Photo",
-                        }
-                    )
-
-                # Handle photos array (if exists)
-                photos = extra_fields.get("photos") or []
-                for p in photos:
-                    if isinstance(p, dict) and p.get("url"):
-                        media_items.append(
-                            {
-                                "property_id": property_id,
-                                "type": "photo",
-                                "url": p.get("url"),
-                                "title": p.get("title"),
-                            }
-                        )
-
-                # Handle videos array (if exists)
-                videos = extra_fields.get("videos") or []
-                for v in videos:
-                    if isinstance(v, dict) and v.get("url"):
-                        media_items.append(
-                            {
-                                "property_id": property_id,
-                                "type": "video",
-                                "url": v.get("url"),
-                                "title": v.get("title"),
-                            }
-                        )
-
-            # Insert media items (avoid duplicates)
-            for media in media_items:
-                if media["url"]:
-                    # Check if this URL already exists for this property
-                    existing = (
-                        session.query(Media)
-                        .filter_by(property_id=property_id, url=media["url"])
-                        .first()
-                    )
-                    if not existing:
-                        session.merge(Media(**media))
-
-            # Payment plans
-            payment_plans = []
-            if extra_fields is not None and isinstance(extra_fields, dict):
-                plans = (
-                    extra_fields.get("paymentPlans")
-                    or extra_fields.get("payment_plans")
-                    or []
-                )
-                for plan in plans:
-                    payment_plans.append(
-                        {
-                            "property_id": property_id,
-                            "plan_type": plan.get("plan_type"),
-                            "down_payment": plan.get("down_payment"),
-                            "installments": plan.get("installments"),
-                        }
-                    )
+            # Parse and insert payment plans
+            payment_plans = (
+                extra_fields.get("payment_plans", []) if extra_fields else []
+            )
             for plan in payment_plans:
-                session.merge(PaymentPlan(**plan))
+                if isinstance(plan, dict):
+                    plan_data = {
+                        "property_id": prop.id,
+                        "name": plan.get("name"),
+                        "description": plan.get("description"),
+                        "down_payment": plan.get("down_payment"),
+                        "monthly_payment": plan.get("monthly_payment"),
+                        "duration": plan.get("duration"),
+                    }
+                    session.merge(PaymentPlan(**plan_data))
 
-            # Documents
-            documents = []
-            if extra_fields is not None and isinstance(extra_fields, dict):
-                docs = extra_fields.get("documents") or []
-                for doc in docs:
-                    documents.append(
-                        {
-                            "property_id": property_id,
-                            "doc_type": doc.get("doc_type"),
-                            "url": doc.get("url"),
-                        }
-                    )
+            # Parse and insert documents
+            documents = extra_fields.get("documents", []) if extra_fields else []
             for doc in documents:
-                if doc["url"]:
-                    session.merge(Document(**doc))
+                if isinstance(doc, dict):
+                    doc_data = {
+                        "property_id": prop.id,
+                        "type": doc.get("type"),
+                        "title": doc.get("title"),
+                        "url": doc.get("url"),
+                        "description": doc.get("description"),
+                    }
+                    session.merge(Document(**doc_data))
 
         session.commit()
-        print(
-            f"Successfully backfilled normalized tables for {len(properties)} properties"
-        )
+        print(f"✅ Backfilled {len(properties)} properties to normalized tables")
     except Exception as e:
         session.rollback()
-        print(f"Error during backfill: {e}")
+        print(f"❌ Error during backfill: {e}")
         raise
+    finally:
+        session.close()
+
+
+def get_property_stats():
+    """Get statistics about the properties in the database."""
+    session = SessionLocal()
+    try:
+        total_properties = session.query(Property).count()
+        properties_with_agency = (
+            session.query(Property).filter(Property.agency_id.isnot(None)).count()
+        )
+        properties_with_agent = (
+            session.query(Property).filter(Property.agent_id.isnot(None)).count()
+        )
+        properties_with_project = (
+            session.query(Property).filter(Property.project_id.isnot(None)).count()
+        )
+
+        total_agencies = session.query(Agency).count()
+        total_agents = session.query(Agent).count()
+        total_projects = session.query(Project).count()
+        total_media = session.query(Media).count()
+        total_payment_plans = session.query(PaymentPlan).count()
+        total_documents = session.query(Document).count()
+
+        return {
+            "properties": {
+                "total": total_properties,
+                "with_agency": properties_with_agency,
+                "with_agent": properties_with_agent,
+                "with_project": properties_with_project,
+            },
+            "related_data": {
+                "agencies": total_agencies,
+                "agents": total_agents,
+                "projects": total_projects,
+                "media": total_media,
+                "payment_plans": total_payment_plans,
+                "documents": total_documents,
+            },
+        }
     finally:
         session.close()
