@@ -40,9 +40,11 @@ select = [
     "UP", # pyupgrade
 ]
 ignore = [
-    "E501",  # line too long, handled by formatter
+    "E501",  # line too long (handled by black)
     "B008",  # do not perform function calls in argument defaults
-    "C901",  # too complex
+    "B011",  # do not call assert False since python -O removes these calls
+    "UP035", # typing.Dict/List deprecated (just warnings)
+    "UP006", # Use dict/list instead of Dict/List (just warnings)
 ]
 
 [tool.ruff.lint.per-file-ignores]
@@ -79,14 +81,13 @@ extend-exclude = '''
 
 [tool.vulture]
 exclude = [
-    ".venv/",
-    ".git/",
-    "__pycache__/",
-    "*.pyc",
-    "build/",
-    "dist/",
-    ".pytest_cache/",
-    "alembic/",
+    ".venv",
+    ".git",
+    "__pycache__",
+    "build",
+    "dist",
+    "alembic",
+    "migrations",
 ]
 
 [tool.pytest.ini_options]

@@ -177,9 +177,11 @@ def backfill_properties_to_normalized_tables():
                         agency_data = {
                             "name": agency_name_obj.get("name"),
                             "name_ar": agency_name_obj.get("name_l1"),
-                            "logo": agency_name_obj.get("logo", {}).get("url")
-                            if agency_name_obj.get("logo")
-                            else None,
+                            "logo": (
+                                agency_name_obj.get("logo", {}).get("url")
+                                if agency_name_obj.get("logo")
+                                else None
+                            ),
                         }
                     elif isinstance(agency_name_obj, str):
                         agency_data = {"name": agency_name_obj}

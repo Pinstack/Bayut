@@ -586,19 +586,23 @@ class EnhancedBayutScraper:
                 "created_at": listing.created_at,
                 "updated_at": listing.updated_at,
                 # JSONB fields
-                "amenities": listing.extra_fields.get("amenities")
-                if listing.extra_fields
-                else None,
-                "images": listing.extra_fields.get("images")
-                if listing.extra_fields
-                else None,
-                "license_info": {
-                    "permit_number": listing.permit_number,
-                    "reference_number": listing.reference_number,
-                    "rega_data": listing.extra_fields,
-                }
-                if listing.extra_fields
-                else None,
+                "amenities": (
+                    listing.extra_fields.get("amenities")
+                    if listing.extra_fields
+                    else None
+                ),
+                "images": (
+                    listing.extra_fields.get("images") if listing.extra_fields else None
+                ),
+                "license_info": (
+                    {
+                        "permit_number": listing.permit_number,
+                        "reference_number": listing.reference_number,
+                        "rega_data": listing.extra_fields,
+                    }
+                    if listing.extra_fields
+                    else None
+                ),
                 "location_details": {
                     "hierarchy": listing.location_hierarchy,
                     "geography": listing.geography,
