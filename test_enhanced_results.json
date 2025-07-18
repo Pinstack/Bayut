@@ -193,7 +193,7 @@
     "furnishing_status": "furnished",
     "completion_status": "completed",
     "is_verified": false,
-    "scraped_at": "2025-07-18T14:23:22.270502",
+    "scraped_at": "2025-07-18T14:27:34.641467",
     "created_at": 1752843135.0,
     "updated_at": 1752843136.0,
     "geography": {
@@ -846,7 +846,7 @@
     "furnishing_status": "unfurnished",
     "completion_status": "completed",
     "is_verified": false,
-    "scraped_at": "2025-07-18T14:23:22.270542",
+    "scraped_at": "2025-07-18T14:27:34.641497",
     "created_at": 1752837930.0,
     "updated_at": 1752838175.0,
     "geography": {
@@ -1558,7 +1558,7 @@
     "furnishing_status": "unfurnished",
     "completion_status": "completed",
     "is_verified": false,
-    "scraped_at": "2025-07-18T14:23:22.270560",
+    "scraped_at": "2025-07-18T14:27:34.641508",
     "created_at": 1752813020.0,
     "updated_at": 1752813020.0,
     "geography": {
@@ -2237,7 +2237,7 @@
     "furnishing_status": "unfurnished",
     "completion_status": "completed",
     "is_verified": false,
-    "scraped_at": "2025-07-18T14:23:22.270574",
+    "scraped_at": "2025-07-18T14:27:34.641517",
     "created_at": 1752812993.0,
     "updated_at": 1752812993.0,
     "geography": {
@@ -2947,7 +2947,7 @@
     "furnishing_status": "unfurnished",
     "completion_status": "completed",
     "is_verified": false,
-    "scraped_at": "2025-07-18T14:23:22.270591",
+    "scraped_at": "2025-07-18T14:27:34.641527",
     "created_at": 1752812988.0,
     "updated_at": 1752812989.0,
     "geography": {
@@ -3645,7 +3645,7 @@
     "furnishing_status": "unfurnished",
     "completion_status": "completed",
     "is_verified": false,
-    "scraped_at": "2025-07-18T14:23:22.270604",
+    "scraped_at": "2025-07-18T14:27:34.641536",
     "created_at": 1752812870.0,
     "updated_at": 1752812870.0,
     "geography": {
@@ -4426,7 +4426,7 @@
     "furnishing_status": "unfurnished",
     "completion_status": "completed",
     "is_verified": false,
-    "scraped_at": "2025-07-18T14:23:22.270619",
+    "scraped_at": "2025-07-18T14:27:34.641544",
     "created_at": 1752812839.0,
     "updated_at": 1752812840.0,
     "geography": {
@@ -5199,7 +5199,7 @@
     "furnishing_status": "unfurnished",
     "completion_status": "completed",
     "is_verified": false,
-    "scraped_at": "2025-07-18T14:23:22.270632",
+    "scraped_at": "2025-07-18T14:27:34.641552",
     "created_at": 1752812751.0,
     "updated_at": 1752812752.0,
     "geography": {
@@ -5911,7 +5911,7 @@
     "furnishing_status": "unfurnished",
     "completion_status": "completed",
     "is_verified": false,
-    "scraped_at": "2025-07-18T14:23:22.270646",
+    "scraped_at": "2025-07-18T14:27:34.641560",
     "created_at": 1752812733.0,
     "updated_at": 1752812733.0,
     "geography": {
@@ -6648,7 +6648,7 @@
     "furnishing_status": "unfurnished",
     "completion_status": "completed",
     "is_verified": false,
-    "scraped_at": "2025-07-18T14:23:22.270660",
+    "scraped_at": "2025-07-18T14:27:34.641568",
     "created_at": 1752812729.0,
     "updated_at": 1752812730.0,
     "geography": {
@@ -7451,7 +7451,7 @@
     "furnishing_status": "unfurnished",
     "completion_status": "completed",
     "is_verified": false,
-    "scraped_at": "2025-07-18T14:23:22.270674",
+    "scraped_at": "2025-07-18T14:27:34.641576",
     "created_at": 1752811904.0,
     "updated_at": 1752811904.0,
     "geography": {
@@ -8184,7 +8184,7 @@
     "furnishing_status": "unfurnished",
     "completion_status": "completed",
     "is_verified": false,
-    "scraped_at": "2025-07-18T14:23:22.270690",
+    "scraped_at": "2025-07-18T14:27:34.641584",
     "created_at": 1752810200.0,
     "updated_at": 1752810200.0,
     "geography": {
@@ -8921,7 +8921,7 @@
     "furnishing_status": "unfurnished",
     "completion_status": "completed",
     "is_verified": false,
-    "scraped_at": "2025-07-18T14:23:22.270704",
+    "scraped_at": "2025-07-18T14:27:34.641592",
     "created_at": 1752777194.0,
     "updated_at": 1752777194.0,
     "geography": {
@@ -9618,7 +9618,7 @@
     "furnishing_status": "unfurnished",
     "completion_status": "completed",
     "is_verified": false,
-    "scraped_at": "2025-07-18T14:23:22.270717",
+    "scraped_at": "2025-07-18T14:27:34.641600",
     "created_at": 1752776769.0,
     "updated_at": 1752776769.0,
     "geography": {
@@ -10210,7 +10210,7 @@
     "furnishing_status": "furnished",
     "completion_status": "completed",
     "is_verified": false,
-    "scraped_at": "2025-07-18T14:23:22.270730",
+    "scraped_at": "2025-07-18T14:27:34.641608",
     "created_at": 1752776750.0,
     "updated_at": 1752776750.0,
     "geography": {
@@ -10838,7 +10838,7 @@
     "furnishing_status": "unfurnished",
     "completion_status": "completed",
     "is_verified": false,
-    "scraped_at": "2025-07-18T14:23:22.270743",
+    "scraped_at": "2025-07-18T14:27:34.641616",
     "created_at": 1752768252.0,
     "updated_at": 1752768252.0,
     "geography": {
@@ -11478,7 +11478,7 @@
     "furnishing_status": "unfurnished",
     "completion_status": "completed",
     "is_verified": false,
-    "scraped_at": "2025-07-18T14:23:22.270756",
+    "scraped_at": "2025-07-18T14:27:34.641625",
     "created_at": 1752768247.0,
     "updated_at": 1752768247.0,
     "geography": {
@@ -12150,7 +12150,7 @@
     "furnishing_status": "unfurnished",
     "completion_status": "completed",
     "is_verified": false,
-    "scraped_at": "2025-07-18T14:23:22.270770",
+    "scraped_at": "2025-07-18T14:27:34.641632",
     "created_at": 1752760724.0,
     "updated_at": 1752761585.0,
     "geography": {
@@ -12850,7 +12850,7 @@
     "furnishing_status": "unfurnished",
     "completion_status": "completed",
     "is_verified": false,
-    "scraped_at": "2025-07-18T14:23:22.270783",
+    "scraped_at": "2025-07-18T14:27:34.641640",
     "created_at": 1752751826.0,
     "updated_at": 1752751826.0,
     "geography": {
@@ -13506,7 +13506,7 @@
     "furnishing_status": "unfurnished",
     "completion_status": "completed",
     "is_verified": false,
-    "scraped_at": "2025-07-18T14:23:22.270796",
+    "scraped_at": "2025-07-18T14:27:34.641649",
     "created_at": 1752741865.0,
     "updated_at": 1752741865.0,
     "geography": {
@@ -14207,7 +14207,7 @@
     "furnishing_status": "unfurnished",
     "completion_status": "completed",
     "is_verified": false,
-    "scraped_at": "2025-07-18T14:23:22.270811",
+    "scraped_at": "2025-07-18T14:27:34.641657",
     "created_at": 1752741658.0,
     "updated_at": 1752743224.0,
     "geography": {
@@ -14920,7 +14920,7 @@
     "furnishing_status": "unfurnished",
     "completion_status": "completed",
     "is_verified": false,
-    "scraped_at": "2025-07-18T14:23:22.270825",
+    "scraped_at": "2025-07-18T14:27:34.641665",
     "created_at": 1752740099.0,
     "updated_at": 1752740099.0,
     "geography": {
@@ -15596,7 +15596,7 @@
     "furnishing_status": "furnished",
     "completion_status": "completed",
     "is_verified": false,
-    "scraped_at": "2025-07-18T14:23:22.270839",
+    "scraped_at": "2025-07-18T14:27:34.641675",
     "created_at": 1752740075.0,
     "updated_at": 1752740075.0,
     "geography": {
@@ -16259,7 +16259,7 @@
     "furnishing_status": "unfurnished",
     "completion_status": "completed",
     "is_verified": false,
-    "scraped_at": "2025-07-18T14:23:22.270852",
+    "scraped_at": "2025-07-18T14:27:34.641683",
     "created_at": 1752740019.0,
     "updated_at": 1752740019.0,
     "geography": {
@@ -16971,7 +16971,7 @@
     "furnishing_status": "furnished",
     "completion_status": "completed",
     "is_verified": false,
-    "scraped_at": "2025-07-18T14:23:22.270865",
+    "scraped_at": "2025-07-18T14:27:34.641691",
     "created_at": 1752739961.0,
     "updated_at": 1752739961.0,
     "geography": {

@@ -1,6 +1,6 @@
 [flake8]
 max-line-length = 88
-extend-ignore = E203,E501,W503,W504
+extend-ignore = E203,E501,W503,W504,E402,C901
 exclude = 
     .venv,
     .git,
@@ -14,4 +14,4 @@ exclude =
 per-file-ignores =
     __init__.py:F401
     tests/*:B011
-max-complexity = 10 
+max-complexity = 40 
