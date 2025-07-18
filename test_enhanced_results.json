@@ -1,5 +1,1241 @@
 [
   {
+    "external_id": "87683910",
+    "objectID": "1065328",
+    "title": "فلل للبيع في الصدفة، الدمام",
+    "title_ar": "Villas for Sale in Al Sadafah, Dammam",
+    "description": "",
+    "property_type": [
+      {
+        "id": 1,
+        "level": 0,
+        "externalID": "1",
+        "name_l1": "Residential",
+        "name": "سكني",
+        "slug_l1": "residential",
+        "slug": "residential",
+        "nameSingular_l1": "Residential",
+        "nameSingular": "سكني"
+      },
+      {
+        "id": 7,
+        "level": 1,
+        "externalID": "4",
+        "name_l1": "Villas",
+        "name": "فلل",
+        "slug_l1": "villas",
+        "slug": "villas",
+        "nameSingular_l1": "Villa",
+        "nameSingular": "فیلا"
+      }
+    ],
+    "property_type_ar": "property",
+    "purpose": "for-sale",
+    "price": 2690000.0,
+    "currency": "SAR",
+    "bedrooms": 4,
+    "bathrooms": 7,
+    "area": 372.0,
+    "area_unit": "sqm",
+    "location": [
+      {
+        "id": 1,
+        "level": 0,
+        "externalID": "1",
+        "name_l1": "KSA",
+        "name": "السعودية",
+        "slug_l1": "/ksa",
+        "slug": "/السعودية"
+      },
+      {
+        "id": 76,
+        "level": 1,
+        "externalID": "1359",
+        "name_l1": "Dammam",
+        "name": "الدمام",
+        "slug_l1": "/dammam",
+        "slug": "/الدمام"
+      },
+      {
+        "id": 3793,
+        "level": 2,
+        "externalID": "6380",
+        "name_l1": "Al Sadafah",
+        "name": "الصدفة",
+        "slug_l1": "/dammam/al-sadafah",
+        "slug": "/الدمام/الصدفة"
+      }
+    ],
+    "city": "الدمام",
+    "latitude": 26.377186562259,
+    "longitude": 50.22143025029,
+    "location_hierarchy": [
+      {
+        "id": 1,
+        "level": 0,
+        "externalID": "1",
+        "name_l1": "KSA",
+        "name": "السعودية",
+        "slug_l1": "/ksa",
+        "slug": "/السعودية"
+      },
+      {
+        "id": 76,
+        "level": 1,
+        "externalID": "1359",
+        "name_l1": "Dammam",
+        "name": "الدمام",
+        "slug_l1": "/dammam",
+        "slug": "/الدمام"
+      },
+      {
+        "id": 3793,
+        "level": 2,
+        "externalID": "6380",
+        "name_l1": "Al Sadafah",
+        "name": "الصدفة",
+        "slug_l1": "/dammam/al-sadafah",
+        "slug": "/الدمام/الصدفة"
+      }
+    ],
+    "agency_name": {
+      "id": 1245523,
+      "objectID": 1245523,
+      "name_l1": "CIVIL Real Estate",
+      "name": "سيفيل العقارية",
+      "externalID": "1720197598",
+      "product": "silver",
+      "productScore": 3,
+      "licenses": [],
+      "logo": {
+        "id": 4650474,
+        "url": "https://bayut-sa-production.s3.eu-central-1.amazonaws.com/image/4650474/4476e9a484494ef3ad62c2d6ae24a209"
+      },
+      "slug_l1": "al-durar-al-khaleejia-contracting-and-real-estate-development-company-1720197598",
+      "slug": "al-durar-al-khaleejia-contracting-and-real-estate-development-company-1720197598",
+      "tr": 4,
+      "tier": 4,
+      "roles": [],
+      "active": true,
+      "createdAt": "2025-06-19T14:49:15+00:00",
+      "commercialNumber": null,
+      "shortNumber": null,
+      "type": "agency"
+    },
+    "agency_name_ar": {
+      "id": 1245523,
+      "objectID": 1245523,
+      "name_l1": "CIVIL Real Estate",
+      "name": "سيفيل العقارية",
+      "externalID": "1720197598",
+      "product": "silver",
+      "productScore": 3,
+      "licenses": [],
+      "logo": {
+        "id": 4650474,
+        "url": "https://bayut-sa-production.s3.eu-central-1.amazonaws.com/image/4650474/4476e9a484494ef3ad62c2d6ae24a209"
+      },
+      "slug_l1": "al-durar-al-khaleejia-contracting-and-real-estate-development-company-1720197598",
+      "slug": "al-durar-al-khaleejia-contracting-and-real-estate-development-company-1720197598",
+      "tr": 4,
+      "tier": 4,
+      "roles": [],
+      "active": true,
+      "createdAt": "2025-06-19T14:49:15+00:00",
+      "commercialNumber": null,
+      "shortNumber": null,
+      "type": "agency"
+    },
+    "agent_name": "Abdulaziz Al-Qahtani",
+    "agent_name_ar": "Abdulaziz Al-Qahtani",
+    "phone": {
+      "mobile": "+966531618388",
+      "whatsapp": "966114049994",
+      "proxyMobile": "+966115002681",
+      "mobileNumbers": [
+        "+966531618388"
+      ]
+    },
+    "photo_url": {
+      "id": 4650506,
+      "externalID": "1408760",
+      "title": null,
+      "orderIndex": 0,
+      "nimaScore": null,
+      "url": "https://bayut-sa-production.s3.eu-central-1.amazonaws.com/image/4650506/1738a97a2741442f8256f080ae395c73",
+      "main": true,
+      "uuid": "fffad7f6-1450-48cf-bed4-456f9e8f1c1f"
+    },
+    "photo_count": 11,
+    "permit_number": "7200581203",
+    "furnishing_status": "unfurnished",
+    "completion_status": "completed",
+    "is_verified": false,
+    "scraped_at": "2025-07-18T15:26:02.815557",
+    "created_at": 1752846833.0,
+    "updated_at": 1752846833.0,
+    "geography": {
+      "lat": 26.377186562259,
+      "lng": 50.22143025029
+    },
+    "extra_fields": {
+      "rega_location_city": {
+        "ar": "الدمام",
+        "en": "Dammam"
+      },
+      "rega_location_region": {
+        "ar": "المنطقة الشرقية",
+        "en": "المنطقة الشرقية"
+      },
+      "ad_license_expiry_date": 1782766800,
+      "rega_location_district": {
+        "ar": "الصدفة",
+        "en": "Al Sadafah"
+      },
+      "rega_location_latitude": 26.37718656225883,
+      "rega_location_longitude": 50.22143025029012,
+      "rega_utilities_sewerage": {
+        "ar": "نعم",
+        "en": "Yes"
+      },
+      "rega_location_postal_code": "34215",
+      "rega_location_street_name": {
+        "ar": "شرحبيل بن سعد",
+        "en": "شرحبيل بن سعد"
+      },
+      "rega_property_specs_price": 2690000.0,
+      "rega_additional_info_notes": "",
+      "rega_license_info_end_date": "2026-06-30",
+      "rega_utilities_electricity": {
+        "ar": "نعم",
+        "en": "Yes"
+      },
+      "rega_license_info_start_date": "2025-06-30",
+      "rega_additional_info_channels": {
+        "ar": "منصة مرخصة ،لوحة اعلانية ،منصات التواصل الإجتماعي ،الإذاعة ،أخرى",
+        "en": "Licensed platform, Bulletin board, Social media platforms, Radio, Other"
+      },
+      "rega_location_building_number": "9218",
+      "rega_property_specs_area_size": 372.0,
+      "rega_deed_location_description": "حي الصدفة في  مدينة الخبر",
+      "rega_location_additional_number": "4299",
+      "rega_additional_info_deed_number": "760026339938",
+      "rega_additional_info_land_number": "6 / 1 / 44",
+      "rega_additional_info_listing_age": {
+        "ar": "جديد",
+        "en": "New"
+      },
+      "rega_additional_info_plan_number": "ش د 1145 معدل أول",
+      "rega_property_specs_listing_type": {
+        "ar": "فلل",
+        "en": "Villa"
+      },
+      "rega_additional_info_listing_face": {
+        "ar": "شرقية",
+        "en": "Eastern"
+      },
+      "rega_additional_info_street_width": 30.0,
+      "rega_property_specs_listing_usage": {
+        "ar": "",
+        "en": ""
+      },
+      "rega_license_info_ad_license_number": "7200581203",
+      "rega_property_specs_number_of_rooms": 8.0,
+      "brokerage_and_marketing_license_number": "1200019567",
+      "rega_additional_info_is_listing_pawned": {
+        "ar": "نعم",
+        "en": "Yes"
+      },
+      "rega_property_specs_advertisement_type": {
+        "ar": "للبيع",
+        "en": "For Sale"
+      },
+      "rega_additional_info_is_listing_constrained": {
+        "ar": "نعم",
+        "en": "Yes"
+      },
+      "rega_additional_info_obligations_on_listing": "يوجد",
+      "rega_additional_info_guarantees_and_duration": "",
+      "dldPropertySK": "87683910"
+    },
+    "raw_data": {
+      "id": 1065328,
+      "ownerID": "b72d94e0-558a-4437-b215-c66b4bcf2d6b",
+      "userExternalID": "b72d94e0-558a-4437-b215-c66b4bcf2d6b",
+      "sourceID": 68353,
+      "state": "active",
+      "geography": {
+        "lat": 26.377186562259,
+        "lng": 50.22143025029
+      },
+      "purpose": "for-sale",
+      "price": 2690000.0,
+      "product": "superhot",
+      "productLabel": "default",
+      "rentFrequency": null,
+      "referenceNumber": null,
+      "permitNumber": "7200581203",
+      "projectNumber": null,
+      "title_l1": "Villas for Sale in Al Sadafah, Dammam",
+      "title": "فلل للبيع في الصدفة، الدمام",
+      "externalID": "87683910",
+      "slug_l1": "details-87683910",
+      "slug": "تفاصيل-87683910",
+      "location": [
+        {
+          "id": 1,
+          "level": 0,
+          "externalID": "1",
+          "name_l1": "KSA",
+          "name": "السعودية",
+          "slug_l1": "/ksa",
+          "slug": "/السعودية"
+        },
+        {
+          "id": 76,
+          "level": 1,
+          "externalID": "1359",
+          "name_l1": "Dammam",
+          "name": "الدمام",
+          "slug_l1": "/dammam",
+          "slug": "/الدمام"
+        },
+        {
+          "id": 3793,
+          "level": 2,
+          "externalID": "6380",
+          "name_l1": "Al Sadafah",
+          "name": "الصدفة",
+          "slug_l1": "/dammam/al-sadafah",
+          "slug": "/الدمام/الصدفة"
+        }
+      ],
+      "category": [
+        {
+          "id": 1,
+          "level": 0,
+          "externalID": "1",
+          "name_l1": "Residential",
+          "name": "سكني",
+          "slug_l1": "residential",
+          "slug": "residential",
+          "nameSingular_l1": "Residential",
+          "nameSingular": "سكني"
+        },
+        {
+          "id": 7,
+          "level": 1,
+          "externalID": "4",
+          "name_l1": "Villas",
+          "name": "فلل",
+          "slug_l1": "villas",
+          "slug": "villas",
+          "nameSingular_l1": "Villa",
+          "nameSingular": "فیلا"
+        }
+      ],
+      "createdAt": 1752846833.0,
+      "updatedAt": 1752846833.0,
+      "reactivatedAt": 1751279314.0,
+      "rooms": 4,
+      "baths": 7,
+      "area": 372.0,
+      "coverPhoto": {
+        "id": 4650506,
+        "externalID": "1408760",
+        "title": null,
+        "orderIndex": 0,
+        "nimaScore": null,
+        "url": "https://bayut-sa-production.s3.eu-central-1.amazonaws.com/image/4650506/1738a97a2741442f8256f080ae395c73",
+        "main": true,
+        "uuid": "fffad7f6-1450-48cf-bed4-456f9e8f1c1f"
+      },
+      "coverVideo": {
+        "externalID": 12509,
+        "title": null,
+        "host": "youtube",
+        "url": "https://youtube.com/shorts/nRB_oBCLn-Y",
+        "orderIndex": 0
+      },
+      "photoCount": 11,
+      "videoCount": 1,
+      "panoramaCount": 0,
+      "phoneNumber": {
+        "mobile": "+966531618388",
+        "whatsapp": "966114049994",
+        "proxyMobile": "+966115002681",
+        "mobileNumbers": [
+          "+966531618388"
+        ]
+      },
+      "contactMethodAvailability": {
+        "whatsapp": true,
+        "sms": true,
+        "email": true,
+        "call": true
+      },
+      "contactName": "Abdulaziz Al-Qahtani",
+      "agency": {
+        "id": 1245523,
+        "objectID": 1245523,
+        "name_l1": "CIVIL Real Estate",
+        "name": "سيفيل العقارية",
+        "externalID": "1720197598",
+        "product": "silver",
+        "productScore": 3,
+        "licenses": [],
+        "logo": {
+          "id": 4650474,
+          "url": "https://bayut-sa-production.s3.eu-central-1.amazonaws.com/image/4650474/4476e9a484494ef3ad62c2d6ae24a209"
+        },
+        "slug_l1": "al-durar-al-khaleejia-contracting-and-real-estate-development-company-1720197598",
+        "slug": "al-durar-al-khaleejia-contracting-and-real-estate-development-company-1720197598",
+        "tr": 4,
+        "tier": 4,
+        "roles": [],
+        "active": true,
+        "createdAt": "2025-06-19T14:49:15+00:00",
+        "commercialNumber": null,
+        "shortNumber": null,
+        "type": "agency"
+      },
+      "isVerified": false,
+      "verification": {
+        "updatedAt": 1751442491.512406,
+        "eligible": false,
+        "status": "unverified",
+        "verifiedAt": null,
+        "trucheckedAt": 0
+      },
+      "floorPlanID": null,
+      "furnishingStatus": "unfurnished",
+      "extraFields": {
+        "rega_location_city": {
+          "ar": "الدمام",
+          "en": "Dammam"
+        },
+        "rega_location_region": {
+          "ar": "المنطقة الشرقية",
+          "en": "المنطقة الشرقية"
+        },
+        "ad_license_expiry_date": 1782766800,
+        "rega_location_district": {
+          "ar": "الصدفة",
+          "en": "Al Sadafah"
+        },
+        "rega_location_latitude": 26.37718656225883,
+        "rega_location_longitude": 50.22143025029012,
+        "rega_utilities_sewerage": {
+          "ar": "نعم",
+          "en": "Yes"
+        },
+        "rega_location_postal_code": "34215",
+        "rega_location_street_name": {
+          "ar": "شرحبيل بن سعد",
+          "en": "شرحبيل بن سعد"
+        },
+        "rega_property_specs_price": 2690000.0,
+        "rega_additional_info_notes": "",
+        "rega_license_info_end_date": "2026-06-30",
+        "rega_utilities_electricity": {
+          "ar": "نعم",
+          "en": "Yes"
+        },
+        "rega_license_info_start_date": "2025-06-30",
+        "rega_additional_info_channels": {
+          "ar": "منصة مرخصة ،لوحة اعلانية ،منصات التواصل الإجتماعي ،الإذاعة ،أخرى",
+          "en": "Licensed platform, Bulletin board, Social media platforms, Radio, Other"
+        },
+        "rega_location_building_number": "9218",
+        "rega_property_specs_area_size": 372.0,
+        "rega_deed_location_description": "حي الصدفة في  مدينة الخبر",
+        "rega_location_additional_number": "4299",
+        "rega_additional_info_deed_number": "760026339938",
+        "rega_additional_info_land_number": "6 / 1 / 44",
+        "rega_additional_info_listing_age": {
+          "ar": "جديد",
+          "en": "New"
+        },
+        "rega_additional_info_plan_number": "ش د 1145 معدل أول",
+        "rega_property_specs_listing_type": {
+          "ar": "فلل",
+          "en": "Villa"
+        },
+        "rega_additional_info_listing_face": {
+          "ar": "شرقية",
+          "en": "Eastern"
+        },
+        "rega_additional_info_street_width": 30.0,
+        "rega_property_specs_listing_usage": {
+          "ar": "",
+          "en": ""
+        },
+        "rega_license_info_ad_license_number": "7200581203",
+        "rega_property_specs_number_of_rooms": 8.0,
+        "brokerage_and_marketing_license_number": "1200019567",
+        "rega_additional_info_is_listing_pawned": {
+          "ar": "نعم",
+          "en": "Yes"
+        },
+        "rega_property_specs_advertisement_type": {
+          "ar": "للبيع",
+          "en": "For Sale"
+        },
+        "rega_additional_info_is_listing_constrained": {
+          "ar": "نعم",
+          "en": "Yes"
+        },
+        "rega_additional_info_obligations_on_listing": "يوجد",
+        "rega_additional_info_guarantees_and_duration": "",
+        "dldPropertySK": "87683910"
+      },
+      "type": "property",
+      "ownerAgent": {
+        "externalID": "b72d94e0-558a-4437-b215-c66b4bcf2d6b",
+        "name_l1": "Abdulaziz Al-Qahtani",
+        "name": "عبدالعزيز القحطاني",
+        "user_image": "https://bayut-sa-production.s3.eu-central-1.amazonaws.com/image/4640089/80dea5cc14f244e382d51a918f919982",
+        "user_image_id": 4640089,
+        "isTruBroker": true,
+        "slug_l1": "abdulaziz-al-qahtani-b72d94e0-558a-4437-b215-c66b4bcf2d6b",
+        "slug": "abdulaziz-al-qahtani-b72d94e0-558a-4437-b215-c66b4bcf2d6b",
+        "state": "active",
+        "isProfileCompleted": true,
+        "isComplete": true
+      },
+      "completionStatus": "completed",
+      "hasMatchingFloorPlans": false,
+      "photoIDs": [
+        4650506,
+        4650503,
+        4650515,
+        4650504,
+        4650509,
+        4650513,
+        4650508,
+        4650510,
+        4650514,
+        4650516,
+        4650517
+      ],
+      "hidePrice": false,
+      "locationPurposeTier": 0,
+      "plotArea": null,
+      "additionalCategories": [
+        [
+          {
+            "id": 1,
+            "level": 0,
+            "externalID": "1",
+            "name_l1": "Residential",
+            "name": "سكني",
+            "slug_l1": "residential",
+            "slug": "residential",
+            "nameSingular_l1": "Residential",
+            "nameSingular": "سكني"
+          },
+          {
+            "id": 7,
+            "level": 1,
+            "externalID": "4",
+            "name_l1": "Villas",
+            "name": "فلل",
+            "slug_l1": "villas",
+            "slug": "villas",
+            "nameSingular_l1": "Villa",
+            "nameSingular": "فیلا"
+          }
+        ]
+      ],
+      "objectID": "1065328",
+      "_highlightResult": {
+        "title_l1": {
+          "value": "Villas for Sale in Al Sadafah, Dammam",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "title": {
+          "value": "فلل للبيع في الصدفة، الدمام",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "externalID": {
+          "value": "87683910",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "agency": {
+          "name_l1": {
+            "value": "CIVIL Real Estate",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "name": {
+            "value": "سيفيل العقارية",
+            "matchLevel": "none",
+            "matchedWords": []
+          }
+        },
+        "keywords": [
+          {
+            "value": "حديقة",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          {
+            "value": "مودرن",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          {
+            "value": "مسجد",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          {
+            "value": "فاخرة",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          {
+            "value": "بحر",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          {
+            "value": "حديثة",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          {
+            "value": "مصعد",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          {
+            "value": "خادمة",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          {
+            "value": "خدم",
+            "matchLevel": "none",
+            "matchedWords": []
+          }
+        ]
+      }
+    }
+  },
+  {
+    "external_id": "87686890",
+    "objectID": "1067359",
+    "title": "بادر بالحجز وامتلك بيت العمر . .",
+    "title_ar": "Villa in Al Sadafah 4 bedrooms 2654000 SAR - 87686890",
+    "description": "",
+    "property_type": [
+      {
+        "id": 1,
+        "level": 0,
+        "externalID": "1",
+        "name_l1": "Residential",
+        "name": "سكني",
+        "slug_l1": "residential",
+        "slug": "residential",
+        "nameSingular_l1": "Residential",
+        "nameSingular": "سكني"
+      },
+      {
+        "id": 7,
+        "level": 1,
+        "externalID": "4",
+        "name_l1": "Villas",
+        "name": "فلل",
+        "slug_l1": "villas",
+        "slug": "villas",
+        "nameSingular_l1": "Villa",
+        "nameSingular": "فیلا"
+      }
+    ],
+    "property_type_ar": "property",
+    "purpose": "for-sale",
+    "price": 2654000.0,
+    "currency": "SAR",
+    "bedrooms": 4,
+    "bathrooms": 7,
+    "area": 372.0,
+    "area_unit": "sqm",
+    "location": [
+      {
+        "id": 1,
+        "level": 0,
+        "externalID": "1",
+        "name_l1": "KSA",
+        "name": "السعودية",
+        "slug_l1": "/ksa",
+        "slug": "/السعودية"
+      },
+      {
+        "id": 76,
+        "level": 1,
+        "externalID": "1359",
+        "name_l1": "Dammam",
+        "name": "الدمام",
+        "slug_l1": "/dammam",
+        "slug": "/الدمام"
+      },
+      {
+        "id": 3793,
+        "level": 2,
+        "externalID": "6380",
+        "name_l1": "Al Sadafah",
+        "name": "الصدفة",
+        "slug_l1": "/dammam/al-sadafah",
+        "slug": "/الدمام/الصدفة"
+      }
+    ],
+    "city": "الدمام",
+    "latitude": 26.376770591684,
+    "longitude": 50.221677536631,
+    "location_hierarchy": [
+      {
+        "id": 1,
+        "level": 0,
+        "externalID": "1",
+        "name_l1": "KSA",
+        "name": "السعودية",
+        "slug_l1": "/ksa",
+        "slug": "/السعودية"
+      },
+      {
+        "id": 76,
+        "level": 1,
+        "externalID": "1359",
+        "name_l1": "Dammam",
+        "name": "الدمام",
+        "slug_l1": "/dammam",
+        "slug": "/الدمام"
+      },
+      {
+        "id": 3793,
+        "level": 2,
+        "externalID": "6380",
+        "name_l1": "Al Sadafah",
+        "name": "الصدفة",
+        "slug_l1": "/dammam/al-sadafah",
+        "slug": "/الدمام/الصدفة"
+      }
+    ],
+    "agency_name": {
+      "id": 1245523,
+      "objectID": 1245523,
+      "name_l1": "CIVIL Real Estate",
+      "name": "سيفيل العقارية",
+      "externalID": "1720197598",
+      "product": "silver",
+      "productScore": 3,
+      "licenses": [],
+      "logo": {
+        "id": 4650474,
+        "url": "https://bayut-sa-production.s3.eu-central-1.amazonaws.com/image/4650474/4476e9a484494ef3ad62c2d6ae24a209"
+      },
+      "slug_l1": "al-durar-al-khaleejia-contracting-and-real-estate-development-company-1720197598",
+      "slug": "al-durar-al-khaleejia-contracting-and-real-estate-development-company-1720197598",
+      "tr": 4,
+      "tier": 4,
+      "roles": [],
+      "active": true,
+      "createdAt": "2025-06-19T14:49:15+00:00",
+      "commercialNumber": null,
+      "shortNumber": null,
+      "type": "agency"
+    },
+    "agency_name_ar": {
+      "id": 1245523,
+      "objectID": 1245523,
+      "name_l1": "CIVIL Real Estate",
+      "name": "سيفيل العقارية",
+      "externalID": "1720197598",
+      "product": "silver",
+      "productScore": 3,
+      "licenses": [],
+      "logo": {
+        "id": 4650474,
+        "url": "https://bayut-sa-production.s3.eu-central-1.amazonaws.com/image/4650474/4476e9a484494ef3ad62c2d6ae24a209"
+      },
+      "slug_l1": "al-durar-al-khaleejia-contracting-and-real-estate-development-company-1720197598",
+      "slug": "al-durar-al-khaleejia-contracting-and-real-estate-development-company-1720197598",
+      "tr": 4,
+      "tier": 4,
+      "roles": [],
+      "active": true,
+      "createdAt": "2025-06-19T14:49:15+00:00",
+      "commercialNumber": null,
+      "shortNumber": null,
+      "type": "agency"
+    },
+    "agent_name": "Abdulaziz Al-Qahtani",
+    "agent_name_ar": "Abdulaziz Al-Qahtani",
+    "phone": {
+      "mobile": "+966531618388",
+      "whatsapp": "966114049994",
+      "proxyMobile": "+966115002681",
+      "mobileNumbers": [
+        "+966531618388"
+      ]
+    },
+    "photo_url": {
+      "id": 4669274,
+      "externalID": "1428358",
+      "title": null,
+      "orderIndex": 0,
+      "nimaScore": null,
+      "url": "https://bayut-sa-production.s3.eu-central-1.amazonaws.com/image/4669274/cfb350e764594ad0916bbfc9b3f90fb0",
+      "main": true,
+      "uuid": "5647ae96-e357-4ba8-b21e-44d59e2d9c44"
+    },
+    "photo_count": 10,
+    "permit_number": "7200591704",
+    "furnishing_status": "unfurnished",
+    "completion_status": "completed",
+    "is_verified": false,
+    "scraped_at": "2025-07-18T15:26:02.815573",
+    "created_at": 1752846821.0,
+    "updated_at": 1752846821.0,
+    "geography": {
+      "lat": 26.376770591684,
+      "lng": 50.221677536631
+    },
+    "extra_fields": {
+      "rega_location_city": {
+        "ar": "الدمام",
+        "en": "Dammam"
+      },
+      "rega_location_region": {
+        "ar": "المنطقة الشرقية",
+        "en": "المنطقة الشرقية"
+      },
+      "ad_license_expiry_date": 1783371600,
+      "rega_location_district": {
+        "ar": "الصدفة",
+        "en": "Al Sadafah"
+      },
+      "rega_location_latitude": 26.376770591684,
+      "rega_location_longitude": 50.22167753663105,
+      "rega_utilities_sewerage": {
+        "ar": "نعم",
+        "en": "Yes"
+      },
+      "rega_location_postal_code": "34215",
+      "rega_location_street_name": {
+        "ar": "ابن ابي السرح",
+        "en": "ابن ابي السرح"
+      },
+      "rega_property_specs_price": 2654000.0,
+      "rega_additional_info_notes": "",
+      "rega_license_info_end_date": "2026-07-07",
+      "rega_utilities_electricity": {
+        "ar": "نعم",
+        "en": "Yes"
+      },
+      "rega_license_info_start_date": "2025-07-09",
+      "rega_additional_info_channels": {
+        "ar": "منصة مرخصة ،لوحة اعلانية ،منصات التواصل الإجتماعي ،الإذاعة ،أخرى",
+        "en": "Licensed platform, Bulletin board, Social media platforms, Radio, Other"
+      },
+      "rega_location_building_number": "4338",
+      "rega_property_specs_area_size": 372.0,
+      "rega_deed_location_description": "حي الصدفة في  مدينة الخبر",
+      "rega_location_additional_number": "9164",
+      "rega_additional_info_deed_number": "360026339932",
+      "rega_additional_info_land_number": "1 / 1 / 44",
+      "rega_additional_info_listing_age": {
+        "ar": "جديد",
+        "en": "New"
+      },
+      "rega_additional_info_plan_number": "ش د 1145 معدل أول",
+      "rega_property_specs_listing_type": {
+        "ar": "فلل",
+        "en": "Villa"
+      },
+      "rega_additional_info_listing_face": {
+        "ar": "شرقية",
+        "en": "Eastern"
+      },
+      "rega_additional_info_street_width": 30.0,
+      "rega_property_specs_listing_usage": {
+        "ar": "",
+        "en": ""
+      },
+      "rega_license_info_ad_license_number": "7200591704",
+      "rega_property_specs_number_of_rooms": 8.0,
+      "brokerage_and_marketing_license_number": "1200019567",
+      "rega_additional_info_is_listing_pawned": {
+        "ar": "نعم",
+        "en": "Yes"
+      },
+      "rega_property_specs_advertisement_type": {
+        "ar": "للبيع",
+        "en": "For Sale"
+      },
+      "rega_additional_info_is_listing_constrained": {
+        "ar": "نعم",
+        "en": "Yes"
+      },
+      "rega_additional_info_obligations_on_listing": "يوجد",
+      "rega_additional_info_guarantees_and_duration": "",
+      "dldPropertySK": "87686890"
+    },
+    "raw_data": {
+      "id": 1067359,
+      "ownerID": "b72d94e0-558a-4437-b215-c66b4bcf2d6b",
+      "userExternalID": "b72d94e0-558a-4437-b215-c66b4bcf2d6b",
+      "sourceID": 68353,
+      "state": "active",
+      "geography": {
+        "lat": 26.376770591684,
+        "lng": 50.221677536631
+      },
+      "purpose": "for-sale",
+      "price": 2654000.0,
+      "product": "superhot",
+      "productLabel": "default",
+      "rentFrequency": null,
+      "referenceNumber": null,
+      "permitNumber": "7200591704",
+      "projectNumber": null,
+      "title_l1": "Villa in Al Sadafah 4 bedrooms 2654000 SAR - 87686890",
+      "title": "بادر بالحجز وامتلك بيت العمر . .",
+      "externalID": "87686890",
+      "slug_l1": "details-87686890",
+      "slug": "تفاصيل-87686890",
+      "location": [
+        {
+          "id": 1,
+          "level": 0,
+          "externalID": "1",
+          "name_l1": "KSA",
+          "name": "السعودية",
+          "slug_l1": "/ksa",
+          "slug": "/السعودية"
+        },
+        {
+          "id": 76,
+          "level": 1,
+          "externalID": "1359",
+          "name_l1": "Dammam",
+          "name": "الدمام",
+          "slug_l1": "/dammam",
+          "slug": "/الدمام"
+        },
+        {
+          "id": 3793,
+          "level": 2,
+          "externalID": "6380",
+          "name_l1": "Al Sadafah",
+          "name": "الصدفة",
+          "slug_l1": "/dammam/al-sadafah",
+          "slug": "/الدمام/الصدفة"
+        }
+      ],
+      "category": [
+        {
+          "id": 1,
+          "level": 0,
+          "externalID": "1",
+          "name_l1": "Residential",
+          "name": "سكني",
+          "slug_l1": "residential",
+          "slug": "residential",
+          "nameSingular_l1": "Residential",
+          "nameSingular": "سكني"
+        },
+        {
+          "id": 7,
+          "level": 1,
+          "externalID": "4",
+          "name_l1": "Villas",
+          "name": "فلل",
+          "slug_l1": "villas",
+          "slug": "villas",
+          "nameSingular_l1": "Villa",
+          "nameSingular": "فیلا"
+        }
+      ],
+      "createdAt": 1752846821.0,
+      "updatedAt": 1752846821.0,
+      "reactivatedAt": 1752066789.0,
+      "rooms": 4,
+      "baths": 7,
+      "area": 372.0,
+      "coverPhoto": {
+        "id": 4669274,
+        "externalID": "1428358",
+        "title": null,
+        "orderIndex": 0,
+        "nimaScore": null,
+        "url": "https://bayut-sa-production.s3.eu-central-1.amazonaws.com/image/4669274/cfb350e764594ad0916bbfc9b3f90fb0",
+        "main": true,
+        "uuid": "5647ae96-e357-4ba8-b21e-44d59e2d9c44"
+      },
+      "photoCount": 10,
+      "videoCount": 0,
+      "panoramaCount": 0,
+      "phoneNumber": {
+        "mobile": "+966531618388",
+        "whatsapp": "966114049994",
+        "proxyMobile": "+966115002681",
+        "mobileNumbers": [
+          "+966531618388"
+        ]
+      },
+      "contactMethodAvailability": {
+        "whatsapp": true,
+        "sms": true,
+        "email": true,
+        "call": true
+      },
+      "contactName": "Abdulaziz Al-Qahtani",
+      "agency": {
+        "id": 1245523,
+        "objectID": 1245523,
+        "name_l1": "CIVIL Real Estate",
+        "name": "سيفيل العقارية",
+        "externalID": "1720197598",
+        "product": "silver",
+        "productScore": 3,
+        "licenses": [],
+        "logo": {
+          "id": 4650474,
+          "url": "https://bayut-sa-production.s3.eu-central-1.amazonaws.com/image/4650474/4476e9a484494ef3ad62c2d6ae24a209"
+        },
+        "slug_l1": "al-durar-al-khaleejia-contracting-and-real-estate-development-company-1720197598",
+        "slug": "al-durar-al-khaleejia-contracting-and-real-estate-development-company-1720197598",
+        "tr": 4,
+        "tier": 4,
+        "roles": [],
+        "active": true,
+        "createdAt": "2025-06-19T14:49:15+00:00",
+        "commercialNumber": null,
+        "shortNumber": null,
+        "type": "agency"
+      },
+      "isVerified": false,
+      "verification": {
+        "updatedAt": 1752066814.429236,
+        "eligible": false,
+        "status": "unverified",
+        "verifiedAt": null,
+        "trucheckedAt": 0
+      },
+      "floorPlanID": null,
+      "furnishingStatus": "unfurnished",
+      "extraFields": {
+        "rega_location_city": {
+          "ar": "الدمام",
+          "en": "Dammam"
+        },
+        "rega_location_region": {
+          "ar": "المنطقة الشرقية",
+          "en": "المنطقة الشرقية"
+        },
+        "ad_license_expiry_date": 1783371600,
+        "rega_location_district": {
+          "ar": "الصدفة",
+          "en": "Al Sadafah"
+        },
+        "rega_location_latitude": 26.376770591684,
+        "rega_location_longitude": 50.22167753663105,
+        "rega_utilities_sewerage": {
+          "ar": "نعم",
+          "en": "Yes"
+        },
+        "rega_location_postal_code": "34215",
+        "rega_location_street_name": {
+          "ar": "ابن ابي السرح",
+          "en": "ابن ابي السرح"
+        },
+        "rega_property_specs_price": 2654000.0,
+        "rega_additional_info_notes": "",
+        "rega_license_info_end_date": "2026-07-07",
+        "rega_utilities_electricity": {
+          "ar": "نعم",
+          "en": "Yes"
+        },
+        "rega_license_info_start_date": "2025-07-09",
+        "rega_additional_info_channels": {
+          "ar": "منصة مرخصة ،لوحة اعلانية ،منصات التواصل الإجتماعي ،الإذاعة ،أخرى",
+          "en": "Licensed platform, Bulletin board, Social media platforms, Radio, Other"
+        },
+        "rega_location_building_number": "4338",
+        "rega_property_specs_area_size": 372.0,
+        "rega_deed_location_description": "حي الصدفة في  مدينة الخبر",
+        "rega_location_additional_number": "9164",
+        "rega_additional_info_deed_number": "360026339932",
+        "rega_additional_info_land_number": "1 / 1 / 44",
+        "rega_additional_info_listing_age": {
+          "ar": "جديد",
+          "en": "New"
+        },
+        "rega_additional_info_plan_number": "ش د 1145 معدل أول",
+        "rega_property_specs_listing_type": {
+          "ar": "فلل",
+          "en": "Villa"
+        },
+        "rega_additional_info_listing_face": {
+          "ar": "شرقية",
+          "en": "Eastern"
+        },
+        "rega_additional_info_street_width": 30.0,
+        "rega_property_specs_listing_usage": {
+          "ar": "",
+          "en": ""
+        },
+        "rega_license_info_ad_license_number": "7200591704",
+        "rega_property_specs_number_of_rooms": 8.0,
+        "brokerage_and_marketing_license_number": "1200019567",
+        "rega_additional_info_is_listing_pawned": {
+          "ar": "نعم",
+          "en": "Yes"
+        },
+        "rega_property_specs_advertisement_type": {
+          "ar": "للبيع",
+          "en": "For Sale"
+        },
+        "rega_additional_info_is_listing_constrained": {
+          "ar": "نعم",
+          "en": "Yes"
+        },
+        "rega_additional_info_obligations_on_listing": "يوجد",
+        "rega_additional_info_guarantees_and_duration": "",
+        "dldPropertySK": "87686890"
+      },
+      "type": "property",
+      "ownerAgent": {
+        "externalID": "b72d94e0-558a-4437-b215-c66b4bcf2d6b",
+        "name_l1": "Abdulaziz Al-Qahtani",
+        "name": "عبدالعزيز القحطاني",
+        "user_image": "https://bayut-sa-production.s3.eu-central-1.amazonaws.com/image/4640089/80dea5cc14f244e382d51a918f919982",
+        "user_image_id": 4640089,
+        "isTruBroker": true,
+        "slug_l1": "abdulaziz-al-qahtani-b72d94e0-558a-4437-b215-c66b4bcf2d6b",
+        "slug": "abdulaziz-al-qahtani-b72d94e0-558a-4437-b215-c66b4bcf2d6b",
+        "state": "active",
+        "isProfileCompleted": true,
+        "isComplete": true
+      },
+      "completionStatus": "completed",
+      "hasMatchingFloorPlans": false,
+      "photoIDs": [
+        4669274,
+        4669275,
+        4669276,
+        4669277,
+        4669278,
+        4669279,
+        4669280,
+        4669281,
+        4669282,
+        4669283
+      ],
+      "hidePrice": false,
+      "locationPurposeTier": 0,
+      "plotArea": null,
+      "additionalCategories": [
+        [
+          {
+            "id": 1,
+            "level": 0,
+            "externalID": "1",
+            "name_l1": "Residential",
+            "name": "سكني",
+            "slug_l1": "residential",
+            "slug": "residential",
+            "nameSingular_l1": "Residential",
+            "nameSingular": "سكني"
+          },
+          {
+            "id": 7,
+            "level": 1,
+            "externalID": "4",
+            "name_l1": "Villas",
+            "name": "فلل",
+            "slug_l1": "villas",
+            "slug": "villas",
+            "nameSingular_l1": "Villa",
+            "nameSingular": "فیلا"
+          }
+        ]
+      ],
+      "objectID": "1067359",
+      "_highlightResult": {
+        "title_l1": {
+          "value": "Villa in Al Sadafah 4 bedrooms 2654000 SAR - 87686890",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "title": {
+          "value": "بادر بالحجز وامتلك بيت العمر . .",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "externalID": {
+          "value": "87686890",
+          "matchLevel": "none",
+          "matchedWords": []
+        },
+        "agency": {
+          "name_l1": {
+            "value": "CIVIL Real Estate",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          "name": {
+            "value": "سيفيل العقارية",
+            "matchLevel": "none",
+            "matchedWords": []
+          }
+        },
+        "keywords": [
+          {
+            "value": "مصعد",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          {
+            "value": "مودرن",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          {
+            "value": "حديثة",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          {
+            "value": "موقف سيارة",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          {
+            "value": "بحر",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          {
+            "value": "حديقة",
+            "matchLevel": "none",
+            "matchedWords": []
+          },
+          {
+            "value": "خادمة",
+            "matchLevel": "none",
+            "matchedWords": []
+          }
+        ]
+      }
+    }
+  },
+  {
     "external_id": "87685968",
     "objectID": "1066461",
     "title": "شقة مفروشة بالكامل في الرياض، حي العليا",
@@ -193,7 +1429,7 @@
     "furnishing_status": "furnished",
     "completion_status": "completed",
     "is_verified": false,
-    "scraped_at": "2025-07-18T14:27:55.696179",
+    "scraped_at": "2025-07-18T15:26:02.815579",
     "created_at": 1752843135.0,
     "updated_at": 1752843136.0,
     "geography": {
@@ -846,7 +2082,7 @@
     "furnishing_status": "unfurnished",
     "completion_status": "completed",
     "is_verified": false,
-    "scraped_at": "2025-07-18T14:27:55.696205",
+    "scraped_at": "2025-07-18T15:26:02.815584",
     "created_at": 1752837930.0,
     "updated_at": 1752838175.0,
     "geography": {
@@ -1558,7 +2794,7 @@
     "furnishing_status": "unfurnished",
     "completion_status": "completed",
     "is_verified": false,
-    "scraped_at": "2025-07-18T14:27:55.696226",
+    "scraped_at": "2025-07-18T15:26:02.815589",
     "created_at": 1752813020.0,
     "updated_at": 1752813020.0,
     "geography": {
@@ -2237,7 +3473,7 @@
     "furnishing_status": "unfurnished",
     "completion_status": "completed",
     "is_verified": false,
-    "scraped_at": "2025-07-18T14:27:55.696236",
+    "scraped_at": "2025-07-18T15:26:02.815594",
     "created_at": 1752812993.0,
     "updated_at": 1752812993.0,
     "geography": {
@@ -2947,7 +4183,7 @@
     "furnishing_status": "unfurnished",
     "completion_status": "completed",
     "is_verified": false,
-    "scraped_at": "2025-07-18T14:27:55.696246",
+    "scraped_at": "2025-07-18T15:26:02.815598",
     "created_at": 1752812988.0,
     "updated_at": 1752812989.0,
     "geography": {
@@ -3645,7 +4881,7 @@
     "furnishing_status": "unfurnished",
     "completion_status": "completed",
     "is_verified": false,
-    "scraped_at": "2025-07-18T14:27:55.696256",
+    "scraped_at": "2025-07-18T15:26:02.815603",
     "created_at": 1752812870.0,
     "updated_at": 1752812870.0,
     "geography": {
@@ -4426,7 +5662,7 @@
     "furnishing_status": "unfurnished",
     "completion_status": "completed",
     "is_verified": false,
-    "scraped_at": "2025-07-18T14:27:55.696266",
+    "scraped_at": "2025-07-18T15:26:02.815607",
     "created_at": 1752812839.0,
     "updated_at": 1752812840.0,
     "geography": {
@@ -5199,7 +6435,7 @@
     "furnishing_status": "unfurnished",
     "completion_status": "completed",
     "is_verified": false,
-    "scraped_at": "2025-07-18T14:27:55.696276",
+    "scraped_at": "2025-07-18T15:26:02.815612",
     "created_at": 1752812751.0,
     "updated_at": 1752812752.0,
     "geography": {
@@ -5911,7 +7147,7 @@
     "furnishing_status": "unfurnished",
     "completion_status": "completed",
     "is_verified": false,
-    "scraped_at": "2025-07-18T14:27:55.696286",
+    "scraped_at": "2025-07-18T15:26:02.815616",
     "created_at": 1752812733.0,
     "updated_at": 1752812733.0,
     "geography": {
@@ -6648,7 +7884,7 @@
     "furnishing_status": "unfurnished",
     "completion_status": "completed",
     "is_verified": false,
-    "scraped_at": "2025-07-18T14:27:55.696295",
+    "scraped_at": "2025-07-18T15:26:02.815621",
     "created_at": 1752812729.0,
     "updated_at": 1752812730.0,
     "geography": {
@@ -7451,7 +8687,7 @@
     "furnishing_status": "unfurnished",
     "completion_status": "completed",
     "is_verified": false,
-    "scraped_at": "2025-07-18T14:27:55.696304",
+    "scraped_at": "2025-07-18T15:26:02.815626",
     "created_at": 1752811904.0,
     "updated_at": 1752811904.0,
     "geography": {
@@ -8184,7 +9420,7 @@
     "furnishing_status": "unfurnished",
     "completion_status": "completed",
     "is_verified": false,
-    "scraped_at": "2025-07-18T14:27:55.696313",
+    "scraped_at": "2025-07-18T15:26:02.815630",
     "created_at": 1752810200.0,
     "updated_at": 1752810200.0,
     "geography": {
@@ -8921,7 +10157,7 @@
     "furnishing_status": "unfurnished",
     "completion_status": "completed",
     "is_verified": false,
-    "scraped_at": "2025-07-18T14:27:55.696322",
+    "scraped_at": "2025-07-18T15:26:02.815635",
     "created_at": 1752777194.0,
     "updated_at": 1752777194.0,
     "geography": {
@@ -9618,7 +10854,7 @@
     "furnishing_status": "unfurnished",
     "completion_status": "completed",
     "is_verified": false,
-    "scraped_at": "2025-07-18T14:27:55.696331",
+    "scraped_at": "2025-07-18T15:26:02.815640",
     "created_at": 1752776769.0,
     "updated_at": 1752776769.0,
     "geography": {
@@ -10210,7 +11446,7 @@
     "furnishing_status": "furnished",
     "completion_status": "completed",
     "is_verified": false,
-    "scraped_at": "2025-07-18T14:27:55.696340",
+    "scraped_at": "2025-07-18T15:26:02.815644",
     "created_at": 1752776750.0,
     "updated_at": 1752776750.0,
     "geography": {
@@ -10838,7 +12074,7 @@
     "furnishing_status": "unfurnished",
     "completion_status": "completed",
     "is_verified": false,
-    "scraped_at": "2025-07-18T14:27:55.696348",
+    "scraped_at": "2025-07-18T15:26:02.815649",
     "created_at": 1752768252.0,
     "updated_at": 1752768252.0,
     "geography": {
@@ -11478,7 +12714,7 @@
     "furnishing_status": "unfurnished",
     "completion_status": "completed",
     "is_verified": false,
-    "scraped_at": "2025-07-18T14:27:55.696357",
+    "scraped_at": "2025-07-18T15:26:02.815653",
     "created_at": 1752768247.0,
     "updated_at": 1752768247.0,
     "geography": {
@@ -12150,7 +13386,7 @@
     "furnishing_status": "unfurnished",
     "completion_status": "completed",
     "is_verified": false,
-    "scraped_at": "2025-07-18T14:27:55.696366",
+    "scraped_at": "2025-07-18T15:26:02.815657",
     "created_at": 1752760724.0,
     "updated_at": 1752761585.0,
     "geography": {
@@ -12850,7 +14086,7 @@
     "furnishing_status": "unfurnished",
     "completion_status": "completed",
     "is_verified": false,
-    "scraped_at": "2025-07-18T14:27:55.696375",
+    "scraped_at": "2025-07-18T15:26:02.815662",
     "created_at": 1752751826.0,
     "updated_at": 1752751826.0,
     "geography": {
@@ -13506,7 +14742,7 @@
     "furnishing_status": "unfurnished",
     "completion_status": "completed",
     "is_verified": false,
-    "scraped_at": "2025-07-18T14:27:55.696384",
+    "scraped_at": "2025-07-18T15:26:02.815667",
     "created_at": 1752741865.0,
     "updated_at": 1752741865.0,
     "geography": {
@@ -14207,7 +15443,7 @@
     "furnishing_status": "unfurnished",
     "completion_status": "completed",
     "is_verified": false,
-    "scraped_at": "2025-07-18T14:27:55.696393",
+    "scraped_at": "2025-07-18T15:26:02.815671",
     "created_at": 1752741658.0,
     "updated_at": 1752743224.0,
     "geography": {
@@ -14920,7 +16156,7 @@
     "furnishing_status": "unfurnished",
     "completion_status": "completed",
     "is_verified": false,
-    "scraped_at": "2025-07-18T14:27:55.696402",
+    "scraped_at": "2025-07-18T15:26:02.815676",
     "created_at": 1752740099.0,
     "updated_at": 1752740099.0,
     "geography": {
@@ -15596,7 +16832,7 @@
     "furnishing_status": "furnished",
     "completion_status": "completed",
     "is_verified": false,
-    "scraped_at": "2025-07-18T14:27:55.696411",
+    "scraped_at": "2025-07-18T15:26:02.815680",
     "created_at": 1752740075.0,
     "updated_at": 1752740075.0,
     "geography": {
@@ -16038,1422 +17274,6 @@
           },
           {
             "value": "فاخرة",
-            "matchLevel": "none",
-            "matchedWords": []
-          },
-          {
-            "value": "موقف سيارة",
-            "matchLevel": "none",
-            "matchedWords": []
-          },
-          {
-            "value": "مؤثثة",
-            "matchLevel": "none",
-            "matchedWords": []
-          },
-          {
-            "value": "مفروشة",
-            "matchLevel": "none",
-            "matchedWords": []
-          },
-          {
-            "value": "مفروش",
-            "matchLevel": "none",
-            "matchedWords": []
-          }
-        ]
-      }
-    }
-  },
-  {
-    "external_id": "87636950",
-    "objectID": "1039954",
-    "title": "دور فاخر للإيجار في حي الملقا",
-    "title_ar": "Luxurious house for rent in Al Malqa neighborhood",
-    "description": "",
-    "property_type": [
-      {
-        "id": 1,
-        "level": 0,
-        "externalID": "1",
-        "name_l1": "Residential",
-        "name": "سكني",
-        "slug_l1": "residential",
-        "slug": "residential",
-        "nameSingular_l1": "Residential",
-        "nameSingular": "سكني"
-      },
-      {
-        "id": 9,
-        "level": 1,
-        "externalID": "6",
-        "name_l1": "Floors",
-        "name": "ادوار",
-        "slug_l1": "residential-floors",
-        "slug": "residential-floors",
-        "nameSingular_l1": "Floor",
-        "nameSingular": "دور"
-      }
-    ],
-    "property_type_ar": "property",
-    "purpose": "for-rent",
-    "price": 175000.0,
-    "currency": "SAR",
-    "bedrooms": 3,
-    "bathrooms": 5,
-    "area": 271.0,
-    "area_unit": "sqm",
-    "location": [
-      {
-        "id": 1,
-        "level": 0,
-        "externalID": "1",
-        "name_l1": "KSA",
-        "name": "السعودية",
-        "slug_l1": "/ksa",
-        "slug": "/السعودية"
-      },
-      {
-        "id": 37,
-        "level": 1,
-        "externalID": "230",
-        "name_l1": "Riyadh",
-        "name": "الرياض",
-        "slug_l1": "/riyadh",
-        "slug": "/الرياض"
-      },
-      {
-        "id": 8484,
-        "level": 2,
-        "externalID": "12074",
-        "name_l1": "North Riyadh",
-        "name": "شمال الرياض",
-        "slug_l1": "/riyadh/north-riyadh",
-        "slug": "/الرياض/شمال-الرياض"
-      },
-      {
-        "id": 2944,
-        "level": 3,
-        "externalID": "5367",
-        "name_l1": "Al Malqa",
-        "name": "الملقا",
-        "slug_l1": "/riyadh/north-riyadh/al-malqa",
-        "slug": "/الرياض/شمال-الرياض/الملقا"
-      }
-    ],
-    "city": "الرياض",
-    "latitude": 24.785570346984,
-    "longitude": 46.603606723825,
-    "location_hierarchy": [
-      {
-        "id": 1,
-        "level": 0,
-        "externalID": "1",
-        "name_l1": "KSA",
-        "name": "السعودية",
-        "slug_l1": "/ksa",
-        "slug": "/السعودية"
-      },
-      {
-        "id": 37,
-        "level": 1,
-        "externalID": "230",
-        "name_l1": "Riyadh",
-        "name": "الرياض",
-        "slug_l1": "/riyadh",
-        "slug": "/الرياض"
-      },
-      {
-        "id": 8484,
-        "level": 2,
-        "externalID": "12074",
-        "name_l1": "North Riyadh",
-        "name": "شمال الرياض",
-        "slug_l1": "/riyadh/north-riyadh",
-        "slug": "/الرياض/شمال-الرياض"
-      },
-      {
-        "id": 2944,
-        "level": 3,
-        "externalID": "5367",
-        "name_l1": "Al Malqa",
-        "name": "الملقا",
-        "slug_l1": "/riyadh/north-riyadh/al-malqa",
-        "slug": "/الرياض/شمال-الرياض/الملقا"
-      }
-    ],
-    "agency_name": {
-      "id": 15494,
-      "objectID": 15494,
-      "name_l1": "SATEL Co.",
-      "name": "ساتل",
-      "externalID": "1720192428",
-      "product": "platinum plus",
-      "productScore": 3,
-      "licenses": [],
-      "logo": {
-        "id": 3156854,
-        "url": "https://bayut-sa-production.s3.eu-central-1.amazonaws.com/image/3156854/a8ad7e553cd241169a67e7d9538cc595"
-      },
-      "slug_l1": "satel-realty-company-1720192428",
-      "slug": "satel-realty-company-1720192428",
-      "tr": 4,
-      "tier": 4,
-      "roles": [],
-      "active": true,
-      "createdAt": "2023-05-07T02:40:40+00:00",
-      "commercialNumber": null,
-      "shortNumber": null,
-      "type": "agency"
-    },
-    "agency_name_ar": {
-      "id": 15494,
-      "objectID": 15494,
-      "name_l1": "SATEL Co.",
-      "name": "ساتل",
-      "externalID": "1720192428",
-      "product": "platinum plus",
-      "productScore": 3,
-      "licenses": [],
-      "logo": {
-        "id": 3156854,
-        "url": "https://bayut-sa-production.s3.eu-central-1.amazonaws.com/image/3156854/a8ad7e553cd241169a67e7d9538cc595"
-      },
-      "slug_l1": "satel-realty-company-1720192428",
-      "slug": "satel-realty-company-1720192428",
-      "tr": 4,
-      "tier": 4,
-      "roles": [],
-      "active": true,
-      "createdAt": "2023-05-07T02:40:40+00:00",
-      "commercialNumber": null,
-      "shortNumber": null,
-      "type": "agency"
-    },
-    "agent_name": "Naif",
-    "agent_name_ar": "Naif",
-    "phone": {
-      "mobile": "+966539992727",
-      "phone": "+966114888849",
-      "whatsapp": "966114049994",
-      "proxyMobile": "+966115002345",
-      "phoneNumbers": [
-        "+966114888849"
-      ],
-      "mobileNumbers": [
-        "+966539992727"
-      ]
-    },
-    "photo_url": {
-      "id": 4630301,
-      "externalID": "1387381",
-      "title": null,
-      "orderIndex": 0,
-      "nimaScore": null,
-      "url": "https://bayut-sa-production.s3.eu-central-1.amazonaws.com/image/4630301/eb1432e11db24ca4873ba609b7df07d5",
-      "main": true,
-      "uuid": "0b27c590-1b68-46de-b19e-17d62d64fc86"
-    },
-    "photo_count": 37,
-    "permit_number": "7200501117",
-    "furnishing_status": "unfurnished",
-    "completion_status": "completed",
-    "is_verified": false,
-    "scraped_at": "2025-07-18T14:27:55.696420",
-    "created_at": 1752740019.0,
-    "updated_at": 1752740019.0,
-    "geography": {
-      "lat": 24.785570346984,
-      "lng": 46.603606723825
-    },
-    "extra_fields": {
-      "rega_location_city": {
-        "ar": "الرياض",
-        "en": "Riyadh"
-      },
-      "rega_location_region": {
-        "ar": "منطقة الرياض",
-        "en": "منطقة الرياض"
-      },
-      "ad_license_expiry_date": 1776286800,
-      "rega_location_district": {
-        "ar": "الملقا",
-        "en": "Al Malqa"
-      },
-      "rega_location_latitude": 24.78557034698429,
-      "rega_location_longitude": 46.60360672382504,
-      "rega_utilities_sewerage": {
-        "ar": "نعم",
-        "en": "Yes"
-      },
-      "rega_location_postal_code": "13522",
-      "rega_location_street_name": {
-        "ar": "رقم 165",
-        "en": "رقم 165"
-      },
-      "rega_property_specs_price": 175000.0,
-      "rega_additional_info_notes": "",
-      "rega_license_info_end_date": "2026-04-16",
-      "rega_utilities_electricity": {
-        "ar": "نعم",
-        "en": "Yes"
-      },
-      "rega_utilities_fixed_phone": {
-        "ar": "نعم",
-        "en": "Yes"
-      },
-      "rega_utilities_fiber_optics": {
-        "ar": "نعم",
-        "en": "Yes"
-      },
-      "rega_license_info_start_date": "2025-04-21",
-      "rega_additional_info_channels": {
-        "ar": "منصة مرخصة ،منصات التواصل الإجتماعي ،لوحة اعلانية ،الإذاعة ،أخرى",
-        "en": "Licensed platform, Social media platforms, Bulletin board, Radio, Other"
-      },
-      "rega_location_building_number": "6846",
-      "rega_property_specs_area_size": 271.41,
-      "rega_location_additional_number": "3812",
-      "rega_additional_info_deed_number": "3707104532700003",
-      "rega_additional_info_land_number": "1133/2",
-      "rega_additional_info_listing_age": {
-        "ar": "اقل من سنة",
-        "en": "Less than one year"
-      },
-      "rega_additional_info_plan_number": "3179",
-      "rega_property_specs_listing_type": {
-        "ar": "ادوار",
-        "en": "Floor"
-      },
-      "rega_additional_info_street_width": 0.0,
-      "rega_property_specs_listing_usage": {
-        "ar": "",
-        "en": ""
-      },
-      "rega_license_info_ad_license_number": "7200501117",
-      "rega_property_specs_number_of_rooms": 3.0,
-      "brokerage_and_marketing_license_number": "1200010193",
-      "rega_additional_info_is_listing_pawned": {
-        "ar": "لا",
-        "en": "No"
-      },
-      "rega_property_specs_advertisement_type": {
-        "ar": "للإيجار",
-        "en": "For Rent"
-      },
-      "rega_additional_info_is_listing_constrained": {
-        "ar": "لا",
-        "en": "No"
-      },
-      "rega_additional_info_obligations_on_listing": "لا يوجد",
-      "rega_additional_info_guarantees_and_duration": "المكيفات المطبخ الانشائي الكهرباء السباكة\n",
-      "dldPropertySK": "87636950"
-    },
-    "raw_data": {
-      "id": 1039954,
-      "ownerID": "00000000-e2ba-801f-8000-024213371337",
-      "userExternalID": "00000000-e2ba-801f-8000-024213371337",
-      "sourceID": 68353,
-      "state": "active",
-      "geography": {
-        "lat": 24.785570346984,
-        "lng": 46.603606723825
-      },
-      "purpose": "for-rent",
-      "price": 175000.0,
-      "product": "superhot",
-      "productLabel": "default",
-      "rentFrequency": "yearly",
-      "referenceNumber": null,
-      "permitNumber": "7200501117",
-      "projectNumber": null,
-      "title_l1": "Luxurious house for rent in Al Malqa neighborhood",
-      "title": "دور فاخر للإيجار في حي الملقا",
-      "externalID": "87636950",
-      "slug_l1": "details-87636950",
-      "slug": "تفاصيل-87636950",
-      "location": [
-        {
-          "id": 1,
-          "level": 0,
-          "externalID": "1",
-          "name_l1": "KSA",
-          "name": "السعودية",
-          "slug_l1": "/ksa",
-          "slug": "/السعودية"
-        },
-        {
-          "id": 37,
-          "level": 1,
-          "externalID": "230",
-          "name_l1": "Riyadh",
-          "name": "الرياض",
-          "slug_l1": "/riyadh",
-          "slug": "/الرياض"
-        },
-        {
-          "id": 8484,
-          "level": 2,
-          "externalID": "12074",
-          "name_l1": "North Riyadh",
-          "name": "شمال الرياض",
-          "slug_l1": "/riyadh/north-riyadh",
-          "slug": "/الرياض/شمال-الرياض"
-        },
-        {
-          "id": 2944,
-          "level": 3,
-          "externalID": "5367",
-          "name_l1": "Al Malqa",
-          "name": "الملقا",
-          "slug_l1": "/riyadh/north-riyadh/al-malqa",
-          "slug": "/الرياض/شمال-الرياض/الملقا"
-        }
-      ],
-      "category": [
-        {
-          "id": 1,
-          "level": 0,
-          "externalID": "1",
-          "name_l1": "Residential",
-          "name": "سكني",
-          "slug_l1": "residential",
-          "slug": "residential",
-          "nameSingular_l1": "Residential",
-          "nameSingular": "سكني"
-        },
-        {
-          "id": 9,
-          "level": 1,
-          "externalID": "6",
-          "name_l1": "Floors",
-          "name": "ادوار",
-          "slug_l1": "residential-floors",
-          "slug": "residential-floors",
-          "nameSingular_l1": "Floor",
-          "nameSingular": "دور"
-        }
-      ],
-      "createdAt": 1752740019.0,
-      "updatedAt": 1752740019.0,
-      "reactivatedAt": 1745231422.0,
-      "rooms": 3,
-      "baths": 5,
-      "area": 271.0,
-      "coverPhoto": {
-        "id": 4630301,
-        "externalID": "1387381",
-        "title": null,
-        "orderIndex": 0,
-        "nimaScore": null,
-        "url": "https://bayut-sa-production.s3.eu-central-1.amazonaws.com/image/4630301/eb1432e11db24ca4873ba609b7df07d5",
-        "main": true,
-        "uuid": "0b27c590-1b68-46de-b19e-17d62d64fc86"
-      },
-      "photoCount": 37,
-      "videoCount": 0,
-      "panoramaCount": 0,
-      "phoneNumber": {
-        "mobile": "+966539992727",
-        "phone": "+966114888849",
-        "whatsapp": "966114049994",
-        "proxyMobile": "+966115002345",
-        "phoneNumbers": [
-          "+966114888849"
-        ],
-        "mobileNumbers": [
-          "+966539992727"
-        ]
-      },
-      "contactMethodAvailability": {
-        "whatsapp": true,
-        "sms": true,
-        "email": true,
-        "call": true
-      },
-      "contactName": "Naif",
-      "agency": {
-        "id": 15494,
-        "objectID": 15494,
-        "name_l1": "SATEL Co.",
-        "name": "ساتل",
-        "externalID": "1720192428",
-        "product": "platinum plus",
-        "productScore": 3,
-        "licenses": [],
-        "logo": {
-          "id": 3156854,
-          "url": "https://bayut-sa-production.s3.eu-central-1.amazonaws.com/image/3156854/a8ad7e553cd241169a67e7d9538cc595"
-        },
-        "slug_l1": "satel-realty-company-1720192428",
-        "slug": "satel-realty-company-1720192428",
-        "tr": 4,
-        "tier": 4,
-        "roles": [],
-        "active": true,
-        "createdAt": "2023-05-07T02:40:40+00:00",
-        "commercialNumber": null,
-        "shortNumber": null,
-        "type": "agency"
-      },
-      "isVerified": false,
-      "verification": {
-        "updatedAt": 1745238763.573353,
-        "eligible": false,
-        "status": "unverified",
-        "verifiedAt": null,
-        "trucheckedAt": 0
-      },
-      "floorPlanID": null,
-      "furnishingStatus": "unfurnished",
-      "extraFields": {
-        "rega_location_city": {
-          "ar": "الرياض",
-          "en": "Riyadh"
-        },
-        "rega_location_region": {
-          "ar": "منطقة الرياض",
-          "en": "منطقة الرياض"
-        },
-        "ad_license_expiry_date": 1776286800,
-        "rega_location_district": {
-          "ar": "الملقا",
-          "en": "Al Malqa"
-        },
-        "rega_location_latitude": 24.78557034698429,
-        "rega_location_longitude": 46.60360672382504,
-        "rega_utilities_sewerage": {
-          "ar": "نعم",
-          "en": "Yes"
-        },
-        "rega_location_postal_code": "13522",
-        "rega_location_street_name": {
-          "ar": "رقم 165",
-          "en": "رقم 165"
-        },
-        "rega_property_specs_price": 175000.0,
-        "rega_additional_info_notes": "",
-        "rega_license_info_end_date": "2026-04-16",
-        "rega_utilities_electricity": {
-          "ar": "نعم",
-          "en": "Yes"
-        },
-        "rega_utilities_fixed_phone": {
-          "ar": "نعم",
-          "en": "Yes"
-        },
-        "rega_utilities_fiber_optics": {
-          "ar": "نعم",
-          "en": "Yes"
-        },
-        "rega_license_info_start_date": "2025-04-21",
-        "rega_additional_info_channels": {
-          "ar": "منصة مرخصة ،منصات التواصل الإجتماعي ،لوحة اعلانية ،الإذاعة ،أخرى",
-          "en": "Licensed platform, Social media platforms, Bulletin board, Radio, Other"
-        },
-        "rega_location_building_number": "6846",
-        "rega_property_specs_area_size": 271.41,
-        "rega_location_additional_number": "3812",
-        "rega_additional_info_deed_number": "3707104532700003",
-        "rega_additional_info_land_number": "1133/2",
-        "rega_additional_info_listing_age": {
-          "ar": "اقل من سنة",
-          "en": "Less than one year"
-        },
-        "rega_additional_info_plan_number": "3179",
-        "rega_property_specs_listing_type": {
-          "ar": "ادوار",
-          "en": "Floor"
-        },
-        "rega_additional_info_street_width": 0.0,
-        "rega_property_specs_listing_usage": {
-          "ar": "",
-          "en": ""
-        },
-        "rega_license_info_ad_license_number": "7200501117",
-        "rega_property_specs_number_of_rooms": 3.0,
-        "brokerage_and_marketing_license_number": "1200010193",
-        "rega_additional_info_is_listing_pawned": {
-          "ar": "لا",
-          "en": "No"
-        },
-        "rega_property_specs_advertisement_type": {
-          "ar": "للإيجار",
-          "en": "For Rent"
-        },
-        "rega_additional_info_is_listing_constrained": {
-          "ar": "لا",
-          "en": "No"
-        },
-        "rega_additional_info_obligations_on_listing": "لا يوجد",
-        "rega_additional_info_guarantees_and_duration": "المكيفات المطبخ الانشائي الكهرباء السباكة\n",
-        "dldPropertySK": "87636950"
-      },
-      "type": "property",
-      "ownerAgent": {
-        "externalID": "00000000-e2ba-801f-8000-024213371337",
-        "name_l1": "Naif",
-        "name": "نايف",
-        "user_image": "https://bayut-sa-production.s3.eu-central-1.amazonaws.com/image/4287930/55b9f66801f74ebeaf5f93c5c27949de",
-        "user_image_id": 4287930,
-        "isTruBroker": true,
-        "slug_l1": "naif-00000000-e2ba-801f-8000-024213371337",
-        "slug": "naif-00000000-e2ba-801f-8000-024213371337",
-        "state": "active",
-        "isProfileCompleted": true,
-        "isComplete": true
-      },
-      "completionStatus": "completed",
-      "hasMatchingFloorPlans": false,
-      "photoIDs": [
-        4630301,
-        4630302,
-        4630303,
-        4630304,
-        4630305,
-        4630306,
-        4630307,
-        4630308,
-        4630309,
-        4630310,
-        4630311,
-        4630312,
-        4630313,
-        4630314,
-        4630315,
-        4630316,
-        4630317,
-        4630318,
-        4630319,
-        4630320,
-        4630321,
-        4630322,
-        4630323,
-        4630324,
-        4630325,
-        4630326,
-        4630327,
-        4630328,
-        4630329,
-        4630330,
-        4630331,
-        4630332,
-        4630333,
-        4630334,
-        4630335,
-        4630336,
-        4630337
-      ],
-      "hidePrice": false,
-      "locationPurposeTier": 0,
-      "plotArea": null,
-      "additionalCategories": [
-        [
-          {
-            "id": 1,
-            "level": 0,
-            "externalID": "1",
-            "name_l1": "Residential",
-            "name": "سكني",
-            "slug_l1": "residential",
-            "slug": "residential",
-            "nameSingular_l1": "Residential",
-            "nameSingular": "سكني"
-          },
-          {
-            "id": 9,
-            "level": 1,
-            "externalID": "6",
-            "name_l1": "Floors",
-            "name": "ادوار",
-            "slug_l1": "residential-floors",
-            "slug": "residential-floors",
-            "nameSingular_l1": "Floor",
-            "nameSingular": "دور"
-          }
-        ]
-      ],
-      "objectID": "1039954",
-      "_highlightResult": {
-        "title_l1": {
-          "value": "Luxurious house for rent in Al Malqa neighborhood",
-          "matchLevel": "none",
-          "matchedWords": []
-        },
-        "title": {
-          "value": "دور فاخر للإيجار في حي الملقا",
-          "matchLevel": "none",
-          "matchedWords": []
-        },
-        "externalID": {
-          "value": "87636950",
-          "matchLevel": "none",
-          "matchedWords": []
-        },
-        "agency": {
-          "name_l1": {
-            "value": "SATEL Co.",
-            "matchLevel": "none",
-            "matchedWords": []
-          },
-          "name": {
-            "value": "ساتل",
-            "matchLevel": "none",
-            "matchedWords": []
-          }
-        },
-        "keywords": [
-          {
-            "value": "جاهزة",
-            "matchLevel": "none",
-            "matchedWords": []
-          },
-          {
-            "value": "مفروش",
-            "matchLevel": "none",
-            "matchedWords": []
-          },
-          {
-            "value": "جاهز",
-            "matchLevel": "none",
-            "matchedWords": []
-          },
-          {
-            "value": "موقف سيارة",
-            "matchLevel": "none",
-            "matchedWords": []
-          },
-          {
-            "value": "خاص",
-            "matchLevel": "none",
-            "matchedWords": []
-          },
-          {
-            "value": "بحر",
-            "matchLevel": "none",
-            "matchedWords": []
-          },
-          {
-            "value": "حديثة",
-            "matchLevel": "none",
-            "matchedWords": []
-          },
-          {
-            "value": "مفروشة",
-            "matchLevel": "none",
-            "matchedWords": []
-          },
-          {
-            "value": "مؤثثة",
-            "matchLevel": "none",
-            "matchedWords": []
-          },
-          {
-            "value": "مطبخ",
-            "matchLevel": "none",
-            "matchedWords": []
-          },
-          {
-            "value": "خدم",
-            "matchLevel": "none",
-            "matchedWords": []
-          },
-          {
-            "value": "غير مفروشة",
-            "matchLevel": "none",
-            "matchedWords": []
-          },
-          {
-            "value": "خادمة",
-            "matchLevel": "none",
-            "matchedWords": []
-          },
-          {
-            "value": "مودرن",
-            "matchLevel": "none",
-            "matchedWords": []
-          }
-        ]
-      }
-    }
-  },
-  {
-    "external_id": "87650647",
-    "objectID": "1045374",
-    "title": "شقة فخمة في الملقا",
-    "title_ar": "Luxorious Apartment In Al Malqa",
-    "description": "",
-    "property_type": [
-      {
-        "id": 1,
-        "level": 0,
-        "externalID": "1",
-        "name_l1": "Residential",
-        "name": "سكني",
-        "slug_l1": "residential",
-        "slug": "residential",
-        "nameSingular_l1": "Residential",
-        "nameSingular": "سكني"
-      },
-      {
-        "id": 6,
-        "level": 1,
-        "externalID": "3",
-        "name_l1": "Apartments",
-        "name": "شقق",
-        "slug_l1": "apartments",
-        "slug": "apartments",
-        "nameSingular_l1": "Apartment",
-        "nameSingular": "شقة"
-      }
-    ],
-    "property_type_ar": "property",
-    "purpose": "for-rent",
-    "price": 100000.0,
-    "currency": "SAR",
-    "bedrooms": 3,
-    "bathrooms": 3,
-    "area": 134.0,
-    "area_unit": "sqm",
-    "location": [
-      {
-        "id": 1,
-        "level": 0,
-        "externalID": "1",
-        "name_l1": "KSA",
-        "name": "السعودية",
-        "slug_l1": "/ksa",
-        "slug": "/السعودية"
-      },
-      {
-        "id": 37,
-        "level": 1,
-        "externalID": "230",
-        "name_l1": "Riyadh",
-        "name": "الرياض",
-        "slug_l1": "/riyadh",
-        "slug": "/الرياض"
-      },
-      {
-        "id": 8484,
-        "level": 2,
-        "externalID": "12074",
-        "name_l1": "North Riyadh",
-        "name": "شمال الرياض",
-        "slug_l1": "/riyadh/north-riyadh",
-        "slug": "/الرياض/شمال-الرياض"
-      },
-      {
-        "id": 2944,
-        "level": 3,
-        "externalID": "5367",
-        "name_l1": "Al Malqa",
-        "name": "الملقا",
-        "slug_l1": "/riyadh/north-riyadh/al-malqa",
-        "slug": "/الرياض/شمال-الرياض/الملقا"
-      }
-    ],
-    "city": "الرياض",
-    "latitude": 24.819111585506,
-    "longitude": 46.605092664344,
-    "location_hierarchy": [
-      {
-        "id": 1,
-        "level": 0,
-        "externalID": "1",
-        "name_l1": "KSA",
-        "name": "السعودية",
-        "slug_l1": "/ksa",
-        "slug": "/السعودية"
-      },
-      {
-        "id": 37,
-        "level": 1,
-        "externalID": "230",
-        "name_l1": "Riyadh",
-        "name": "الرياض",
-        "slug_l1": "/riyadh",
-        "slug": "/الرياض"
-      },
-      {
-        "id": 8484,
-        "level": 2,
-        "externalID": "12074",
-        "name_l1": "North Riyadh",
-        "name": "شمال الرياض",
-        "slug_l1": "/riyadh/north-riyadh",
-        "slug": "/الرياض/شمال-الرياض"
-      },
-      {
-        "id": 2944,
-        "level": 3,
-        "externalID": "5367",
-        "name_l1": "Al Malqa",
-        "name": "الملقا",
-        "slug_l1": "/riyadh/north-riyadh/al-malqa",
-        "slug": "/الرياض/شمال-الرياض/الملقا"
-      }
-    ],
-    "agency_name": {
-      "id": 15494,
-      "objectID": 15494,
-      "name_l1": "SATEL Co.",
-      "name": "ساتل",
-      "externalID": "1720192428",
-      "product": "platinum plus",
-      "productScore": 3,
-      "licenses": [],
-      "logo": {
-        "id": 3156854,
-        "url": "https://bayut-sa-production.s3.eu-central-1.amazonaws.com/image/3156854/a8ad7e553cd241169a67e7d9538cc595"
-      },
-      "slug_l1": "satel-realty-company-1720192428",
-      "slug": "satel-realty-company-1720192428",
-      "tr": 4,
-      "tier": 4,
-      "roles": [],
-      "active": true,
-      "createdAt": "2023-05-07T02:40:40+00:00",
-      "commercialNumber": null,
-      "shortNumber": null,
-      "type": "agency"
-    },
-    "agency_name_ar": {
-      "id": 15494,
-      "objectID": 15494,
-      "name_l1": "SATEL Co.",
-      "name": "ساتل",
-      "externalID": "1720192428",
-      "product": "platinum plus",
-      "productScore": 3,
-      "licenses": [],
-      "logo": {
-        "id": 3156854,
-        "url": "https://bayut-sa-production.s3.eu-central-1.amazonaws.com/image/3156854/a8ad7e553cd241169a67e7d9538cc595"
-      },
-      "slug_l1": "satel-realty-company-1720192428",
-      "slug": "satel-realty-company-1720192428",
-      "tr": 4,
-      "tier": 4,
-      "roles": [],
-      "active": true,
-      "createdAt": "2023-05-07T02:40:40+00:00",
-      "commercialNumber": null,
-      "shortNumber": null,
-      "type": "agency"
-    },
-    "agent_name": "Ahmed",
-    "agent_name_ar": "Ahmed",
-    "phone": {
-      "mobile": "+966539992727",
-      "phone": "+966114888849",
-      "whatsapp": "966114049994",
-      "proxyMobile": "+966115002346",
-      "phoneNumbers": [
-        "+966114888849"
-      ],
-      "mobileNumbers": [
-        "+966539992727"
-      ]
-    },
-    "photo_url": {
-      "id": 4631909,
-      "externalID": "1389251",
-      "title": null,
-      "orderIndex": 0,
-      "nimaScore": null,
-      "url": "https://bayut-sa-production.s3.eu-central-1.amazonaws.com/image/4631909/6006e9b394754726af79b693b435a4ed",
-      "main": true,
-      "uuid": "ee10a11b-46a1-4ef2-9fd0-42f95a5aacd8"
-    },
-    "photo_count": 21,
-    "permit_number": "7200520547",
-    "furnishing_status": "furnished",
-    "completion_status": "completed",
-    "is_verified": false,
-    "scraped_at": "2025-07-18T14:27:55.696429",
-    "created_at": 1752739961.0,
-    "updated_at": 1752739961.0,
-    "geography": {
-      "lat": 24.819111585506,
-      "lng": 46.605092664344
-    },
-    "extra_fields": {
-      "rega_location_city": {
-        "ar": "الرياض",
-        "en": "Riyadh"
-      },
-      "rega_location_region": {
-        "ar": "منطقة الرياض",
-        "en": "منطقة الرياض"
-      },
-      "ad_license_expiry_date": 1777928400,
-      "rega_location_district": {
-        "ar": "الملقا",
-        "en": "Al Malqa"
-      },
-      "rega_location_latitude": 24.81911158550573,
-      "rega_location_longitude": 46.60509266434449,
-      "rega_utilities_sewerage": {
-        "ar": "نعم",
-        "en": "Yes"
-      },
-      "rega_location_postal_code": "13524",
-      "rega_location_street_name": {
-        "ar": "أبحر",
-        "en": "أبحر"
-      },
-      "rega_property_specs_price": 100000.0,
-      "rega_additional_info_notes": "",
-      "rega_license_info_end_date": "2026-05-05",
-      "rega_utilities_electricity": {
-        "ar": "نعم",
-        "en": "Yes"
-      },
-      "rega_utilities_fixed_phone": {
-        "ar": "نعم",
-        "en": "Yes"
-      },
-      "rega_utilities_fiber_optics": {
-        "ar": "نعم",
-        "en": "Yes"
-      },
-      "rega_borders_east_limit_name": ":",
-      "rega_borders_west_limit_name": ":",
-      "rega_license_info_start_date": "2025-05-06",
-      "rega_additional_info_channels": {
-        "ar": "منصة مرخصة ،لوحة اعلانية ،منصات التواصل الإجتماعي ،الإذاعة ،أخرى",
-        "en": "Licensed platform, Bulletin board, Social media platforms, Radio, Other"
-      },
-      "rega_borders_north_limit_name": ":",
-      "rega_borders_south_limit_name": ":",
-      "rega_location_building_number": "2914",
-      "rega_property_specs_area_size": 134.6,
-      "rega_deed_location_description": "حي الملقا بمدينة الرياض  مساحة الوحدة من الأرض 67.19 متر   وتختص من المنافع والأجزاء المشتركة بمساحة 30.89 متر ",
-      "rega_location_additional_number": "7839",
-      "rega_additional_info_deed_number": "993533002494",
-      "rega_additional_info_land_number": "2145",
-      "rega_additional_info_listing_age": {
-        "ar": "جديد",
-        "en": "New"
-      },
-      "rega_additional_info_plan_number": "3114",
-      "rega_property_specs_listing_type": {
-        "ar": "شقق",
-        "en": "Apartment"
-      },
-      "rega_additional_info_street_width": 0.0,
-      "rega_property_specs_listing_usage": {
-        "ar": "",
-        "en": ""
-      },
-      "rega_borders_east_limit_description": "مدخل قبو",
-      "rega_borders_east_limit_length_char": "ثلاثة عشر   متر   و  إثنين و ثلاثون  سنتيمتر",
-      "rega_borders_west_limit_description": "مدخل عمارة عرض 2.90 م",
-      "rega_borders_west_limit_length_char": "10.160 + 1.440 + 1.600",
-      "rega_license_info_ad_license_number": "7200520547",
-      "rega_property_specs_number_of_rooms": 3.0,
-      "rega_borders_north_limit_description": "مدخل عمارة عرض 1.38 م والدرج",
-      "rega_borders_north_limit_length_char": "2.080 + 1.560 + 7.180",
-      "rega_borders_south_limit_description": "مواقف ارصفة وشارع عرض 30 متر",
-      "rega_borders_south_limit_length_char": "عشرة   متر   و  تسعة و ستون  سنتيمتر",
-      "rega_license_info_fal_license_number": "1200010193",
-      "brokerage_and_marketing_license_number": "1200010193",
-      "rega_additional_info_is_listing_pawned": {
-        "ar": "لا",
-        "en": "No"
-      },
-      "rega_property_specs_advertisement_type": {
-        "ar": "للإيجار",
-        "en": "For Rent"
-      },
-      "rega_additional_info_is_listing_constrained": {
-        "ar": "لا",
-        "en": "No"
-      },
-      "rega_additional_info_obligations_on_listing": "لا يوجد",
-      "rega_additional_info_guarantees_and_duration": "",
-      "dldPropertySK": "87650647"
-    },
-    "raw_data": {
-      "id": 1045374,
-      "ownerID": "00000000-efdc-801f-8000-024213371337",
-      "userExternalID": "00000000-efdc-801f-8000-024213371337",
-      "sourceID": 68353,
-      "state": "active",
-      "geography": {
-        "lat": 24.819111585506,
-        "lng": 46.605092664344
-      },
-      "purpose": "for-rent",
-      "price": 100000.0,
-      "product": "superhot",
-      "productLabel": "default",
-      "rentFrequency": "yearly",
-      "referenceNumber": null,
-      "permitNumber": "7200520547",
-      "projectNumber": null,
-      "title_l1": "Luxorious Apartment In Al Malqa",
-      "title": "شقة فخمة في الملقا",
-      "externalID": "87650647",
-      "slug_l1": "details-87650647",
-      "slug": "تفاصيل-87650647",
-      "location": [
-        {
-          "id": 1,
-          "level": 0,
-          "externalID": "1",
-          "name_l1": "KSA",
-          "name": "السعودية",
-          "slug_l1": "/ksa",
-          "slug": "/السعودية"
-        },
-        {
-          "id": 37,
-          "level": 1,
-          "externalID": "230",
-          "name_l1": "Riyadh",
-          "name": "الرياض",
-          "slug_l1": "/riyadh",
-          "slug": "/الرياض"
-        },
-        {
-          "id": 8484,
-          "level": 2,
-          "externalID": "12074",
-          "name_l1": "North Riyadh",
-          "name": "شمال الرياض",
-          "slug_l1": "/riyadh/north-riyadh",
-          "slug": "/الرياض/شمال-الرياض"
-        },
-        {
-          "id": 2944,
-          "level": 3,
-          "externalID": "5367",
-          "name_l1": "Al Malqa",
-          "name": "الملقا",
-          "slug_l1": "/riyadh/north-riyadh/al-malqa",
-          "slug": "/الرياض/شمال-الرياض/الملقا"
-        }
-      ],
-      "category": [
-        {
-          "id": 1,
-          "level": 0,
-          "externalID": "1",
-          "name_l1": "Residential",
-          "name": "سكني",
-          "slug_l1": "residential",
-          "slug": "residential",
-          "nameSingular_l1": "Residential",
-          "nameSingular": "سكني"
-        },
-        {
-          "id": 6,
-          "level": 1,
-          "externalID": "3",
-          "name_l1": "Apartments",
-          "name": "شقق",
-          "slug_l1": "apartments",
-          "slug": "apartments",
-          "nameSingular_l1": "Apartment",
-          "nameSingular": "شقة"
-        }
-      ],
-      "createdAt": 1752739961.0,
-      "updatedAt": 1752739961.0,
-      "reactivatedAt": 1746525312.0,
-      "rooms": 3,
-      "baths": 3,
-      "area": 134.0,
-      "coverPhoto": {
-        "id": 4631909,
-        "externalID": "1389251",
-        "title": null,
-        "orderIndex": 0,
-        "nimaScore": null,
-        "url": "https://bayut-sa-production.s3.eu-central-1.amazonaws.com/image/4631909/6006e9b394754726af79b693b435a4ed",
-        "main": true,
-        "uuid": "ee10a11b-46a1-4ef2-9fd0-42f95a5aacd8"
-      },
-      "photoCount": 21,
-      "videoCount": 0,
-      "panoramaCount": 0,
-      "phoneNumber": {
-        "mobile": "+966539992727",
-        "phone": "+966114888849",
-        "whatsapp": "966114049994",
-        "proxyMobile": "+966115002346",
-        "phoneNumbers": [
-          "+966114888849"
-        ],
-        "mobileNumbers": [
-          "+966539992727"
-        ]
-      },
-      "contactMethodAvailability": {
-        "whatsapp": true,
-        "sms": true,
-        "email": true,
-        "call": true
-      },
-      "contactName": "Ahmed",
-      "agency": {
-        "id": 15494,
-        "objectID": 15494,
-        "name_l1": "SATEL Co.",
-        "name": "ساتل",
-        "externalID": "1720192428",
-        "product": "platinum plus",
-        "productScore": 3,
-        "licenses": [],
-        "logo": {
-          "id": 3156854,
-          "url": "https://bayut-sa-production.s3.eu-central-1.amazonaws.com/image/3156854/a8ad7e553cd241169a67e7d9538cc595"
-        },
-        "slug_l1": "satel-realty-company-1720192428",
-        "slug": "satel-realty-company-1720192428",
-        "tr": 4,
-        "tier": 4,
-        "roles": [],
-        "active": true,
-        "createdAt": "2023-05-07T02:40:40+00:00",
-        "commercialNumber": null,
-        "shortNumber": null,
-        "type": "agency"
-      },
-      "isVerified": false,
-      "verification": {
-        "updatedAt": 1746528540.799136,
-        "eligible": false,
-        "status": "unverified",
-        "verifiedAt": null,
-        "trucheckedAt": 0
-      },
-      "floorPlanID": null,
-      "furnishingStatus": "furnished",
-      "extraFields": {
-        "rega_location_city": {
-          "ar": "الرياض",
-          "en": "Riyadh"
-        },
-        "rega_location_region": {
-          "ar": "منطقة الرياض",
-          "en": "منطقة الرياض"
-        },
-        "ad_license_expiry_date": 1777928400,
-        "rega_location_district": {
-          "ar": "الملقا",
-          "en": "Al Malqa"
-        },
-        "rega_location_latitude": 24.81911158550573,
-        "rega_location_longitude": 46.60509266434449,
-        "rega_utilities_sewerage": {
-          "ar": "نعم",
-          "en": "Yes"
-        },
-        "rega_location_postal_code": "13524",
-        "rega_location_street_name": {
-          "ar": "أبحر",
-          "en": "أبحر"
-        },
-        "rega_property_specs_price": 100000.0,
-        "rega_additional_info_notes": "",
-        "rega_license_info_end_date": "2026-05-05",
-        "rega_utilities_electricity": {
-          "ar": "نعم",
-          "en": "Yes"
-        },
-        "rega_utilities_fixed_phone": {
-          "ar": "نعم",
-          "en": "Yes"
-        },
-        "rega_utilities_fiber_optics": {
-          "ar": "نعم",
-          "en": "Yes"
-        },
-        "rega_borders_east_limit_name": ":",
-        "rega_borders_west_limit_name": ":",
-        "rega_license_info_start_date": "2025-05-06",
-        "rega_additional_info_channels": {
-          "ar": "منصة مرخصة ،لوحة اعلانية ،منصات التواصل الإجتماعي ،الإذاعة ،أخرى",
-          "en": "Licensed platform, Bulletin board, Social media platforms, Radio, Other"
-        },
-        "rega_borders_north_limit_name": ":",
-        "rega_borders_south_limit_name": ":",
-        "rega_location_building_number": "2914",
-        "rega_property_specs_area_size": 134.6,
-        "rega_deed_location_description": "حي الملقا بمدينة الرياض  مساحة الوحدة من الأرض 67.19 متر   وتختص من المنافع والأجزاء المشتركة بمساحة 30.89 متر ",
-        "rega_location_additional_number": "7839",
-        "rega_additional_info_deed_number": "993533002494",
-        "rega_additional_info_land_number": "2145",
-        "rega_additional_info_listing_age": {
-          "ar": "جديد",
-          "en": "New"
-        },
-        "rega_additional_info_plan_number": "3114",
-        "rega_property_specs_listing_type": {
-          "ar": "شقق",
-          "en": "Apartment"
-        },
-        "rega_additional_info_street_width": 0.0,
-        "rega_property_specs_listing_usage": {
-          "ar": "",
-          "en": ""
-        },
-        "rega_borders_east_limit_description": "مدخل قبو",
-        "rega_borders_east_limit_length_char": "ثلاثة عشر   متر   و  إثنين و ثلاثون  سنتيمتر",
-        "rega_borders_west_limit_description": "مدخل عمارة عرض 2.90 م",
-        "rega_borders_west_limit_length_char": "10.160 + 1.440 + 1.600",
-        "rega_license_info_ad_license_number": "7200520547",
-        "rega_property_specs_number_of_rooms": 3.0,
-        "rega_borders_north_limit_description": "مدخل عمارة عرض 1.38 م والدرج",
-        "rega_borders_north_limit_length_char": "2.080 + 1.560 + 7.180",
-        "rega_borders_south_limit_description": "مواقف ارصفة وشارع عرض 30 متر",
-        "rega_borders_south_limit_length_char": "عشرة   متر   و  تسعة و ستون  سنتيمتر",
-        "rega_license_info_fal_license_number": "1200010193",
-        "brokerage_and_marketing_license_number": "1200010193",
-        "rega_additional_info_is_listing_pawned": {
-          "ar": "لا",
-          "en": "No"
-        },
-        "rega_property_specs_advertisement_type": {
-          "ar": "للإيجار",
-          "en": "For Rent"
-        },
-        "rega_additional_info_is_listing_constrained": {
-          "ar": "لا",
-          "en": "No"
-        },
-        "rega_additional_info_obligations_on_listing": "لا يوجد",
-        "rega_additional_info_guarantees_and_duration": "",
-        "dldPropertySK": "87650647"
-      },
-      "type": "property",
-      "ownerAgent": {
-        "externalID": "00000000-efdc-801f-8000-024213371337",
-        "name_l1": "Ahmed",
-        "name": "أحمد",
-        "user_image": "https://bayut-sa-production.s3.eu-central-1.amazonaws.com/image/4287931/c9a623fe4e3745bf86ac285b7d244548",
-        "user_image_id": 4287931,
-        "isTruBroker": true,
-        "slug_l1": "ahmed-00000000-efdc-801f-8000-024213371337",
-        "slug": "ahmed-00000000-efdc-801f-8000-024213371337",
-        "state": "active",
-        "isProfileCompleted": true,
-        "isComplete": true
-      },
-      "completionStatus": "completed",
-      "hasMatchingFloorPlans": false,
-      "photoIDs": [
-        4631909,
-        4611960,
-        4611980,
-        4631910,
-        4631911,
-        4631912,
-        4631913,
-        4631914,
-        4631915,
-        4631916,
-        4631917,
-        4631918,
-        4631919,
-        4631920,
-        4631921,
-        4631922,
-        4631923,
-        4631924,
-        4631925,
-        4631926,
-        4631927
-      ],
-      "hidePrice": false,
-      "locationPurposeTier": 0,
-      "plotArea": null,
-      "additionalCategories": [
-        [
-          {
-            "id": 1,
-            "level": 0,
-            "externalID": "1",
-            "name_l1": "Residential",
-            "name": "سكني",
-            "slug_l1": "residential",
-            "slug": "residential",
-            "nameSingular_l1": "Residential",
-            "nameSingular": "سكني"
-          },
-          {
-            "id": 6,
-            "level": 1,
-            "externalID": "3",
-            "name_l1": "Apartments",
-            "name": "شقق",
-            "slug_l1": "apartments",
-            "slug": "apartments",
-            "nameSingular_l1": "Apartment",
-            "nameSingular": "شقة"
-          }
-        ]
-      ],
-      "objectID": "1045374",
-      "_highlightResult": {
-        "title_l1": {
-          "value": "Luxorious Apartment In Al Malqa",
-          "matchLevel": "none",
-          "matchedWords": []
-        },
-        "title": {
-          "value": "شقة فخمة في الملقا",
-          "matchLevel": "none",
-          "matchedWords": []
-        },
-        "externalID": {
-          "value": "87650647",
-          "matchLevel": "none",
-          "matchedWords": []
-        },
-        "agency": {
-          "name_l1": {
-            "value": "SATEL Co.",
-            "matchLevel": "none",
-            "matchedWords": []
-          },
-          "name": {
-            "value": "ساتل",
-            "matchLevel": "none",
-            "matchedWords": []
-          }
-        },
-        "keywords": [
-          {
-            "value": "مفروش بالكامل",
-            "matchLevel": "none",
-            "matchedWords": []
-          },
-          {
-            "value": "الطابق السفلي",
-            "matchLevel": "none",
-            "matchedWords": []
-          },
-          {
-            "value": "خادمة",
-            "matchLevel": "none",
-            "matchedWords": []
-          },
-          {
-            "value": "مطبخ",
-            "matchLevel": "none",
-            "matchedWords": []
-          },
-          {
-            "value": "خدم",
-            "matchLevel": "none",
-            "matchedWords": []
-          },
-          {
-            "value": "مصعد",
             "matchLevel": "none",
             "matchedWords": []
           },
