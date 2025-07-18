@@ -607,7 +607,7 @@ def map_api_to_db(hit):
 
 if __name__ == "__main__":
     import asyncio
-    from src.db_utils import bulk_insert_properties
+    from db_utils import bulk_insert_properties
 
     async def main():
         async with EnhancedBayutScraper() as scraper:
