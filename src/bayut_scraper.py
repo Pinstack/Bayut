@@ -21,7 +21,6 @@ logHandler = logging.StreamHandler()
 formatter = JsonFormatter("%(asctime)s %(levelname)s %(name)s %(message)s")
 logHandler.setFormatter(formatter)
 logger = logging.getLogger(__name__)
-logger.handlers = []
 logger.addHandler(logHandler)
 logger.setLevel(logging.INFO)
 
@@ -537,94 +536,6 @@ class EnhancedBayutScraper:
             json.dump(listings_data, f, ensure_ascii=False, indent=2)
 
         logger.info(f"Saved {len(listings)} listings to {filename}")
-
-    def save_listings_to_database_format(
-        self, listings: List[PropertyListing], filename: str
-    ):
-        """Save listings in a format ready for database insertion"""
-        data = {
-            "scraped_at": datetime.now().isoformat(),
-            "total_listings": len(listings),
-            "listings": [],
-        }
-
-        for listing in listings:
-            # Convert to database-ready format
-            db_listing = {
-                "external_id": listing.external_id,
-                "title": listing.title,
-                "title_ar": listing.title_ar,
-                "description": listing.description,
-                "description_ar": listing.description_ar,
-                "property_type": listing.property_type,
-                "property_type_ar": listing.property_type_ar,
-                "purpose": listing.purpose,
-                "price": listing.price,
-                "currency": listing.currency,
-                "bedrooms": listing.bedrooms,
-                "bathrooms": listing.bathrooms,
-                "area": listing.area,
-                "area_unit": listing.area_unit,
-                "location": listing.location,
-                "city": listing.city,
-                "latitude": listing.latitude,
-                "longitude": listing.longitude,
-                "agency_name": listing.agency_name,
-                "agency_name_ar": listing.agency_name_ar,
-                "agent_name": listing.agent_name,
-                "agent_name_ar": listing.agent_name_ar,
-                "phone": listing.phone,
-                "whatsapp": listing.whatsapp,
-                "photo_url": listing.photo_url,
-                "photo_count": listing.photo_count,
-                "permit_number": listing.permit_number,
-                "reference_number": listing.reference_number,
-                "furnishing_status": listing.furnishing_status,
-                "completion_status": listing.completion_status,
-                "is_verified": listing.is_verified,
-                "scraped_at": listing.scraped_at,
-                "created_at": listing.created_at,
-                "updated_at": listing.updated_at,
-                # JSONB fields
-                "amenities": (
-                    listing.extra_fields.get("amenities")
-                    if listing.extra_fields
-                    else None
-                ),
-                "images": (
-                    listing.extra_fields.get("images") if listing.extra_fields else None
-                ),
-                "license_info": (
-                    {
-                        "permit_number": listing.permit_number,
-                        "reference_number": listing.reference_number,
-                        "rega_data": listing.extra_fields,
-                    }
-                    if listing.extra_fields
-                    else None
-                ),
-                "location_details": {
-                    "hierarchy": listing.location_hierarchy,
-                    "geography": listing.geography,
-                    "latitude": listing.latitude,
-                    "longitude": listing.longitude,
-                },
-                "property_details": {
-                    "raw_data": listing.raw_data,
-                    "project": listing.project,
-                    "payment_plans": listing.payment_plans,
-                    "documents": listing.documents,
-                },
-            }
-
-            # Remove None values
-            db_listing = {k: v for k, v in db_listing.items() if v is not None}
-            data["listings"].append(db_listing)
-
-        with open(filename, "w", encoding="utf-8") as f:
-            json.dump(data, f, ensure_ascii=False, indent=2)
-
-        logger.info(f"Saved {len(listings)} listings in database format to {filename}")
 
 
 def clean_for_json(data):
