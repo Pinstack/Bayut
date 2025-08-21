@@ -2,6 +2,16 @@
 
 ## Current Work Focus
 
+### Change Tracking System Planning (In Progress)
+- **Status**: 🔄 Planning Phase
+- **Date**: July 18, 2024
+- **Description**: Designing comprehensive change tracking system for property listings
+- **Key Components**:
+  - Price history tracking with location-based analysis
+  - Automated change detection and notification system
+  - Enhanced database schema for historical data
+  - Scheduled scraping with state management
+
 ### Database Schema Simplification (Completed)
 - **Status**: ✅ Complete
 - **Date**: July 18, 2024
@@ -26,6 +36,31 @@
 - **README Updated**: Complete documentation with virtual environment instructions
 
 ## Recent Changes
+
+### Change Tracking System Design
+1. **Architecture Planning**:
+   - Designed location-based change tracking approach
+   - Planned price history tracking with temporal granularity
+   - Designed automated change detection algorithms
+   - Planned notification and alerting system
+
+2. **Database Schema Enhancement**:
+   - Designed `price_history` table for temporal data
+   - Planned `property_changes` table for change tracking
+   - Designed efficient indexing strategy for performance
+   - Planned state management for change detection
+
+3. **Implementation Strategy**:
+   - Phase 1: Location-based price tracking (immediate)
+   - Phase 2: Change detection and state management (short-term)
+   - Phase 3: Notification system and scheduling (medium-term)
+   - Planned automated daily scraping with change detection
+
+4. **Technical Requirements**:
+   - Enhanced scraper with change detection capabilities
+   - Background task scheduling system
+   - Notification and alerting infrastructure
+   - State management for tracking previous scraping results
 
 ### Database Schema Simplification
 1. **Table Rename Process**:
@@ -119,22 +154,37 @@
 ## Next Steps
 
 ### Immediate Priorities
-1. **Application Integration**: ✅ Complete - All code updated for simplified schema
-2. **Performance Optimization**: Fine-tune scraping performance
-3. **Monitoring**: Add performance and success rate tracking
+1. **Change Tracking Implementation**: Implement Phase 1 location-based price tracking
+2. **Database Schema Enhancement**: Add price_history and property_changes tables
+3. **Enhanced Scraper**: Add change detection capabilities to existing scraper
 
 ### Medium-term Goals
-1. **Automated Scheduling**: Set up regular scraping jobs
-2. **Data Analysis**: Implement basic analytics and reporting
-3. **API Monitoring**: Detect changes in Algolia endpoints
+1. **State Management**: Implement change detection state management
+2. **Automated Scheduling**: Set up regular scraping jobs with change detection
+3. **Notification System**: Implement alerts for significant price changes
 
 ### Long-term Vision
-1. **Scalability**: Handle larger datasets efficiently
-2. **Real-time Updates**: Implement change detection
-3. **Advanced Analytics**: Comprehensive data analysis tools
-4. **API Development**: Expose scraper functionality via API
+1. **Advanced Analytics**: Comprehensive price trend analysis and visualization
+2. **Real-time Monitoring**: Continuous change detection with minimal latency
+3. **Market Intelligence**: Price analysis and market insights
+4. **API Development**: Expose change tracking functionality via API
 
 ## Active Decisions
+
+### Change Tracking Architecture
+- **Decision**: Location-based change tracking approach
+- **Rationale**: Natural market boundaries align with user behavior and Bayut's structure
+- **Implementation**: Location-based tracking with state management and comparison algorithms
+
+### Price History Strategy
+- **Decision**: Temporal granularity with daily tracking for major locations
+- **Rationale**: Balances data freshness with API rate limits and system resources
+- **Implementation**: Automated daily scraping with change detection algorithms
+
+### Database Schema Enhancement
+- **Decision**: Add dedicated tables for price history and change tracking
+- **Rationale**: Separates current data from historical data for better performance
+- **Implementation**: price_history and property_changes tables with efficient indexing
 
 ### Database Schema Simplification
 - **Decision**: Simplified location system from 4 tables to 2 tables
@@ -158,6 +208,24 @@
 
 ## Current Considerations
 
+### Change Tracking Performance
+- **Polling Frequency**: Daily for major locations, hourly for high-value areas
+- **Data Storage**: Efficient compression and archiving for historical data
+- **Change Detection**: Optimized algorithms for fast comparison
+- **Memory Usage**: Streaming processing for large datasets
+
+### Location-Based Analysis Requirements
+- **Location Granularity**: Use Bayut's existing location hierarchy
+- **Cross-location Analysis**: Compare prices across different market areas
+- **Temporal Analysis**: Track price changes over time by location
+- **Market Insights**: Generate location-specific market intelligence
+
+### Notification System Design
+- **Change Thresholds**: Configurable price change percentages
+- **Alert Channels**: Email, webhook, or database notifications
+- **Frequency Control**: Prevent notification spam
+- **User Preferences**: Customizable alert settings
+
 ### Performance Optimization
 - **Rate Limiting**: Current 1-second delay between requests
 - **Batch Size**: 25 properties per page (configurable)
@@ -178,11 +246,18 @@
 
 ## Recent Learnings
 
+### Change Tracking Insights
+- Location-based tracking aligns with user search behavior and market boundaries
+- Temporal data requires careful indexing for efficient querying
+- Change detection algorithms need to handle data quality issues gracefully
+- State management is critical for reliable change detection
+
 ### Database Schema Design
 - Simplified schemas are easier to maintain and understand
 - Location hierarchies can be effectively managed with self-referencing tables
 - Bulk operations are more efficient with normalized data
 - Proper testing is essential for schema migrations
+- Historical data requires separate optimization strategies
 
 ### Virtual Environment Best Practices
 - Always use virtual environments for Python projects
@@ -204,6 +279,12 @@
 
 ## Current Challenges
 
+### Change Tracking Challenges
+- **Data Volume**: Historical data will grow significantly over time
+- **Performance**: Efficient change detection for large datasets
+- **Accuracy**: Distinguishing real changes from data quality issues
+- **Scalability**: Handling multiple locations and property types
+
 ### Minor Issues
 - **Error Handling**: Some edge cases in data parsing
 - **Performance**: Could be optimized for larger datasets
@@ -215,7 +296,7 @@
 - Documentation comprehensive and up-to-date
 - Database schema simplified and working
 - Application code updated and tested
-- Ready for next phase of development
+- Ready for change tracking implementation
 
 ## Environment Status
 
@@ -242,4 +323,5 @@
 - **Tables**: 8 tables (properties, locations, agencies, agents, projects, media, payment_plans, documents)
 - **Records**: 27,535 properties, 880 locations, 1,388 agencies, 2,224 agents, 23,205 media items
 - **Schema**: Simplified and normalized
-- **Relationships**: All foreign keys working correctly 
+- **Relationships**: All foreign keys working correctly
+- **Planned Additions**: price_history, property_changes tables for change tracking 

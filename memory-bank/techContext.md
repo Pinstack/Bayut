@@ -21,6 +21,20 @@
 - **Features**: Event loop, coroutines, concurrent execution
 - **Usage**: Core async functionality, rate limiting, batch processing
 
+### Change Tracking Technologies (New)
+
+#### APScheduler 3.10.0+
+- **Purpose**: Advanced Python Scheduler for background tasks
+- **Features**: Cron-like scheduling, persistent job storage, timezone support
+- **Configuration**: Daily/hourly scraping schedules, error handling
+- **Usage**: Automated change tracking and monitoring
+
+#### SQLAlchemy 2.0.0+
+- **Purpose**: SQL toolkit and Object-Relational Mapping
+- **Features**: Database abstraction, connection pooling, transaction management
+- **Configuration**: PostgreSQL connection, session management
+- **Usage**: Enhanced database operations for historical data
+
 ### Development Environment
 
 #### Virtual Environment
@@ -43,6 +57,14 @@
 aiohttp>=3.8.0
 asyncio
 typing-extensions>=4.0.0
+```
+
+#### Change Tracking Dependencies (New)
+```txt
+APScheduler>=3.10.0
+SQLAlchemy>=2.0.0
+alembic>=1.12.0
+psycopg2-binary>=2.9.0
 ```
 
 #### Supporting Dependencies
@@ -122,6 +144,90 @@ extra_fields = {
 }
 ```
 
+### Change Tracking Data Models (New)
+```python
+@dataclass
+class ChangeEvent:
+    event_type: str  # 'new', 'updated', 'removed', 'price_change'
+    property_id: str
+    timestamp: datetime
+    old_data: Optional[Dict[str, Any]]
+    new_data: Optional[Dict[str, Any]]
+    change_percentage: Optional[float]
+    location: str
+
+@dataclass
+class PriceHistory:
+    property_id: str
+    location_id: int
+    asking_price: float
+    price_per_sqm: float
+    currency: str
+    property_type: str
+    purpose: str
+    captured_at: datetime
+    listing_date: Optional[datetime]
+```
+
+## Database Schema
+
+### Current Tables
+- **properties**: Main property listings
+- **locations**: Location hierarchy
+- **agencies**: Real estate agencies
+- **agents**: Property agents
+- **projects**: Development projects
+- **media**: Property media assets
+- **payment_plans**: Payment plan information
+- **documents**: Property documents
+
+### New Tables for Change Tracking
+```sql
+-- Price history tracking
+CREATE TABLE price_history (
+    id SERIAL PRIMARY KEY,
+    property_id VARCHAR(255) NOT NULL,
+    location_id INTEGER REFERENCES locations(id),
+    asking_price DECIMAL(15,2) NOT NULL,
+    price_per_sqm DECIMAL(15,2),
+    currency VARCHAR(10) DEFAULT 'SAR',
+    property_type VARCHAR(100),
+    purpose VARCHAR(50),
+    captured_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    listing_date TIMESTAMP,
+    
+    INDEX idx_property_date (property_id, captured_at),
+    INDEX idx_location_date (location_id, captured_at)
+);
+
+-- Change events tracking
+CREATE TABLE property_changes (
+    id SERIAL PRIMARY KEY,
+    event_type VARCHAR(50) NOT NULL,
+    property_id VARCHAR(255) NOT NULL,
+    location_id INTEGER REFERENCES locations(id),
+    old_data JSONB,
+    new_data JSONB,
+    change_percentage DECIMAL(5,2),
+    event_timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    
+    INDEX idx_property_event (property_id, event_timestamp),
+    INDEX idx_location_event (location_id, event_timestamp),
+    INDEX idx_event_type (event_type, event_timestamp)
+);
+
+-- State management for change detection
+CREATE TABLE scraping_states (
+    id SERIAL PRIMARY KEY,
+    location VARCHAR(255) NOT NULL,
+    state_data JSONB NOT NULL,
+    last_updated TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    
+    UNIQUE(location),
+    INDEX idx_location_updated (location, last_updated)
+);
+```
+
 ## Configuration
 
 ### Environment Variables
@@ -132,6 +238,14 @@ PATH=.venv/bin:$PATH
 
 # Python path
 PYTHONPATH=/Users/raedmund/Projects/Bayut_mapping
+
+# Database configuration
+DATABASE_URL=postgresql://user:password@localhost/bayut_db
+
+# Change tracking configuration
+CHANGE_TRACKING_ENABLED=true
+PRICE_CHANGE_THRESHOLD=5.0
+POLLING_INTERVAL=3600
 ```
 
 ### Scraper Configuration
@@ -144,6 +258,35 @@ BATCH_SIZE = 25  # listings per page
 MAX_PAGES = 100  # maximum pages to scrape
 ```
 
+### Change Tracking Configuration (New)
+```python
+# Change tracking settings
+CHANGE_TRACKING_CONFIG = {
+    'enabled': True,
+    'polling_interval': 3600,  # 1 hour
+    'price_change_threshold': 5.0,  # 5% price change
+    'locations': ['الرياض', 'جدة', 'الدمام', 'مكة', 'المدينة'],
+    'notification_channels': ['email', 'webhook'],
+    'state_persistence': True,
+    'data_retention_days': 365
+}
+
+# Scheduling configuration
+SCHEDULER_CONFIG = {
+    'job_defaults': {
+        'coalesce': False,
+        'max_instances': 3
+    },
+    'timezone': 'Asia/Riyadh',
+    'job_stores': {
+        'default': {
+            'type': 'sqlalchemy',
+            'url': 'postgresql://user:password@localhost/bayut_db'
+        }
+    }
+}
+```
+
 ### Logging Configuration
 ```python
 import logging
@@ -151,6 +294,10 @@ logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
 )
+
+# Change tracking specific logging
+change_logger = logging.getLogger('change_tracking')
+change_logger.setLevel(logging.INFO)
 ```
 
 ## File Structure
@@ -166,11 +313,28 @@ Bayut_mapping/
 │   ├── techContext.md
 │   ├── activeContext.md
 │   └── progress.md
-├── bayut_scraper.py               # Original scraper
-├── bayut_scraper_enhanced.py      # Enhanced scraper with REGA data
-├── scrape_100_properties.py       # Demo script
-├── test_scraper.py                # Test script
-├── test_enhanced_scraper.py       # Enhanced scraper tests
+├── src/                           # Source code
+│   ├── bayut_scraper.py          # Original scraper
+│   ├── bayut_scraper_enhanced.py # Enhanced scraper with REGA data
+│   ├── change_tracker.py         # Change detection system (new)
+│   ├── price_history.py          # Price history tracking (new)
+│   ├── location_analyzer.py      # Location-based analysis (new)
+│   ├── notification_system.py    # Alert system (new)
+│   ├── scheduler.py              # Background task scheduling (new)
+│   ├── models.py                 # Database models
+│   └── db_utils.py               # Database utilities
+├── scripts/                       # Utility scripts
+│   ├── scrape_100_properties.py  # Demo script
+│   ├── test_scraper.py           # Test script
+│   ├── test_enhanced_scraper.py  # Enhanced scraper tests
+│   ├── setup_change_tracking.py  # Change tracking setup (new)
+│   └── run_scheduler.py          # Scheduler runner (new)
+├── alembic/                       # Database migrations
+│   ├── versions/
+│   │   ├── add_price_history.py  # Price history table (new)
+│   │   ├── add_property_changes.py # Change tracking table (new)
+│   │   └── add_scraping_states.py # State management table (new)
+│   └── env.py
 ├── requirements.txt               # Python dependencies
 ├── activate_venv.sh              # Virtual environment activation
 ├── .gitignore                    # Git ignore rules
@@ -185,6 +349,11 @@ Bayut_mapping/
 100_properties_db_ready.json     # Database-ready format
 test_enhanced_results.json       # Test results
 enhanced_apartments_for_sale.json # Category-specific results
+
+# Change tracking outputs (new)
+price_history_2024-07-18.json    # Daily price history
+change_events_2024-07-18.json    # Daily change events
+location_analysis_riyadh.json    # Location-based analysis
 ```
 
 ## Development Tools
@@ -200,6 +369,7 @@ enhanced_apartments_for_sale.json # Category-specific results
 - **Data Validation**: Property listing validation
 - **API Testing**: Direct API endpoint testing
 - **Integration Testing**: End-to-end scraping workflows
+- **Change Tracking Testing**: `test_change_tracker.py` (new)
 
 ### Documentation
 - **README.md**: Comprehensive project documentation
@@ -221,11 +391,18 @@ enhanced_apartments_for_sale.json # Category-specific results
 - **Minimal Overhead**: No HTML parsing required
 - **Caching Ready**: Easy to add response caching
 
+### Change Tracking Performance (New)
+- **State Management**: Efficient comparison algorithms
+- **Location Analysis**: Optimized location-based operations
+- **Database Operations**: Bulk inserts and efficient queries
+- **Memory Usage**: Streaming processing for large datasets
+
 ### Scalability
 - **Horizontal Scaling**: Multiple scraper instances
 - **Vertical Scaling**: Increased batch sizes and concurrency
 - **Resource Management**: Proper session cleanup
 - **Error Recovery**: Robust retry mechanisms
+- **Background Processing**: Scheduled tasks for change tracking
 
 ## Security Considerations
 
@@ -241,6 +418,12 @@ enhanced_apartments_for_sale.json # Category-specific results
 - **Encrypted Communication**: HTTPS for all API calls
 - **Access Control**: File system permissions
 
+### Change Tracking Security (New)
+- **Data Encryption**: Sensitive data encryption at rest
+- **Access Logging**: Audit trail for data changes
+- **Input Validation**: Validate all change detection inputs
+- **State Integrity**: Verify state data authenticity
+
 ## Deployment Considerations
 
 ### Environment Setup
@@ -249,6 +432,12 @@ enhanced_apartments_for_sale.json # Category-specific results
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
+
+# Database setup
+alembic upgrade head
+
+# Change tracking setup
+python scripts/setup_change_tracking.py
 ```
 
 ### Monitoring
@@ -256,12 +445,14 @@ pip install -r requirements.txt
 - **Progress Tracking**: Real-time scraping progress
 - **Error Reporting**: Detailed error messages
 - **Performance Metrics**: Timing and success rates
+- **Change Tracking Metrics**: Change detection performance (new)
 
 ### Maintenance
 - **Dependency Updates**: Regular package updates
 - **API Monitoring**: Detect endpoint changes
 - **Data Validation**: Ensure ongoing data quality
 - **Documentation Updates**: Keep guides current
+- **Data Archiving**: Archive old historical data (new)
 
 ## Integration Points
 
@@ -270,6 +461,7 @@ pip install -r requirements.txt
 - **JSONB Fields**: Support for nested REGA data
 - **Bulk Insert**: Efficient database loading
 - **Schema Mapping**: Direct field mapping
+- **Historical Data**: Price history and change tracking (new)
 
 ### File System Integration
 - **JSON Export**: Multiple output formats
@@ -281,4 +473,10 @@ pip install -r requirements.txt
 - **Algolia Search**: Primary data source
 - **Rate Limiting**: Respectful API consumption
 - **Error Handling**: Robust retry and recovery
-- **Authentication**: Proper API key management 
+- **Authentication**: Proper API key management
+
+### Change Tracking Integrations (New)
+- **Email Notifications**: SMTP integration for alerts
+- **Webhook Notifications**: HTTP callbacks for external systems
+- **Scheduling System**: APScheduler for background tasks
+- **Location Analysis**: Location-based market analysis 

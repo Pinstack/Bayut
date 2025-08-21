@@ -5,26 +5,34 @@ Run this script after applying the Alembic migration for simplified tables.
 It will copy all data from the old location tables to the new simplified tables.
 """
 
-from src.models import Property, UniqueLocation, PropertyLocation
-from src.simplified_models import SimplifiedProperty, SimplifiedLocation
 from src.db_utils import SessionLocal
+from src.models import Property, PropertyLocation, UniqueLocation
+from src.simplified_models import SimplifiedLocation, SimplifiedProperty
 
 
 def migrate_unique_locations(session):
     print("Migrating unique_locations → simplified_locations...")
-    unique_locations = session.query(UniqueLocation).order_by(UniqueLocation.level).all()
+    unique_locations = (
+        session.query(UniqueLocation).order_by(UniqueLocation.level).all()
+    )
     inserted = 0
     for ul in unique_locations:
         if ul.name is None:
             continue  # Skip locations with no name
         # Deduplicate by (name, level)
-        exists = session.query(SimplifiedLocation).filter_by(name=ul.name, level=ul.level).first()
+        exists = (
+            session.query(SimplifiedLocation)
+            .filter_by(name=ul.name, level=ul.level)
+            .first()
+        )
         if exists:
             continue
         # Only set parent_id if it exists in simplified_locations
         parent_id = ul.parent_id
         if parent_id:
-            parent_exists = session.query(SimplifiedLocation).filter_by(id=parent_id).first()
+            parent_exists = (
+                session.query(SimplifiedLocation).filter_by(id=parent_id).first()
+            )
             if not parent_exists:
                 parent_id = None
         sl = SimplifiedLocation(
@@ -35,12 +43,14 @@ def migrate_unique_locations(session):
             level=ul.level,
             parent_id=parent_id,
             latitude=ul.latitude,
-            longitude=ul.longitude
+            longitude=ul.longitude,
         )
         session.add(sl)
         inserted += 1
     session.commit()
-    print(f"✅ Migrated {inserted} unique_locations (deduplicated by name, level, parents before children, skipped null names).")
+    print(
+        f"✅ Migrated {inserted} unique_locations (deduplicated by name, level, parents before children, skipped null names)."
+    )
 
 
 def migrate_properties(session):
@@ -80,7 +90,7 @@ def migrate_properties(session):
             extra_fields=prop.extra_fields,
             agency_id=prop.agency_id,
             agent_id=prop.agent_id,
-            project_id=prop.project_id
+            project_id=prop.project_id,
         )
         session.add(sp)
         migrated += 1
@@ -102,4 +112,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main() 
+    main()
